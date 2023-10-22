@@ -13,7 +13,7 @@
   </template>
   
   <script>
-  import NavSep from './NavSep.Vue';
+  import NavSep from './NavSep.vue';
 
   export default {
       components: {
