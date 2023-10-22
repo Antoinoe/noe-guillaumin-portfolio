@@ -1,0 +1,9 @@
+:root {
+    --dark-grey: #282828;
+    --mid-grey: #333333;
+    --light-grey: #464646;
+    --mid-red : #c52727;
+    --mid-beige : #f9dbbb;
+    --font-family: 'Arial', sans-serif;
+    /* Add more variables as needed */
+  }

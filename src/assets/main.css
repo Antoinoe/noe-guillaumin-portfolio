@@ -1,0 +1,11 @@
+@import url('./tools.css');
+
+html{
+  background-color: var(--dark-grey);
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
