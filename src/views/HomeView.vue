@@ -11,7 +11,7 @@
 
 
   <div class="Top-Content">
-    <img src= "../assets/images/nono_croped.jpg" alt="profile picture" width="240px">
+    <img src= "../assets/img/nono_croped.jpg" alt="profile picture" width="240px">
   </div>
   <div class="Top-Content"><p class="Subtitle">Discover Me!</p></div>
 </div>

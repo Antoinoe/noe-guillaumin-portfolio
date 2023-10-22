@@ -3,9 +3,6 @@
       <div class="item-name">
         <p>{{ name }}</p>
       </div>
-      <div class="item-img">
-        <img src="../assets/images/nono_croped.jpg" alt="" width=100%>
-      </div>
     </router-link>
       
     </template>
