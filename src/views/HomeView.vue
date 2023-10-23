@@ -11,7 +11,7 @@
 
 
   <div class="Top-Content">
-    <img src= "../assets/img/nono_croped.jpg" alt="profile picture" width="240px">
+    <img src= "../assets/img/nono_croped.jpg" alt="profile picture">
   </div>
   <div class="Top-Content"><p class="Subtitle">Discover Me!</p></div>
 </div>
@@ -42,7 +42,7 @@
 <style scoped>
 @import url('../assets/tools.css');
 .Top {
-  margin: 0.5vw;
+  margin: 0.2vw;
   display: flex;
 }
 
@@ -54,6 +54,10 @@
 .Top-Content {
   flex: 1;
   text-align: center;
+}
+
+.Top-Content img{
+  width: 12vw;
 }
 
 .Name p{
@@ -76,7 +80,7 @@
   font-family: sans-serif;
   font-size: 4vw;
   margin-top: 2em;
-  margin-left: -1.5em;
+  text-align: left;
 }
 
 .Separation{

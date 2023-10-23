@@ -24,26 +24,36 @@
       }
 
       .item{
-        margin : 0vw 2vw 1vw 1vw;
+        margin : 0 4vw 0 4vw;
         background-color: var(--light-grey);
         border-style: solid;
         border-color: var(--light-grey);
         border-width: 0 8px 8px 8px;
-        border-radius: 0 0 5px 5px;
+        border-radius: 0 0 10px 10px;
       }
 
       .item-name {
         background-color: var(--mid-red);
-        padding : 1vw 4vw 1vw 4vw;
+        width:12vw;
+        height: 100%;
 
-        font-size: 22px;
+        min-width: none;
+
+        
+        display: inline-block;
+      
+        align-items: center;
+        text-align: center;
+        font-size: 1.4vw;
         color :var(--mid-beige);
         text-transform: uppercase;
         font-family: sans-serif;
 
-        border-radius: 0 0 5px 5px;
-        
+        border-radius: 0 0 10px 10px;
+      }
 
+      .item-name p{
+        padding-top: 0.5vw;
       }
 
 
