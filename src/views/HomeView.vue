@@ -8,7 +8,7 @@
         </div>
       </div>
       <div class="Top-Content">
-        <img src= "../assets/img/nono_croped.jpg" alt="profile picture">
+        <img src= "img/nono_croped.jpg" alt="profile picture">
       </div>
     <div class="Top-Content"><p class="Subtitle">Discover Me!</p></div>
     </div>
@@ -17,10 +17,10 @@
       <div class="Separation"></div> 
 
       <div class="HomeNav">
-        <HomeNavItem name="Projects" />
-        <HomeNavItem name="Experiences" />
-        <HomeNavItem name="Education" />
-        <HomeNavItem name="Contact" />
+        <HomeNavItem name="Projects" imageSrc ="img/dm_capture_croped.png" />
+        <HomeNavItem name="Experiences" imageSrc ="img/experiences-croped.png"/>
+        <HomeNavItem name="Education" imageSrc ="img/education-croped.png"/>
+        <HomeNavItem name="Contact" imageSrc ="img/contact-cat-croped.png"/>
       </div>
     </div>
   </div>

@@ -1,10 +1,10 @@
 <template>
-    <router-link :to=name class="item"  @mouseover="extendDiv" @mouseleave="resetDiv" style="{padding-bottom:paddingBottom+'px';}">
+    <router-link :to=name class="item">
       <div class="item-name">
         <p>{{ name }}</p>
       </div>
       <div class="image-container">
-        <img src="../assets/img/nono_croped.jpg" alt="test_photo">
+        <img :src="imageSrc" alt="card">
       </div>
 
     </router-link>
@@ -14,29 +14,11 @@
     <script>
     
       export default {
-        data(){
-          return{
-            isHovered: false,
-            paddingBottom: 0,
-          };
-        },
-        methods: {
-          extendDiv() {
-            // Change the height when hovering
-            this.isHovered = true;
-            this.divHeight = 250; // Set the extended height you want
-            console.debug("entering");
-          },
-          resetDiv() {
-            // Reset the height when not hovering
-            this.isHovered = false;
-            this.divHeight = 0; // Set the initial height
-            console.debug("leaving");
-          },
-        },
+
         name: "HomeNavItem",
         props: {
-          name: String
+          name: String,
+          imageSrc: String,
         }
       }
     </script>
@@ -54,7 +36,7 @@
 
         border-style: solid;
         border-color: var(--light-grey);
-        border-width: 0 8px 8px 8px;
+        border-width: 0 .5vw .5vw .5vw;
         border-radius: 0 0 10px 10px;
 
         display: inline;
@@ -82,6 +64,7 @@
       .image-container {
 
         max-width: auto; /* Use the full width of the container */
+        
         display: flex;
         align-items: center; /* Vertical centering */
         justify-content: center; /* Horizontal centering */
@@ -89,9 +72,11 @@
       }
 
       .image-container img {
-      max-width: 100%; /* Ensure the image does not exceed its container */
-      max-height: 100%; /* Ensure the image does not exceed its container */
-      display: block; /* Remove any extra spacing around the image */
+        max-width: 100%; /* Ensure the image does not exceed its container */
+        max-height: 100%; /* Ensure the image does not exceed its container */
+        width: 512px;
+        display: block; /* Remove any extra spacing around the image */
+        border-radius: 3px 3px 3px 3px;
 
       }
 
