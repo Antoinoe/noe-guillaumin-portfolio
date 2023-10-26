@@ -2,12 +2,13 @@
     <nav>
       <router-link to="/">Home</router-link>
       <NavSep/>
-      <router-link to="/education">Education</router-link>
+      <router-link to="/projects">Projects</router-link>
       <NavSep/>
       <router-link to="/experiences">Experiences</router-link>
       <NavSep/>
-      <router-link to="/projects">Projects</router-link>
+      <router-link to="/education">Education</router-link>
       <NavSep/>
+      
       <router-link to="/contact">Contact</router-link>
     </nav>
   </template>

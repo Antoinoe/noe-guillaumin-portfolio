@@ -11,9 +11,8 @@
 <template>
   <div id="app">
     <Navbar/>
-    <Footer></Footer>
     <router-view></router-view>
-    
+    <Footer></Footer>
   </div>
   
 </template>

@@ -16,15 +16,15 @@
 
 
 footer{
-    position: absolute;
-    bottom: 0;
+
     width: 100%;
-    
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    bottom: 0;
 }
 
 .content{
-    padding-top: 1px;
-    padding-bottom: 1px;
     text-align: center;
     background-color: var(--mid-red);
 }

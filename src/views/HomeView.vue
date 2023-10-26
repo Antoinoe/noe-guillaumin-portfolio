@@ -1,31 +1,30 @@
 <template>
-<div class="Top">
-  <div class="Top-Content">
-    <div class="Name">
-      <p class = "First-Name">Noé</p>
-      <p class = "Last-Name">GUILLAUMIN</p>
+  <div class="Container">
+    <div class="Top">
+      <div class="Top-Content">
+        <div class="Name">
+          <p class = "First-Name">Noé</p>
+          <p class = "Last-Name">GUILLAUMIN</p>
+        </div>
+      </div>
+      <div class="Top-Content">
+        <img src= "../assets/img/nono_croped.jpg" alt="profile picture">
+      </div>
+    <div class="Top-Content"><p class="Subtitle">Discover Me!</p></div>
+    </div>
+
+    <div class="Bot">
+      <div class="Separation"></div> 
+
+      <div class="HomeNav">
+        <HomeNavItem name="Projects" />
+        <HomeNavItem name="Experiences" />
+        <HomeNavItem name="Education" />
+        <HomeNavItem name="Contact" />
+      </div>
     </div>
   </div>
 
-  
-
-
-  <div class="Top-Content">
-    <img src= "../assets/img/nono_croped.jpg" alt="profile picture">
-  </div>
-  <div class="Top-Content"><p class="Subtitle">Discover Me!</p></div>
-</div>
-
-<div class="Bot">
-  <div class="Separation"></div> 
-
-  <div class="HomeNav">
-    <HomeNavItem name="Projects" />
-    <HomeNavItem name="Experiences" />
-    <HomeNavItem name="Education" />
-    <HomeNavItem name="Contact" />
-  </div>
-</div>
 
 
 </template>
@@ -41,14 +40,22 @@
 
 <style scoped>
 @import url('../assets/tools.css');
+
+.Container{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 .Top {
   margin: 0.2vw;
   display: flex;
+  flex: auto;
 }
 
 .Bot{
   background-color: var(--mid-grey);
-  
+  flex: auto;
 }
 
 .Top-Content {
