@@ -14,7 +14,7 @@
   </template>
   
   <script>
-  import NavSep from './NavSep.vue';
+  import NavSep from './navsep.vue';
 
   export default {
       components: {
@@ -26,22 +26,20 @@
 <style scoped>
 @import url('../assets/tools.css');
 
-/* Styles spécifiques au composant */
 nav {
     display: flex;
-    background-color: var(--dark-grey); /* Couleur de fond */
-    padding: 5px; /* Augmente la marge intérieure pour plus d'espace */
-    margin: 0;
+    background-color: var(--dark-grey); 
     padding: 0;
-    width: 100%;
+    margin: 1em;
+    padding-left: 0;
     border-radius: 5px 5px 0 0;
 }
 
 nav a {
     font-family: sans-serif;
-    margin: 15px; /* Espacement entre les éléments */
-    font-size: 18px; /* Taille du texte */
-    color: var(--mid-beige); /* Couleur du texte */
+    margin: 15px; 
+    font-size: 18px; 
+    color: var(--mid-beige); 
     text-decoration: none;
 
 }
@@ -52,7 +50,7 @@ nav .router-link-active{
 }
 
 nav a:hover {
-    color: var(--mid-red); /* Couleur différente au survol */
+    color: var(--mid-red); 
 }
 
 

@@ -10,7 +10,7 @@
       <div class="Top-Content">
         <img src= "img/nono_croped.jpg" alt="profile picture">
       </div>
-    <div class="Top-Content"><p class="Subtitle">Discover Me!</p></div>
+    <div class="Top-Content"><p class="Subtitle">Making VR More Immersive</p></div>
     </div>
 
     <div class="Bot">
@@ -64,7 +64,11 @@
 }
 
 .Top-Content img{
-  width: 12vw;
+  width: 15vw;
+  border-style: solid;
+  border-width: 0.5vw;
+  border-radius: 0.3vw;
+  border-color: var(--light-grey);
 }
 
 .Name p{
@@ -85,9 +89,10 @@
 .Subtitle{
   color : var(--mid-beige);
   font-family: sans-serif;
-  font-size: 4vw;
-  margin-top: 2em;
-  text-align: left;
+  font-size: 3vw;
+  display: flex;
+  margin-top:3em;
+  margin-left:-2em;
 }
 
 .Separation{

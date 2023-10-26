@@ -18,7 +18,7 @@
 footer{
 
     width: 100%;
-    margin: 0;
+    margin: 0 0 -.75em 0;
     padding: 0;
     position: fixed;
     bottom: 0;
@@ -27,11 +27,14 @@ footer{
 .content{
     text-align: center;
     background-color: var(--mid-red);
+
 }
 
 .content p{
     text-align: center;
     color : var(--mid-beige);
     font-family: sans-serif;
+    font-size: 0.8vw;
+    padding: 3px;
 }
 </style>

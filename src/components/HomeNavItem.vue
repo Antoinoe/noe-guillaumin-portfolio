@@ -63,19 +63,19 @@
 
       .image-container {
 
-        max-width: auto; /* Use the full width of the container */
+        max-width: auto; 
         
         display: flex;
-        align-items: center; /* Vertical centering */
-        justify-content: center; /* Horizontal centering */
+        align-items: center; 
+        justify-content: center; 
 
       }
 
       .image-container img {
-        max-width: 100%; /* Ensure the image does not exceed its container */
-        max-height: 100%; /* Ensure the image does not exceed its container */
+        max-width: 100%; 
+        max-height: 100%; 
         width: 512px;
-        display: block; /* Remove any extra spacing around the image */
+        display: block; 
         border-radius: 3px 3px 3px 3px;
 
       }
