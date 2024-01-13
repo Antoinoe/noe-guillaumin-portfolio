@@ -14,7 +14,7 @@
   </template>
   
   <script>
-  import NavSep from './navsep.vue';
+  import NavSep from '../components/NavSep.vue';
 
   export default {
       components: {
