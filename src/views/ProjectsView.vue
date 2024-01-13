@@ -10,7 +10,7 @@
                 <p>Overview</p>
             </div>
             <div class="summarry-content">
-                <div class="summarry-content-item"><img class="elipse-section" src="../../img/Ellipse1.png" alt="section"><a href="" class="section-title">Doppelmarsh</a></div>
+                <div class="summarry-content-item"><img class="elipse-section" src="../../public/img/Ellipse1.png" alt="section"><a href="" class="section-title">Doppelmarsh</a></div>
                 <div class="summarry-content-item"><a href="" class="item-title">1. About</a></div>
                 <div class="summarry-content-item"><a href="" class="item-title">2. Technological Platform</a></div>
                 <div class="summarry-content-item"><a href="" class="item-title">3. DoppelWatch</a></div>
@@ -18,7 +18,7 @@
                 <div class="summarry-content-item"><a href="" class="item-title">5. Weather System</a></div>
                 <div class="summarry-content-item"><a href="" class="item-title">6. Olfactive Interface</a></div>
                 <div class="summarry-content-item"><a href="" class="item-title">7.Future Additions</a></div>
-                <div class="summarry-content-item"><img class="elipse-section" src="../../img/Ellipse1.png" alt="section"><a href="" class="section-title">Video Games</a></div>
+                <div class="summarry-content-item"><img class="elipse-section" src="../../public/img/Ellipse1.png" alt="section"><a href="" class="section-title">Video Games</a></div>
                 <div class="summarry-content-item"><a href="" class="item-title">1. Occultas</a></div>
                 <div class="summarry-content-item"><a href="" class="item-title">2. Xenos Heresy</a></div>
                 <div class="summarry-content-item"><a href="" class="item-title">3. Ch'ti Pirate!</a></div>
