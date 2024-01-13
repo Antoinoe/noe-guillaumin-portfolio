@@ -18,7 +18,7 @@ This portfolio is currently under construction, with several pieces of content y
       <div class="Separation"></div> 
 
       <div class="HomeNav">
-        <HomeNavItem name="Projects" imageSrc ="../../public/img/dm_capture_croped.png" />
+        <HomeNavItem name="Projects" imageSrc ="./img/dm_capture_croped.png" />
         <HomeNavItem name="Experiences" imageSrc ="../../public/img/experiences-croped.png"/>
         <HomeNavItem name="Education" imageSrc ="../../public/img/education-croped.png"/>
         <HomeNavItem name="Contact" imageSrc ="../../public/img/contact-cat-croped.png"/>
