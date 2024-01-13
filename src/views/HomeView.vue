@@ -12,7 +12,7 @@
       </div>
     <div class="Top-Content"><p class="Subtitle">Making VR More Immersive</p></div>
     </div>
-
+    <div id="caution">/!\ This portfolio is under construction. Lots of content is missing and will be added shortly. If you want to know more about me or my projects, please, contact at noeguillaumin@gmail.com . /!\</div>
     <div class="Bot">
       <div class="Separation"></div> 
 
@@ -106,7 +106,13 @@
   width: 100%;
 }
 
-
+#caution{
+  color: red;
+  text-align: center;
+  font-size: 2em;
+  font-family: sans-serif;
+  margin: 1em;
+}
 
   
 </style>

@@ -1,7 +1,7 @@
 <template>
     <footer>
         <div class="content">
-            <p>Noé GUILLAUMIN - Portfolio - 2023</p>
+            <p>Noé GUILLAUMIN - Portfolio - 2024</p>
         </div>
         
     </footer>
