@@ -8,7 +8,7 @@
         </div>
       </div>
       <div class="Top-Content">
-        <img src= "img/nono_croped.jpg" alt="profile picture">
+        <img src= "../../public/img/nono_croped.jpg" alt="profile picture">
       </div>
     <div class="Top-Content"><p class="Subtitle">Making VR More Immersive</p></div>
     </div>
