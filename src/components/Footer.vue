@@ -18,10 +18,10 @@
 footer{
 
     width: 100%;
-    margin: 0 0 -.75em 0;
+    margin: 0 0 0 0;
     padding: 0;
     position: fixed;
-    bottom: 0;
+    bottom: -15px;
 }
 
 .content{
