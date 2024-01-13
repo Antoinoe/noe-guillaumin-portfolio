@@ -4,9 +4,6 @@
 
 <script>
     export default{
-      components: {
-      NavSep
-    }
     }
 </script>
 
