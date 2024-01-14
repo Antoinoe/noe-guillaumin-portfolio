@@ -1,10 +1,15 @@
 <script>
-
+    import PageTitle from '../components/PageTitle.vue';
+  export default {
+    components: {
+      PageTitle
+    }
+  }
 </script>
 
 <template>
     <div id="page_content">
-        <div class="title"><p>Experiences</p></div>
+    <PageTitle name = "Experiences"></PageTitle>
     <h3>Research Intern at INRIA</h3>
     <div class="subtitle">France - Rennes 35000 - 2023</div>
     <p class="expe_content">
@@ -23,20 +28,6 @@ Farm3 is a French startup specializing in the creation of an optimized structure
 
 
 <style scoped>
-    .title p{
-        margin-left: 1.3em;
-        margin-top: 0;
-        padding: 0.3em;
-        border-style: solid;
-        border-color: var(--mid-red);
-        border-radius: 5px;
-        border-width: 2px;
-        width: max-content;
-        font-size: 42px;
-        font-family: sans-serif;
-        color: var(--mid-beige);
-        background-color: var(--mid-grey);
-    }
     h2{
         color: var(--mid-red);
         font-size: 3em;

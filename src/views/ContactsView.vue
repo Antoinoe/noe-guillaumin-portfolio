@@ -1,9 +1,14 @@
 <script>
-
+    import PageTitle from '../components/PageTitle.vue';
+  export default {
+    components: {
+      PageTitle
+    }
+  }
 </script>
 
 <template>
-    <div class="title"><p>Contact</p></div>
+    <PageTitle name = "Contact"></PageTitle>
     <div id="page_content">
         <div class="contactZone">
             <div class="contactItem">
@@ -41,21 +46,6 @@
 
 
 <style scoped>
-.title p{
-        margin-left: 1.3em;
-        margin-top: 0;
-        padding: 0.3em;
-        border-style: solid;
-        border-color: var(--mid-red);
-        border-radius: 5px;
-        border-width: 2px;
-        width: max-content;
-        font-size: 42px;
-        font-family: sans-serif;
-        color: var(--mid-beige);
-        background-color: var(--mid-grey);
-    }
-
     #page_content{
         border-style: solid;
         border-color: var(--light-grey);

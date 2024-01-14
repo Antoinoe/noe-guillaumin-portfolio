@@ -1,5 +1,5 @@
 <template>
-    <div class="title"><p>Education</p></div>
+    <PageTitle name = "Education"></PageTitle>
     <div class="educationContent">
         
         <div class="educationZone">
@@ -40,21 +40,6 @@
 </template>
 
 <style scoped>
-    .title p{
-        margin-left: 1.3em;
-        margin-top: 0;
-        padding: 0.3em;
-        border-style: solid;
-        border-color: var(--mid-red);
-        border-radius: 5px;
-        border-width: 2px;
-        width: max-content;
-        font-size: 42px;
-        font-family: sans-serif;
-        color: var(--mid-beige);
-        background-color: var(--mid-grey);
-    }
-
     p{
         font-family:sans-serif;
     }
@@ -120,3 +105,10 @@
         margin-right: auto;
     }
 </style>
+<script>
+    import PageTitle from '../components/PageTitle.vue';
+  export default {
+    components: {
+      PageTitle
+    }
+  }</script>

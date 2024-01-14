@@ -1,9 +1,14 @@
 <script>
-
+    import PageTitle from '../components/PageTitle.vue';
+  export default {
+    components: {
+      PageTitle
+    }
+  }
 </script>
 
 <template>
-    <div class="title"><p>Projects</p></div>
+    <PageTitle name = "Projects"></PageTitle>
     <div id="content">
         <div class="summarry">
             <div class="summarry-title">
@@ -37,21 +42,6 @@
 </template>
 
 <style>
-
-.title p{
-        margin-left: 1.3em;
-        margin-top: 0;
-        padding: 0.3em;
-        border-style: solid;
-        border-color: var(--mid-red);
-        border-radius: 5px;
-        border-width: 2px;
-        width: max-content;
-        font-size: 42px;
-        font-family: sans-serif;
-        color: var(--mid-beige);
-        background-color: var(--mid-grey);
-    }
     .summarry{
         width:20%;
         height:480px;
