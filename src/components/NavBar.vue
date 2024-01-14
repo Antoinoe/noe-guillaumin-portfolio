@@ -31,7 +31,7 @@ nav {
     background-color: var(--dark-grey); 
     padding: 0;
     margin: 1em;
-    padding-left: 0;
+    padding-left: 1.5em;
     border-radius: 5px 5px 0 0;
 }
 

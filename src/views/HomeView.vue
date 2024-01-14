@@ -10,10 +10,9 @@
       <div class="Top-Content">
         <img src= "../../public/img/nono_croped.jpg" alt="profile picture">
       </div>
-    <div class="Top-Content"><p class="Subtitle">Making VR More Immersive</p></div>
+    <div class="Top-Content"><p class="Subtitle">Improving Immersion in VR</p></div>
     </div>
-    <div id="caution">/!\
-This portfolio is currently under construction, with several pieces of content yet to be added. More information about me and my projects will be available shortly. For inquiries, please contact me at : noeguillaumin@gmail.com . /!\</div>
+    <div id="caution">/!\This portfolio is currently under construction, with several pieces of content yet to be added. More information about me and my projects will be available shortly. For inquiries, please contact me at : noeguillaumin@gmail.com . /!\</div>
     <div class="Bot">
       <div class="Separation"></div> 
 
@@ -40,7 +39,6 @@ This portfolio is currently under construction, with several pieces of content y
 </script>
 
 <style scoped>
-@import url('../assets/tools.css');
 
 .Container{
   display: flex;
@@ -108,7 +106,7 @@ This portfolio is currently under construction, with several pieces of content y
 }
 
 #caution{
-  color: red;
+  color: rgb(194, 145, 55);
   text-align: center;
   font-size: 2em;
   font-family: sans-serif;

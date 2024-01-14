@@ -3,53 +3,72 @@
 </script>
 
 <template>
+    <div class="title"><p>Projects</p></div>
     <div id="content">
-        <div class="title">MY PROJECTS</div>
         <div class="summarry">
             <div class="summarry-title">
                 <p>Overview</p>
             </div>
             <div class="summarry-content">
-                <div class="summarry-content-item"><img class="elipse-section" src="../../public/img/Ellipse1.png" alt="section"><a href="" class="section-title">Doppelmarsh</a></div>
-                <div class="summarry-content-item"><a href="" class="item-title">1. About</a></div>
-                <div class="summarry-content-item"><a href="" class="item-title">2. Technological Platform</a></div>
-                <div class="summarry-content-item"><a href="" class="item-title">3. DoppelWatch</a></div>
-                <div class="summarry-content-item"><a href="" class="item-title">4. OpenXR Keyboard</a></div>
-                <div class="summarry-content-item"><a href="" class="item-title">5. Weather System</a></div>
-                <div class="summarry-content-item"><a href="" class="item-title">6. Olfactive Interface</a></div>
-                <div class="summarry-content-item"><a href="" class="item-title">7.Future Additions</a></div>
-                <div class="summarry-content-item"><img class="elipse-section" src="../../public/img/Ellipse1.png" alt="section"><a href="" class="section-title">Video Games</a></div>
-                <div class="summarry-content-item"><a href="" class="item-title">1. Occultas</a></div>
-                <div class="summarry-content-item"><a href="" class="item-title">2. Xenos Heresy</a></div>
-                <div class="summarry-content-item"><a href="" class="item-title">3. Ch'ti Pirate!</a></div>
-                <div class="summarry-content-item"><a href="" class="item-title">4. Game Jams</a></div>
+                <div class="summarry-content-item"><img class="elipse-section" src="../../public/img/Ellipse1.png" alt="section"><a href="" class="section-title">XR Telepresence Platform Application</a></div>
+                <ol>
+                    <li><div class="summarry-content-item"><a href="" class="item-title">About</a></div></li>
+                    <li><div class="summarry-content-item"><a href="" class="item-title">Platform Architecture</a></div></li>
+                    <li><div class="summarry-content-item"><a href="" class="item-title">OpenXR Keyboard</a></div></li>
+                    <li><div class="summarry-content-item"><a href="" class="item-title">Celestial Environment</a></div></li>
+                    <li><div class="summarry-content-item"><a href="" class="item-title">Environment Data Collection</a></div></li>
+                    <li><div class="summarry-content-item"><a href="" class="item-title">External Devices</a></div></li>
+                    <li><div class="summarry-content-item"><a href="" class="item-title">Future Additions</a></div></li>
+                </ol>
                 
-
+                <div class="summarry-content-item"><img class="elipse-section" src="../../public/img/Ellipse1.png" alt="section"><a href="" class="section-title">Video Games</a></div>
+                <ol>
+                    <li><div class="summarry-content-item"><a href="" class="item-title">Occultas</a></div></li>
+                    <li><div class="summarry-content-item"><a href="" class="item-title">Xenos Heresy</a></div></li>
+                    <li><div class="summarry-content-item"><a href="" class="item-title">Game Jams</a></div></li>
+                </ol>
             </div>
+        </div>
+
+        <div id="writingZone">
+            <p>neofrgnetrij</p>
         </div>
     </div>
 </template>
 
 <style>
-    #content{
-        margin: 2em;
-    }
 
-    .title{
-        color:var(--mid-beige);
+.title p{
+        margin-left: 1.3em;
+        margin-top: 0;
+        padding: 0.3em;
+        border-style: solid;
+        border-color: var(--mid-red);
+        border-radius: 5px;
+        border-width: 2px;
+        width: max-content;
+        font-size: 42px;
         font-family: sans-serif;
-        font-size: 56px;
+        color: var(--mid-beige);
+        background-color: var(--mid-grey);
     }
     .summarry{
-        width:300px;
-        height:450px;
+        width:20%;
+        height:480px;
         position : fixed;
         background-color: var(--mid-grey);
         border: solid; 
         border-color:var(--mid-red);
         border-radius: 5px;
         top:200px;
+        left : 3%;
         display: block;
+    }
+
+    .summarry-content li{
+        padding-left: 1em;
+        color: var(--mid-beige);
+        font-family: sans-serif;
     }
 
     .summarry-title p{
@@ -85,9 +104,19 @@
         font-family: sans-serif;
     }
     .item-title{
-        padding-left: 1em;
+        text-decoration: none;
         color: var(--mid-beige);
-        font-family: sans-serif;
+    }
+
+    #writingZone{
+        margin-left: 30%;
+        width: 65%;
+        height: 5000px;
+        margin-top: 2em;
+        background-color: var(--mid-grey);
+        border: solid; 
+        border-color:var(--light-grey);
+        border-radius: 5px;
     }
 
 </style>
