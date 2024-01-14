@@ -49,7 +49,6 @@
         border-style: solid;
         border-width: 5px;
         border-color: var(--mid-red);
-        border-radius: 5px;
         padding: 1em;
         
     }
@@ -62,17 +61,18 @@
     .educationZone {
         margin-left: 10%;
         margin-right: 10%;
-        background-color: var(--light-grey);
-        border-style: solid;
+        /* background-color: var(--light-grey); */
+        /* border-style: solid;
         border-width: 5px;
         border-radius: 5px;
-        border-color: var(--mid-grey);
+        border-color: var(--mid-grey); */
         padding: 1em;
         padding-top: 2em;
         margin-top: 2em;
         display: flex;
         flex-direction: column;
         text-align: center;
+        position: relative;
     }
 
     .educationBoxItemAbout{
@@ -90,7 +90,7 @@
         display: flex;
         flex-direction: column;
         border-style: solid;
-        border-color: var(--dark-grey);
+        border-color: var(--light-grey);
         border-width: 5px;
         border-radius: 5px;
     }

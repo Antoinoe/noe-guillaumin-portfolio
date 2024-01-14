@@ -20,21 +20,21 @@
             <div class="contactContent">+33 6 67 46 93 93</div>
         </div>
         <div class="contactItem">
-            <div class="contactTitle"><a href="https://www.linkedin.com/in/noe-guillaumin/">LinkedIn</a></div>
+            <div class="contactTitle"><a target="_blank" href="https://www.linkedin.com/in/noe-guillaumin/">LinkedIn</a></div>
         </div>
         <div class="contactItem">
-            <div class="contactTitle"><a href="https://github.com/Antoinoe">GitHub</a></div>
+            <div class="contactTitle"><a target="_blank" href="https://github.com/Antoinoe">GitHub</a></div>
             <div class="contactContent"></div>
         </div>
         <div class="contactItem">
-            <div class="contactTitle"><a href="https://noeguillaumin.itch.io">Itch.IO</a></div>
+            <div class="contactTitle"><a target="_blank" href="https://noeguillaumin.itch.io">Itch.IO</a></div>
             <div class="contactContent"></div>
         </div>
         <div class="contactItem">
-            <div class="contactTitle"><a href="../../public/pdf/nguillaumin_cv_en.pdf" download> Download my resume (EN)</a></div>
+            <div class="contactTitle"><a target="_blank" href="../../public/pdf/nguillaumin_cv_en.pdf" download> Download my resume (EN)</a></div>
         </div>
         <div class="contactItem">
-            <div class="contactTitle"><a href="../../public/pdf/nguillaumin_cv_fr.pdf" download> Download my resume (FR)</a></div>
+            <div class="contactTitle"><a target="_blank" href="../../public/pdf/nguillaumin_cv_fr.pdf" download> Download my resume (FR)</a></div>
         </div>
         </div>
     </div>
