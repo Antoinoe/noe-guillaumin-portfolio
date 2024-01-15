@@ -37,46 +37,64 @@
 
         <div id="writingZone">
             <div id="XRTelepresencePlatform" class="projectTitle">XR Telepresence Platform</div>
+            <div class="projectSubContentImage">
+                <img src="../../public/img/xrtp_1.webp" width="60%" alt="Screenshot of the XR telepresence application on the main scene with the 3D environment and phsysically based sky.">
+                <p>1] Screenshot of the XR telepresence application on the main scene with the 3D environment and phsysically based sky.</p>
+            </div>
             <ol>
                 <li>
                     <div class="projectSubItem">
                         <div id="About" class="projectSubTitle">About</div>
+                        <div class="projectSubContent">
+                            <p>
+                                Virtual Reality (VR) has grow a lot over the past few years, researchers are trying to make these applications more <b>realistic</b> and <b>immersive</b>.
+                                <b>Telepresence</b> is a regroupment of technologies that allows someone to physically feel being at a distant place while staying at its initial position. 
+                                This feeling is achieved by fooling the human senses, and it's not only made by recreating a virtual realistic environment, it's also by fooling the sense of smell, touch, hear and even walking.
+                            </p>
+                            <p>
+                                The XR Telepresence Platform is a Virtual Reality application that aims to make a step further the telepresence aspect, by creating a ground and celestial environment based on real-time environmental data.
+                                These data can be used afterwards by future connected devices that will be able to trick human senses. 
+                                The most intuitive exemples would be a thermal suit that takes the temperature as an input, and wind fans with wind direction.
+                            </p>
+                        </div>
                     </div>
-                    <div class="projectSubContent">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda eaque at quo, praesentium sint illum aut quam quia aliquam eum consequatur amet dolorem eveniet corporis numquam quas esse in deleniti!</p>
-                    </div>
+                    
                 </li>
                 <li>
                     <div class="projectSubItem">
                         <div id="PlatformArchitecture" class="projectSubTitle">Platform Architecture</div>
+                        <div class="projectSubContent">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda eaque at quo, praesentium sint illum aut quam quia aliquam eum consequatur amet dolorem eveniet corporis numquam quas esse in deleniti!</p>
+                        </div>
                     </div>
-                    <div class="projectSubContent">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda eaque at quo, praesentium sint illum aut quam quia aliquam eum consequatur amet dolorem eveniet corporis numquam quas esse in deleniti!</p>
-                    </div>
+                    
                 </li>
                 <li>
                     <div class="projectSubItem">
                         <div id="CelestialEnvironment" class="projectSubTitle">Celestial Environment</div>
+                        <div class="projectSubContent">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda eaque at quo, praesentium sint illum aut quam quia aliquam eum consequatur amet dolorem eveniet corporis numquam quas esse in deleniti!</p>
+                        </div>
                     </div>
-                    <div class="projectSubContent">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda eaque at quo, praesentium sint illum aut quam quia aliquam eum consequatur amet dolorem eveniet corporis numquam quas esse in deleniti!</p>
-                    </div>
+                    
                 </li>
                 <li>
                     <div class="projectSubItem">
                         <div id="EnvironmentDataCollection" class="projectSubTitle">Environment Data Collection</div>
+                        <div class="projectSubContent">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda eaque at quo, praesentium sint illum aut quam quia aliquam eum consequatur amet dolorem eveniet corporis numquam quas esse in deleniti!</p>
+                        </div>
                     </div>
-                    <div class="projectSubContent">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda eaque at quo, praesentium sint illum aut quam quia aliquam eum consequatur amet dolorem eveniet corporis numquam quas esse in deleniti!</p>
-                    </div>
+                    
                 </li>
                 <li>
                     <div class="projectSubItem">
                         <div id="ExternalDevices" class="projectSubTitle">External Devices</div>
+                        <div class="projectSubContent">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda eaque at quo, praesentium sint illum aut quam quia aliquam eum consequatur amet dolorem eveniet corporis numquam quas esse in deleniti!</p>
+                        </div>
                     </div>
-                    <div class="projectSubContent">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda eaque at quo, praesentium sint illum aut quam quia aliquam eum consequatur amet dolorem eveniet corporis numquam quas esse in deleniti!</p>
-                    </div>
+                    
                 </li>
                 <li>
                     <div class="projectSubItem">
@@ -95,19 +113,26 @@
                 <li>
                     <div class="projectSubItem">
                         <div id="Occultas" class="projectSubTitle">Occultas</div>
-                        <p class="projectSubContent">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores et, iusto distinctio tempore quod inventore earum labore fuga aliquam illo corporis assumenda perferendis iure, excepturi, harum ex sunt libero unde!</p>
+                        <div class="projectSubContent">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores et, iusto distinctio tempore quod inventore earum labore fuga aliquam illo corporis assumenda perferendis iure, excepturi, harum ex sunt libero unde!</p>
+                        </div>
                     </div>
                 </li>
                 <li>
                     <div class="projectSubItem">
                         <div id="XenosHeresy" class="projectSubTitle">Xenos Heresy</div>
-                        <p class="projectSubContent">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores et, iusto distinctio tempore quod inventore earum labore fuga aliquam illo corporis assumenda perferendis iure, excepturi, harum ex sunt libero unde!</p>
+                        <div class="projectSubContent">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores et, iusto distinctio tempore quod inventore earum labore fuga aliquam illo corporis assumenda perferendis iure, excepturi, harum ex sunt libero unde!</p>
+                        </div>
+                        
                     </div>
                 </li>
                 <li>
                     <div class="projectSubItem">
                         <div id="GameJams" class="projectSubTitle">Game Jams</div>
-                        <p class="projectSubContent">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores et, iusto distinctio tempore quod inventore earum labore fuga aliquam illo corporis assumenda perferendis iure, excepturi, harum ex sunt libero unde!</p>
+                        <div class="projectSubContent">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores et, iusto distinctio tempore quod inventore earum labore fuga aliquam illo corporis assumenda perferendis iure, excepturi, harum ex sunt libero unde!</p>
+                        </div>
                     </div>
                 </li>
             </ol>
@@ -222,14 +247,31 @@
         font-size: 24px;
     }
 
-    .projectSubContent{
+    .projectSubContent p{
         color : var(--mid-beige);
         font-family: sans-serif;
         font-size: 16px;
-        text-justify: auto;
     }
 
-    .projectItemSeparation{
+    .projectSubContentImage img{
+        border-style: solid;
+        border-color: var(--light-grey);
+        border-width: 5px;
+        border-radius: 5px;
+    }
+
+    .projectSubContentImage{
+        margin: 2em;
+        display: inline-flexx;
+        text-align: center;
+    }
+    .projectSubContentImage p{
+        color : var(--mid-beige);
+        font-family: sans-serif;
+        font-size: 12px;
+    }
+
+    .projectItemSeparation {
         margin: 5em 0 5em 0;
     }
 
