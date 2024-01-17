@@ -32,6 +32,7 @@ nav {
     border-radius: 5px 5px 0 0;
     background-color: var(--light-grey);
     border-radius: 5px;
+    border-width: 5px;
     border-color: var(--mid-grey);
     border-style:solid;
 }
@@ -46,7 +47,7 @@ nav a {
 }
 
 nav .router-link-active{
-    font-weight: bold;
+    font-weight: 600;
     font-size: 20px;
 }
 

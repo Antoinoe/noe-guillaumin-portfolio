@@ -13,7 +13,14 @@
     </div>
 
     <div class="links">
-      <div class="linkItem"><a href=""></a></div>
+      <div class="linkItem"><router-link to="/projects">Projects</router-link></div>
+      <div class="linkItem"><router-link to="/experiences">Experiences</router-link></div>
+      <div class="linkItem"><router-link to="/education">Education</router-link></div>
+    </div>
+
+    <div class="contactMe">
+      Interested in my work? Don't hesitate to contact me !
+      <div class="linkItem"><router-link to="/contact">GO</router-link></div>
     </div>
   </div>
   
@@ -76,6 +83,65 @@ export default {
   font-family: sans-serif;
   font-size: 32px;
   text-align: center;
+}
+
+.links{
+  display: inline-flex;
+  margin-top: 2em;
+  width:100%;
+  text-align: center;
+}
+
+.links .linkItem{
+  margin-top: 3em;
+  margin-bottom: 3em;
+  width:100%;
+}
+
+.links .linkItem a{
+  color: var(--mid-beige);
+  text-decoration: none;
+  font-family: sans-serif;
+  padding: 0.5em 3em 0.5em 3em;
+  border-style: solid;
+  border-color: var(--mid-red);
+  border-width: 3px;
+  background-color: var(--light-grey);
+  font-size: 36px;
+  border-radius: 5px;
+}
+
+.links .linkItem a:hover{
+  color: var(--mid-red);
+  background-color: var(--mid-beige);
+  font-weight: 600;
+  border-width: 5px;
+}
+
+.contactMe{
+  display: flex;
+  margin-top : 5vw;
+  color : var(--mid-beige);
+  font-family: sans-serif;
+  font-size: 32px;
+}
+.contactMe a {
+  margin-left : 10px;
+  text-decoration: none;
+  color : var(--mid-beige);
+  font-family: sans-serif;
+  font-size: 32px;
+  background-color: var(--mid-grey);
+
+  padding: 0.2em 1em 0.2em 1em;
+  border-style: solid;
+  border-color: var(--mid-red);
+  border-width: 3px;
+  border-radius: 5px;
+}
+
+.contactMe a:hover{
+  background-color: var(--mid-red);
 }
 
 </style>
