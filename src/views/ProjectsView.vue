@@ -18,6 +18,7 @@
                 <div class="summarry-content-item"><img class="elipse-section" src="../../public/img/Ellipse1.png" alt="section"><a href="#XRTelepresencePlatform" class="section-title">XR Telepresence Platform</a></div>
                 <ol>
                     <li><div class="summarry-content-item"><a href="#About" class="summary-item-title">About</a></div></li>
+                    <li><div class="summarry-content-item"><a href="#StateOfTheArt" class="summary-item-title">State Of The Art</a></div></li>
                     <li><div class="summarry-content-item"><a href="#PlatformArchitecture" class="summary-item-title">Platform Architecture</a></div></li>
                     <li><div class="summarry-content-item"><a href="#OpenXRKeyboard" class="summary-item-title">OpenXR Keyboard</a></div></li>
                     <li><div class="summarry-content-item"><a href="#CelestialEnvironment" class="summary-item-title">Celestial Environment</a></div></li>
@@ -62,12 +63,30 @@
                 </li>
                 <li>
                     <div class="projectSubItem">
-                        <div id="PlatformArchitecture" class="projectSubTitle">Platform Architecture</div>
+                        <div id="StateOfTheArt" class="projectSubTitle">State Of The Art</div>
                         <div class="projectSubContent">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda eaque at quo, praesentium sint illum aut quam quia aliquam eum consequatur amet dolorem eveniet corporis numquam quas esse in deleniti!</p>
+                            <p> This application is primarly inspired by the Doppelmarsh project. It is a Unity3D VR Application developped by the MIT Medial Lab in 2014 that aimed to better visualize environnemental data. Their data came from the Tidmarsh, a reabilitation of a marsh near Boston, Massachusetts.
+                                Once they recieved these data, it changed the weather in the sky, and a simple day-night cycle was implemented. During the next years after the first version of this research application, other researchers has added their on project to it. 
+                                The lack of code architecture made each projects a bit harder to implement, to the point where some could cause issue to others.
+                            </p>
+                            <p>
+                                The Doppelmarsh project arrived at the IFT (Institute for Future Technologies), previously known as the "De Vinci Innovation Center". In 2022 I joined the IFT and learned the concept of telepresence application. I believed this project could be a great step forward telepresence, since it was communicating with real-time data that changes the environment.  
+                                After making proof of concept of differents features, it was now time to upgrade this Unity project. Even though the main goal was to simply upgrade the application, it became quickly a necessity to remake the entire code architecture in order to make the application modular and thus usable by other IFT's students who wants to implement their own innovative projects on the platform.
+                            </p>
                         </div>
                     </div>
                     
+                </li>
+                <li>
+                    <div class="projectSubItem">
+                        <div id="PlatformArchitecture" class="projectSubTitle">Platform Architecture</div>
+                        <div class="projectSubContent">
+                            <p>The XR Telepresence Platform is developped on the game engine Unity3D. This game engine has multiple render system. Doppelmarsh was on URP (Universal Render Pipeline), which is the default render system when developpers want to add some visual effects to their application.
+                                Unity also have a High Definition Render Pipeline. It is costly in ressources, but in return can handle high-resolution textures, complex shaders, and a physically-based celestial environment. .</p>
+                            <p>Several plugins exists to make a Virtual Reality application. For maximum compatibility, I decided to chose OpenXR, a library with not much features in it, but compatible with all VR headsets.</p>
+                            <p>The first one is the "Core". It contains the major features to make the application work. It consists of the VR Player, provided by OpenXR</p>
+                        </div>
+                    </div>
                 </li>
                 <li>
                     <div class="projectSubItem">
@@ -251,6 +270,8 @@
         color : var(--mid-beige);
         font-family: sans-serif;
         font-size: 16px;
+        text-align: justify;
+        text-justify :inter-word;
     }
 
     .projectSubContentImage img{

@@ -3,7 +3,6 @@
         <div class="content">
             <p>Noé GUILLAUMIN - Portfolio - 2024</p>
         </div>
-        
     </footer>
 </template>
 
@@ -14,14 +13,12 @@
 <style>
 @import url('../assets/tools.css');
 
-
 footer{
-
-    width: 100%;
-    margin: 0 0 0 0;
+    text-align: center;
     padding: 0;
-    position: fixed;
-    bottom: -15px;
+    margin: 0;
+    position: relative;
+    width :100%;
 }
 
 .content{
@@ -34,7 +31,7 @@ footer{
     text-align: center;
     color : var(--mid-beige);
     font-family: sans-serif;
-    font-size: 0.8vw;
+    font-size: 11px;
     padding: 3px;
 }
 </style>

@@ -8,11 +8,13 @@
         </div>
       </div>
       <div class="Top-Content">
-        <img src= "../../public/img/nono_croped.jpg" alt="profile picture">
+        <div class="Top-Content-pp">
+          <img src= "../../public/img/nono_croped.jpg" alt="profile picture">
+        </div>
       </div>
     <div class="Top-Content"><p class="Subtitle">Improving Immersion in VR</p></div>
     </div>
-    <div id="caution">/!\This portfolio is currently under construction, with several pieces of content yet to be added. More information about me and my projects will be available shortly. For inquiries, please contact me at : noeguillaumin@gmail.com . /!\</div>
+    <!-- <div id="caution">/!\This portfolio is currently under construction, with several pieces of content yet to be added. More information about me and my projects will be available shortly. For inquiries, please contact me at : noeguillaumin@gmail.com . /!\</div> -->
     <div class="Bot">
       <div class="Separation"></div> 
 
@@ -50,31 +52,39 @@
   margin: 0.2vw;
   display: flex;
   flex: auto;
+  justify-content: center;
+  align-items: center;
 }
 
 .Bot{
   background-color: var(--mid-grey);
   flex: auto;
+  height: 100%;
 }
 
 .Top-Content {
   flex: 1;
   text-align: center;
+  align-items: flex-end;
+}
+
+.Top-Content-pp{
+  display: flex;
 }
 
 .Top-Content img{
-  width: 15vw;
+  width:144px;
   border-style: solid;
-  border-width: 0.5vw;
-  border-radius: 0.3vw;
+  border-width: 5px;
+  border-radius: 5px;
   border-color: var(--light-grey);
+
 }
 
 .Name p{
   color : var(--mid-beige);
   font-family: sans-serif;
   font-size: 4vw;
-  padding-top: -5px;
 }
 
 .First-Name{
@@ -90,8 +100,6 @@
   font-family: sans-serif;
   font-size: 3vw;
   display: flex;
-  margin-top:3em;
-  margin-left:-2em;
 }
 
 .Separation{
@@ -101,8 +109,8 @@
 
 .HomeNav{
   display: flex;
-  justify-content: center;  
   width: 100%;
+  justify-content: center;
 }
 
 #caution{

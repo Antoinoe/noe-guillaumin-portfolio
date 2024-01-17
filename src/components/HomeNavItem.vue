@@ -30,54 +30,40 @@
       }
 
       .item{
-        margin : 0 4vw 4vw 4vw;
-       
-        height:100%;
+        text-align: center;
+        width: 100%;
+        margin-left :5em;
+        margin-right:5em;
 
         border-style: solid;
         border-color: var(--light-grey);
-        border-width: 0 .5vw .5vw .5vw;
-        border-radius: 0 0 10px 10px;
-
-        display: inline;
+        border-width: 0 5px 5px 5px;
+        border-radius: 0 0 5px 5px;
+        
       }
 
       .item-name {
-        background-color: var(--mid-red);
-
-        width:100%;
-        max-height:5vw;
-
-
-        border-radius: 3px 3px 3px 3px;
-        
-        display: inline-block;
-        align-items: center;
-        text-align: center;
-
-        font-size: 1.4vw;
-        color :var(--mid-beige);
+        background-color: var(--mid-beige);
+        border-style: solid;
+        border-color: var(--mid-red);
+        border-width: 5px;
+        font-size: 24px;
+        font-weight: 600;
+        color :var(--dark-grey);
         text-transform: uppercase;
-        font-family: sans-serif;       
+        font-family: sans-serif; 
       }
 
       .image-container {
 
-        max-width: auto; 
-        
-        display: flex;
-        align-items: center; 
-        justify-content: center; 
+          display: flex;
+          align-items: center; 
+          justify-content: center; 
 
       }
 
       .image-container img {
-        max-width: 100%; 
-        max-height: 100%; 
-        width: 512px;
-        display: block; 
-        border-radius: 3px 3px 3px 3px;
-
+        max-width: 100%;  
       }
 
 
