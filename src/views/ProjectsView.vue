@@ -178,7 +178,7 @@
         border: solid; 
         border-color:var(--mid-red);
         border-radius: 5px;
-        top:205px;
+        top:245px;
         left : 3.5em;
         display: block;
         padding: 0.2em;

@@ -1,125 +1,81 @@
 <template>
-  <div class="Container">
-    <div class="Top">
-      <div class="Top-Content">
-        <div class="Name">
-          <p class = "First-Name">Noé</p>
-          <p class = "Last-Name">GUILLAUMIN</p>
-        </div>
+  <div class="warper">
+    <div class="welcomeContent">
+      <div class="helloText">
+        Hi, I'm Noé Guillaumin!
       </div>
-      <div class="Top-Content">
-        <div class="Top-Content-pp">
-          <img src= "../../public/img/nono_croped.jpg" alt="profile picture">
-        </div>
+      <div class="subHelloText">
+        Welcome to my portfolio! I make telerepsence VR applications to better understand our world.
       </div>
-    <div class="Top-Content"><p class="Subtitle">Improving Immersion in VR</p></div>
     </div>
-    <!-- <div id="caution">/!\This portfolio is currently under construction, with several pieces of content yet to be added. More information about me and my projects will be available shortly. For inquiries, please contact me at : noeguillaumin@gmail.com . /!\</div> -->
-    <div class="Bot">
-      <div class="Separation"></div> 
+    <div class="checkout">
+    From video game conception to VR application for research, checkout what I did over the last few years!
+    </div>
 
-      <div class="HomeNav">
-        <HomeNavItem name="Projects" imageSrc ="./img/dm_capture_croped.png" />
-        <HomeNavItem name="Experiences" imageSrc ="./img/experiences-croped.png"/>
-        <HomeNavItem name="Education" imageSrc ="./img/education-croped.png"/>
-        <HomeNavItem name="Contact" imageSrc ="./img/contact-cat-croped.png"/>
-      </div>
+    <div class="links">
+      <div class="linkItem"><a href=""></a></div>
     </div>
   </div>
-
-
-
+  
+  
+  
 </template>
 
 <script>
-  import HomeNavItem from '../components/HomeNavItem.vue';
-  export default {
-    components: {
-      HomeNavItem
-    }
+import HomeNavItem from '../components/HomeNavItem.vue';
+export default {
+  components: {
+    HomeNavItem
   }
+}
 </script>
 
 <style scoped>
 
-.Container{
-  display: flex;
-  flex-direction: column;
-  height: 100%;
+
+.warper{
+  margin: 1.5vw;
 }
 
-.Top {
-  margin: 0.2vw;
-  display: flex;
-  flex: auto;
-  justify-content: center;
-  align-items: center;
+.welcomeContent {
+  display: inline-block; 
 }
 
-.Bot{
-  background-color: var(--mid-grey);
-  flex: auto;
-  height: 100%;
-}
-
-.Top-Content {
-  flex: 1;
-  text-align: center;
-  align-items: flex-end;
-}
-
-.Top-Content-pp{
-  display: flex;
-}
-
-.Top-Content img{
-  width:144px;
+.helloText {
+  font-size: calc(5.5vw);
+  font-weight: 900;
+  font-family: sans-serif;
+  color: var(--mid-red);
+  padding: 0em .5em 0em .5em;
+  background-color: var(--mid-beige);
   border-style: solid;
-  border-width: 5px;
-  border-radius: 5px;
-  border-color: var(--light-grey);
-
-}
-
-.Name p{
-  color : var(--mid-beige);
-  font-family: sans-serif;
-  font-size: 4vw;
-}
-
-.First-Name{
-  margin-bottom: -1px;
-}
-
-.Last-Name{
-  margin-top: -1px;
-}
-
-.Subtitle{
-  color : var(--mid-beige);
-  font-family: sans-serif;
-  font-size: 3vw;
-  display: flex;
-}
-
-.Separation{
-  border: 4px solid var(--light-grey);
+  border-color: var(--mid-red);
+  border-width: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 0px;
   text-align: center;
 }
 
-.HomeNav{
-  display: flex;
-  width: 100%;
-  justify-content: center;
-}
-
-#caution{
-  color: rgb(194, 145, 55);
-  text-align: center;
-  font-size: 2em;
+.subHelloText{
+  padding: 20px;
+  border-style: solid;
+  border-color: var(--mid-red);
+  border-width: 0px 10px 10px 10px;
+  border-radius: 0px 0px 10px 10px;
+  background-color: var(--mid-grey);
+  color: var(--mid-beige);
   font-family: sans-serif;
-  margin: 1em;
+  font-size: 24px;
+  display: inline-block;
+  text-align: center;
+  background-color: var(--dark-grey);
 }
 
-  
+.checkout{
+  margin-top : 5vw;
+  color : var(--mid-beige);
+  font-family: sans-serif;
+  font-size: 32px;
+  text-align: center;
+}
+
 </style>

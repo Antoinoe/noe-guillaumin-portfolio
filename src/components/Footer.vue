@@ -17,8 +17,7 @@ footer{
     text-align: center;
     padding: 0;
     margin: 0;
-    position: relative;
-    width :100%;
+    width :100%;    
 }
 
 .content{
@@ -31,7 +30,7 @@ footer{
     text-align: center;
     color : var(--mid-beige);
     font-family: sans-serif;
-    font-size: 11px;
-    padding: 3px;
+    font-size: 12px;
+    padding: 10px;
 }
 </style>

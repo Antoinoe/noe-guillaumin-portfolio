@@ -17,7 +17,7 @@
       
     <style scoped> 
        .title p{
-        margin-left: 1.3em;
+        margin-left: 0.8em;
         margin-top: 0;
         padding: 0.3em;
         border-style: solid;

@@ -27,12 +27,13 @@
 @import url('../assets/tools.css');
 
 nav {
-    display: flex;
-    background-color: var(--dark-grey); 
-    padding: 0;
-    margin: 1em;
-    padding-left: 1.5em;
+    display: inline-flex;
+    margin: 2em;
     border-radius: 5px 5px 0 0;
+    background-color: var(--light-grey);
+    border-radius: 5px;
+    border-color: var(--mid-grey);
+    border-style:solid;
 }
 
 nav a {
