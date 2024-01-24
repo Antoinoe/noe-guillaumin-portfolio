@@ -133,7 +133,8 @@
                     <div class="projectSubItem">
                         <div id="Occultas" class="projectSubTitle">Occultas</div>
                         <div class="projectSubContent">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores et, iusto distinctio tempore quod inventore earum labore fuga aliquam illo corporis assumenda perferendis iure, excepturi, harum ex sunt libero unde!</p>
+                            <p>"Ocultas" is a fun couch-type game where from 2 to 4 players, you have to hide your character among several twins that resemble you. The goal is to find where your friends are before being spotted.</p>
+                            <a href="https://noeguillaumin.itch.io">Check the game on itch.io!</a>
                         </div>
                     </div>
                 </li>
@@ -141,16 +142,17 @@
                     <div class="projectSubItem">
                         <div id="XenosHeresy" class="projectSubTitle">Xenos Heresy</div>
                         <div class="projectSubContent">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores et, iusto distinctio tempore quod inventore earum labore fuga aliquam illo corporis assumenda perferendis iure, excepturi, harum ex sunt libero unde!</p>
+                            <p>A turn-by-turn strategy mobile game where you control 2 characters. The goal is to defeat all monsters on the level and kill the Great Xenos! I principally worked on the UI design and coding.</p>
+                            <a href="https://noeguillaumin.itch.io">Check the game on itch.io!</a>
                         </div>
-                        
                     </div>
                 </li>
                 <li>
                     <div class="projectSubItem">
                         <div id="GameJams" class="projectSubTitle">Game Jams</div>
                         <div class="projectSubContent">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores et, iusto distinctio tempore quod inventore earum labore fuga aliquam illo corporis assumenda perferendis iure, excepturi, harum ex sunt libero unde!</p>
+                            <p>During my 3 years learning game programming at IIM, I had the opportunity to participate in several game jams. My favorite one was definitely "Yeet The Gift" (yup, I found the name of this one). It's a first-person shooter where you incarnate Santa with a gift-missile launcher that combats his rebellious elves. I worked on some features like the reloading and the UI.</p>
+                            <a href="https://noeguillaumin.itch.io">Check the games on itch.io!</a>
                         </div>
                     </div>
                 </li>
@@ -294,6 +296,11 @@
 
     .projectItemSeparation {
         margin: 5em 0 5em 0;
+    }
+    
+    .projectSubContent a {
+        color :var(--mid-beige);
+        font-size: 12px;
     }
 
 </style>
