@@ -84,7 +84,10 @@
                             <p>The XR Telepresence Platform is developped on the game engine Unity3D. This game engine has multiple render system. Doppelmarsh was on URP (Universal Render Pipeline), which is the default render system when developpers want to add some visual effects to their application.
                                 Unity also have a High Definition Render Pipeline. It is costly in ressources, but in return can handle high-resolution textures, complex shaders, and a physically-based celestial environment. .</p>
                             <p>Several plugins exists to make a Virtual Reality application. For maximum compatibility, I decided to chose OpenXR, a library with not much features in it, but compatible with all VR headsets.</p>
-                            <p>The first one is the "Core". It contains the major features to make the application work. It consists of the VR Player, provided by OpenXR</p>
+                            <p>The Core features contains data that are required for most sub-projects to work properly. They give access to player and online services.</p>
+                            <p>After that comes the Project Manager. It is the central component for all sub-projects. From the unity editor, it is possible to create a sub-project, with it's own folders and classes. First of all, there is a script Project.cs that contain all shared functions for each project, such as ActivateProject(), DeactivateProject() or GetProjectDescription(), just to name a few. After that, there is a template : it's a folder containing a c# folder inheriting the Project class and an Asset folder, where all c# classes, textures and prefab will be stored.</p>
+                            <p>A sub-project is a feature that can be added to the session at the start of the application. Deactivating a sub-project will also deactivate all sub-project that are dependent to this one. Here's what a sub-project UI looks like in the inspector. It's here where dependencies set.</p>
+                            <img src="public\img\project_exemple.png" alt="Exemple of a sub-project in the Unity inspector.">   
                         </div>
                     </div>
                 </li>
@@ -92,7 +95,28 @@
                     <div class="projectSubItem">
                         <div id="CelestialEnvironment" class="projectSubTitle">Celestial Environment</div>
                         <div class="projectSubContent">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda eaque at quo, praesentium sint illum aut quam quia aliquam eum consequatur amet dolorem eveniet corporis numquam quas esse in deleniti!</p>
+                            <p> Weather is a vast word. For this project, it consist of managing the clouds, the wind, the rain and the snow. 
+                            The first feature created was the CloudManager, it takes a float between 0 & 1 as an input and modify the following values of the volumetric cloud component: 
+                            - Cloud Density
+                            - Shape Factor
+                            - Light Exposure
+
+                            here's the result : 
+                            </p>
+                            <img src="public\img\cloud_coverage.png" alt = "Screenshot of the top-view of the terain with only the terrain textures plus the snow texture" width="340px"/>
+                            <p>
+                                After that came the SnowHandler. Generating snow on most GameObjects in the scene was quite easy since it consisted of changing a value of the "TriForge Snow Controller" GameObject provided by the "Real Landscape - Valley Forest" asset pack. The snow on the ground layers was a bit trickier. The Unity Terrain can have a parameter in its material called "Height Transition", which means that a layer can be set to a specific height by setting the G (of the RGBA) value of the normal map of the layer texture to a desired value.
+
+                                these lines of code allow to dynamically change this value, which result in a dynamic ground snow system without using complex shaders.
+                                the parameter HeightBase correspond to a float value between -1 and 1, where -1 means no texture at all and 1 means full texture opacity
+                            </p>
+                            <p>var layer = _terrain.terrainData.terrainLayers[_terrainLayerIndex];</p>
+                            <p>layer.maskMapRemapMax = new Vector4(1,1,HeightBase,1);</p>
+                            <p>layer.maskMapRemapMin = new Vector4(0,0,0,0);</p>
+                                    
+                            <p>Which gives the following terrain texture map when the value is at 1 : </p>
+                            
+                            <img src="public\img\terrain_snow_texture_top_view.png" alt = "Screenshot of the top-view of the terain with only the terrain textures plus the snow texture"/>
                         </div>
                     </div>
                     
@@ -101,7 +125,12 @@
                     <div class="projectSubItem">
                         <div id="EnvironmentDataCollection" class="projectSubTitle">Environment Data Collection</div>
                         <div class="projectSubContent">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda eaque at quo, praesentium sint illum aut quam quia aliquam eum consequatur amet dolorem eveniet corporis numquam quas esse in deleniti!</p>
+                            <p>Tidmarsh is a project conducted by the MIT in 2011 that collects and display on a website real-time environmental data of an overexploited craberry farm. The MIT Media Lab have an API that still collect these data, and it's thanks to this API the Doppelmarsh project could display these data in another way than 2D Diagrams. It collects 2 types of data : 
+- Numerical data : temperature, lighting, atmospheric pressure, humidity, etc.
+- Ambient data : streaming audio
+
+To get this data, we first have to find a base station. A base station is simply a regroupment of sensors that collects numeric data as shown above. 
+The list of devices are present here : https://chain-api.media.mit.edu/devices/?site_id=7, and to know which one we want, we can see the one available on the Tidmarsh website : https://tidmarsh.media.mit.edu/data/herring.</p>
                         </div>
                     </div>
                     
@@ -110,7 +139,7 @@
                     <div class="projectSubItem">
                         <div id="ExternalDevices" class="projectSubTitle">External Devices</div>
                         <div class="projectSubContent">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda eaque at quo, praesentium sint illum aut quam quia aliquam eum consequatur amet dolorem eveniet corporis numquam quas esse in deleniti!</p>
+                            <p>The Olfactive interface is a device imagined by Romain Manoilov in 2022 that throw odors to a user to put they in a choosen ambiance. Smell can be very missleading for people. A smell of fresh menth will make the user feel more cold, while spices makes the user feel more hot. Virtual reality has tried to implement smells in their applications, but for most them, it's a device attached to the headset, and not easily procurable. So we decided with Romain Manoilov and Clement Duhart to implement his interface olfactive to XRTP. My part consisted on craeting a new sub-project where I built smellboxes, which are trigger collision boxes that detects when an entity enters or exit it. Each smellbox was given a type of smell and an intensity. Then a http request was thrown to the ESP86 of the olfactive interface thanks to the plugin Udiono, made by Marc Teyssier.</p>
                         </div>
                     </div>
                     

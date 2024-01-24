@@ -6,25 +6,29 @@
             <div class="educationBoxItem">
                 <div class="educationBoxItemTitle">
                     <p>IIM Digital School - Institute for Future Technologies</p>
+                    <p class="educationBoxItemSubTitle">Since 2022</p>
                 </div>
                 <div class="educationBoxItemAbout">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem magni quia corrupti veniam. Asperiores iusto, quas quos error delectus, atque odit voluptatibus vitae rem, omnis voluptatum veniam in vel consequuntur.</p>
+                    <p>It has been my second home for the last two years. Here, I learned almost everything. From molding to soldering and 3D printing, I learned how to take the initiative to create innovative projects. I found what I wanted to do by developing VR applications. The XR Telepresence Platform is the project that today makes me capable of creating immersive VR environments.</p>
                 </div>
             </div>
             <div class="educationBoxItem">
                 <div class="educationBoxItemTitle">
                     <p>IIM Digital School - Game Programming</p>
+                    <p class="educationBoxItemSubTitle">from 2019 to 2022</p>
                 </div>
                 <div class="educationBoxItemAbout">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem magni quia corrupti veniam. Asperiores iusto, quas quos error delectus, atque odit voluptatibus vitae rem, omnis voluptatum veniam in vel consequuntur.</p>
+                    <p>
+I like playing video games, but what interested me was the creation of them. I knew a bit about how to code back then, so it was completely logical for me to join the IIM Digital School to learn game programming. I learned a lot of things regarding video game conception, and by working on several game projects and game jams, I quickly got the hang of making Unity projects. By working for the startup Farmcube, I realized that I wanted to focus more on innovative projects and serious games. That's why I decided to quit the Video Game course to join the IFT.</p>
                 </div>
             </div>
             <div class="educationBoxItem">
                 <div class="educationBoxItemTitle">
                     <p>ESTIAM</p>
+                    <p class="educationBoxItemSubTitle">From 2018 to 2019</p>
                 </div>
                 <div class="educationBoxItemAbout">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem magni quia corrupti veniam. Asperiores iusto, quas quos error delectus, atque odit voluptatibus vitae rem, omnis voluptatum veniam in vel consequuntur.</p>
+                    <p>"Learn in the morning, practice in the afternoon." Perfectly balanced, as all things should be. I learned during this first year the basics of DevOps, web development, and IoT. I had to quit ESTIAM for personal reasons.</p>
                 </div>
             </div>
             <div class="educationBoxItem">
@@ -32,7 +36,7 @@
                     <p>Highschool</p>
                 </div>
                 <div class="educationBoxItemAbout">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem magni quia corrupti veniam. Asperiores iusto, quas quos error delectus, atque odit voluptatibus vitae rem, omnis voluptatum veniam in vel consequuntur.</p>
+                    <p>The golden age... Got the diploma with mention!</p>
                 </div>
             </div>
         </div>
