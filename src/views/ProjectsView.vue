@@ -87,7 +87,7 @@
                             <p>The Core features contains data that are required for most sub-projects to work properly. They give access to player and online services.</p>
                             <p>After that comes the Project Manager. It is the central component for all sub-projects. From the unity editor, it is possible to create a sub-project, with it's own folders and classes. First of all, there is a script Project.cs that contain all shared functions for each project, such as ActivateProject(), DeactivateProject() or GetProjectDescription(), just to name a few. After that, there is a template : it's a folder containing a c# folder inheriting the Project class and an Asset folder, where all c# classes, textures and prefab will be stored.</p>
                             <p>A sub-project is a feature that can be added to the session at the start of the application. Deactivating a sub-project will also deactivate all sub-project that are dependent to this one. Here's what a sub-project UI looks like in the inspector. It's here where dependencies set.</p>
-                            <img src="public\img\project_exemple.png" alt="Exemple of a sub-project in the Unity inspector.">   
+                            <img src="../../public/img/project_exemple.png" alt="Exemple of a sub-project in the Unity inspector.">   
                         </div>
                     </div>
                 </li>
@@ -103,7 +103,7 @@
 
                             here's the result : 
                             </p>
-                            <img src="public\img\cloud_coverage.png" alt = "Screenshot of the top-view of the terain with only the terrain textures plus the snow texture" width="340px"/>
+                            <img src="../../public/img/cloud_coverage.png" alt = "Screenshot of the top-view of the terain with only the terrain textures plus the snow texture" width="340px"/>
                             <p>
                                 After that came the SnowHandler. Generating snow on most GameObjects in the scene was quite easy since it consisted of changing a value of the "TriForge Snow Controller" GameObject provided by the "Real Landscape - Valley Forest" asset pack. The snow on the ground layers was a bit trickier. The Unity Terrain can have a parameter in its material called "Height Transition", which means that a layer can be set to a specific height by setting the G (of the RGBA) value of the normal map of the layer texture to a desired value.
 
@@ -116,7 +116,7 @@
                                     
                             <p>Which gives the following terrain texture map when the value is at 1 : </p>
                             
-                            <img src="public\img\terrain_snow_texture_top_view.png" alt = "Screenshot of the top-view of the terain with only the terrain textures plus the snow texture"/>
+                            <img src="../../public/img/terrain_snow_texture_top_view.png" alt = "Screenshot of the top-view of the terain with only the terrain textures plus the snow texture"/>
                         </div>
                     </div>
                     
@@ -185,17 +185,7 @@ The list of devices are present here : https://chain-api.media.mit.edu/devices/?
                         </div>
                     </div>
                 </li>
-            </ol>
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
+            </ol>            
         </div>
     </div>
 </template>
