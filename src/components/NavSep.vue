@@ -10,7 +10,7 @@
 <style>
 @import url('../assets/tools.css');
 .nav_sep{
-  color: var(--mid-beige);
+  color: var(--pure-black);
   font-size: 1em;
   font-weight: 900;
   text-align: center;

@@ -1,37 +1,32 @@
 <script>
     import PageTitle from '../components/PageTitle.vue';
-  export default {
-    components: {
-      PageTitle,
-    }
-  }
 </script>
 
 <template>
     <PageTitle name = "Projects"></PageTitle>
     <div id="content">
-        <div class="summarry">
-            <div class="summarry-title">
+        <div class="overview">
+            <div class="overview-title">
                 <a href="#">Overview</a>
             </div>
-            <div class="summarry-content">
-                <div class="summarry-content-item"><img class="elipse-section" src="../../public/img/Ellipse1.png" alt="section"><a href="#XRTelepresencePlatform" class="section-title">XR Telepresence Platform</a></div>
+            <div class="overview-content">
+                <div class="overview-content-item"><a href="#XRTelepresencePlatform" class="section-title">XR Telepresence Platform</a></div>
                 <ol>
-                    <li><div class="summarry-content-item"><a href="#About" class="summary-item-title">About</a></div></li>
-                    <li><div class="summarry-content-item"><a href="#StateOfTheArt" class="summary-item-title">State Of The Art</a></div></li>
-                    <li><div class="summarry-content-item"><a href="#PlatformArchitecture" class="summary-item-title">Platform Architecture</a></div></li>
-                    <li><div class="summarry-content-item"><a href="#OpenXRKeyboard" class="summary-item-title">OpenXR Keyboard</a></div></li>
-                    <li><div class="summarry-content-item"><a href="#CelestialEnvironment" class="summary-item-title">Celestial Environment</a></div></li>
-                    <li><div class="summarry-content-item"><a href="#EnvironmentDataCollection" class="summary-item-title">Environment Data Collection</a></div></li>
-                    <li><div class="summarry-content-item"><a href="#ExternalDevices" class="summary-item-title">External Devices</a></div></li>
-                    <li><div class="summarry-content-item"><a href="#FutureAdditions" class="summary-item-title">Future Additions</a></div></li>
+                    <li><div class="overview-content-item"><a href="#About" class="overview-item-title">About</a></div></li>
+                    <li><div class="overview-content-item"><a href="#StateOfTheArt" class="overview-item-title">State Of The Art</a></div></li>
+                    <li><div class="overview-content-item"><a href="#PlatformArchitecture" class="overview-item-title">Platform Architecture</a></div></li>
+                    <li><div class="overview-content-item"><a href="#OpenXRKeyboard" class="overview-item-title">OpenXR Keyboard</a></div></li>
+                    <li><div class="overview-content-item"><a href="#CelestialEnvironment" class="overview-item-title">Celestial Environment</a></div></li>
+                    <li><div class="overview-content-item"><a href="#EnvironmentDataCollection" class="overview-item-title">Environment Data Collection</a></div></li>
+                    <li><div class="overview-content-item"><a href="#ExternalDevices" class="overview-item-title">External Devices</a></div></li>
+                    <li><div class="overview-content-item"><a href="#FutureAdditions" class="overview-item-title">Future Additions</a></div></li>
                 </ol>
                 
-                <div class="summarry-content-item"><img class="elipse-section" src="../../public/img/Ellipse1.png" alt="section"><a href="#VideoGames" class="section-title">Video Games</a></div>
+                <div class="overview-content-item"><a href="#VideoGames" class="section-title">Video Games</a></div>
                 <ol>
-                    <li><div class="summarry-content-item"><a href="#Occultas" class="summary-item-title">Occultas</a></div></li>
-                    <li><div class="summarry-content-item"><a href="#XenosHeresy" class="summary-item-title">Xenos Heresy</a></div></li>
-                    <li><div class="summarry-content-item"><a href="#GameJams" class="summary-item-title">Game Jams</a></div></li>
+                    <li><div class="overview-content-item"><a href="#Occultas" class="overview-item-title">Occultas</a></div></li>
+                    <li><div class="overview-content-item"><a href="#XenosHeresy" class="overview-item-title">Xenos Heresy</a></div></li>
+                    <li><div class="overview-content-item"><a href="#GameJams" class="overview-item-title">Game Jams</a></div></li>
                 </ol>
             </div>
         </div>
@@ -191,44 +186,50 @@ The list of devices are present here : https://chain-api.media.mit.edu/devices/?
 </template>
 
 <style>
-    .summarry{
+    .overview{
         width:max-content;
         height:max-content;
         position : fixed;
-        background-color: var(--mid-grey);
-        border: solid; 
-        border-color:var(--mid-red);
+        border: solid;
         border-radius: 5px;
-        top:245px;
+        top:160px;
         left : 3.5em;
         display: block;
         padding: 0.2em;
     }
 
-    .summarry-content li{
-        color: var(--mid-beige);
+    .overview-content li{
+        color: var(--pure-black);
         font-family: sans-serif;
     }
 
-    .summarry-title a{
-        margin: 1em;
+    .overview-title a{
+        /*j'arrive pas à mettre une margin top étrangement*/
+        margin: 20px;
         font-family: sans-serif;
-        color : var(--mid-beige);
-        text-decoration: underline;
-        font-size: 25px;
+        color: var(--dark-bluegreen);
+        text-decoration : none;
+        font-size: 30px;
+        font-weight: 600;
     }
 
-    .summarry-content{
+    .overview-content{
         margin: 1em;
     }
 
-    .summarry-content-item{
+    .overview-content-item{
         display: flex;
         margin:10px;
     }
 
-    .summarry-content-item a{
+    .overview-content-item a{
         margin: 0px 10px 0px 0px;
+        color: var(--pure-black);
+        text-decoration: none;
+    }
+        .overview-content-item a:hover{
+        margin: 0px 10px 0px 0px;
+        color: var(--mid-bluegreen);
         text-decoration: none;
     }
 
@@ -238,13 +239,14 @@ The list of devices are present here : https://chain-api.media.mit.edu/devices/?
         height: 15px;
     }
     .section-title{
-
-        color: var(--mid-beige);
+        color: var(--pure-black);
+        font-size: 20px;
+        font-weight: 600;
         font-family: sans-serif;
     }
-    .summary-item-title{
+    .overview-item-title{
         text-decoration: none;
-        color: var(--mid-beige);
+        color: var(--pure-black);
     }
 
     #writingZone{
@@ -253,28 +255,20 @@ The list of devices are present here : https://chain-api.media.mit.edu/devices/?
         margin-bottom: 1em;
         width: auto;
         height: auto;
-        background-color: var(--mid-grey);
-        border: solid; 
-        border-color:var(--light-grey);
-        border-radius: 5px;
         padding: 2em;
     }
 
     .projectTitle{
-        color : var(--mid-red);
+        color : var(--dark-bluegreen);
         font-family: sans-serif;
         font-size: 36px;
-        border-style: solid;
-        border-width: 5px;
-        border-radius: 5px;
-        border-color: var(--mid-red);
-        background-color: var(--mid-beige);
+        font-weight: 600;
         width: max-content;
         padding: 0.2em;
     }
 
     #writingZone li{
-        color : var(--mid-red);
+        color : var(--pure-black);
         font-family: sans-serif;
         font-size: 24px;
         margin-left: 0.2em;
@@ -282,13 +276,13 @@ The list of devices are present here : https://chain-api.media.mit.edu/devices/?
     }
 
     .projectSubTitle{
-        color : var(--mid-red);
+        color : var(--pure-black);  
         font-family: sans-serif;
         font-size: 24px;
     }
 
     .projectSubContent p{
-        color : var(--mid-beige);
+        color : var(--pure-black);
         font-family: sans-serif;
         font-size: 16px;
         text-align: justify;
@@ -297,7 +291,7 @@ The list of devices are present here : https://chain-api.media.mit.edu/devices/?
 
     .projectSubContentImage img{
         border-style: solid;
-        border-color: var(--light-grey);
+        border-color: var(--dark-bluegreen);
         border-width: 5px;
         border-radius: 5px;
     }
@@ -308,7 +302,7 @@ The list of devices are present here : https://chain-api.media.mit.edu/devices/?
         text-align: center;
     }
     .projectSubContentImage p{
-        color : var(--mid-beige);
+        color : var(--pure-black);
         font-family: sans-serif;
         font-size: 12px;
     }
@@ -318,7 +312,12 @@ The list of devices are present here : https://chain-api.media.mit.edu/devices/?
     }
     
     .projectSubContent a {
-        color :var(--mid-beige);
+        color :var(--dark-bluegreen);
+        font-size: 12px;
+    }
+
+    .projectSubContent a:hover {
+        color :var(--mid-bluegreen);
         font-size: 12px;
     }
 

@@ -37,7 +37,7 @@
     h3{
         margin-left: 5em;
         padding-top:1em ;
-        color: var(--mid-red);
+        color: var(--dark-bluegreen);
         font-size: 2em;
         font-family: sans-serif;
     }
@@ -46,7 +46,7 @@
         font-style: italic;
         font-size: 1.8em;
         margin-left: 6em;
-        color: var(--mid-beige);
+        color: var(--pure-black);
         font-family: sans-serif;
     }
 
@@ -55,7 +55,7 @@
         margin-right: 10em;
         font-size: 1.5em;
         text-justify: inter-word;
-        color: var(--mid-beige);
+        color: var(--pure-black);
         font-family: sans-serif;
         text-align: center;
         min-width: 500px;

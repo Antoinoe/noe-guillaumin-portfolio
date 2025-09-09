@@ -36,7 +36,7 @@
         margin-right:5em;
 
         border-style: solid;
-        border-color: var(--light-grey);
+        border-color: #0E6F31;
         border-width: 0 5px 5px 5px;
         border-radius: 0 0 5px 5px;
         
@@ -59,15 +59,11 @@
           display: flex;
           align-items: center; 
           justify-content: center; 
-
       }
 
       .image-container img {
         max-width: 100%;  
       }
-
-
-
     </style>
     
     

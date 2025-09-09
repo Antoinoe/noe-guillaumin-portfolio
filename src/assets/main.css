@@ -1,9 +1,8 @@
 @import url('./tools.css');
 
 html{
-  background-color: var(--dark-grey);
+  background-color: var(--pure-white);
 }
-
 
 body{
     margin: 0;

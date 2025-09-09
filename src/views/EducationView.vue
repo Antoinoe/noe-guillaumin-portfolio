@@ -49,15 +49,14 @@ I like playing video games, but what interested me was the creation of them. I k
     }
 
     .educationBoxItemTitle{
-        background-color: var(--mid-beige);
         border-style: solid;
         border-width: 5px;
-        border-color: var(--mid-red);
+        border-color: var(--dark-bluegreen);
         padding: 1em;
         
     }
     .educationBoxItemTitle p {
-        color: var(--mid-red);
+        color: var(--dark-bluegreen);
         font-size: 32px;
         font-weight: 600;
     }
@@ -65,11 +64,6 @@ I like playing video games, but what interested me was the creation of them. I k
     .educationZone {
         margin-left: 10%;
         margin-right: 10%;
-        /* background-color: var(--light-grey); */
-        /* border-style: solid;
-        border-width: 5px;
-        border-radius: 5px;
-        border-color: var(--mid-grey); */
         padding: 1em;
         padding-top: 2em;
         margin-top: 2em;
@@ -79,12 +73,8 @@ I like playing video games, but what interested me was the creation of them. I k
         position: relative;
     }
 
-    .educationBoxItemAbout{
-        background-color: var(--mid-grey);
-    }
-
     .educationBoxItemAbout p{
-        color: var(--mid-beige);
+        color: var(--pure-black);
         padding: 1em;
     }
 
@@ -93,10 +83,6 @@ I like playing video games, but what interested me was the creation of them. I k
         margin-bottom: 1em;
         display: flex;
         flex-direction: column;
-        border-style: solid;
-        border-color: var(--light-grey);
-        border-width: 5px;
-        border-radius: 5px;
     }
 
     .educationBoxItem:nth-child(even) {

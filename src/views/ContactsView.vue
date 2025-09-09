@@ -16,7 +16,7 @@
             <div class="contactContent">noeguillaumin@gmail.com</div>
         </div>
         <div class="contactItem">
-            <div class="contactTitle">Phone (FRA) : </div>
+            <div class="contactTitle">Phone (FR) : </div>
             <div class="contactContent">+33 6 67 46 93 93</div>
         </div>
         <div class="contactItem">
@@ -47,36 +47,30 @@
 
 <style scoped>
     #page_content{
-        border-style: solid;
-        border-color: var(--light-grey);
         width: max-content;
-        margin: 3.5em;
     }
 
     .contactItem{
-        margin: 1em;
+        margin-left: 1.5em;
         display: flex;
         font-size: 26px;
         padding: 0.1em;
         font-family: sans-serif;
-        border-style: solid;
-        border-color: var(--light-grey);
         width: max-content;
-        background-color: var(--mid-grey);
     }
     .contactItem .contactTitle{
-        color: var(--mid-red);
-        padding: 0.2em;
+        color: var(--dark-bluegreen);
+        padding: 0.1em;
     }
     .contactItem .contactTitle a{
-        color: var(--mid-red);
-        padding: 0.2em;
+        color: var(--dark-bluegreen);
+        padding: 0.1em;
         text-decoration: underline;
     }
 
 
     .contactItem .contactContent{
-        color: var(--mid-beige);
-        padding: 0.2em;
+        color: var(--pure-black);
+        padding: 0.1em;
     }
 </style>

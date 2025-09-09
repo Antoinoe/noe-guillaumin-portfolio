@@ -29,19 +29,13 @@
 nav {
     display: inline-flex;
     margin: 2em;
-    border-radius: 5px 5px 0 0;
-    background-color: var(--light-grey);
-    border-radius: 5px;
-    border-width: 5px;
-    border-color: var(--mid-grey);
-    border-style:solid;
 }
 
 nav a {
     font-family: sans-serif;
     margin: 15px; 
     font-size: 18px; 
-    color: var(--mid-beige); 
+    color: var(--dark-bluegreen); 
     text-decoration: none;
 
 }
@@ -52,7 +46,7 @@ nav .router-link-active{
 }
 
 nav a:hover {
-    color: var(--mid-red); 
+    color: var(--mid-bluegreen);
 }
 
 

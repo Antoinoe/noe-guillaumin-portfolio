@@ -1,9 +1,15 @@
 :root {
+  /* 2023 color code */
     --dark-grey: #282828;
     --mid-grey: #333333;
     --light-grey: #464646;
     --mid-red : #c52727;
     --mid-beige : #f9dbbb;
     --font-family: 'Arial', sans-serif;
-    /* Add more variables as needed */
+
+    /*2025 color code*/
+    --pure-white: #ffffff;
+    --pure-black: #000000;
+    --dark-bluegreen : #003020;
+    --mid-bluegreen: #0E6F31
   }

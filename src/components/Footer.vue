@@ -1,7 +1,7 @@
 <template>
     <footer>
         <div class="content">
-            <p>Noé GUILLAUMIN - Portfolio - 2024</p>
+            <p>Noé GUILLAUMIN - Portfolio - noeguillaumin@gmail.com - 2025</p>
         </div>
     </footer>
 </template>
@@ -14,21 +14,14 @@
 @import url('../assets/tools.css');
 
 footer{
-    text-align: center;
-    padding: 0;
-    margin: 0;
-    width :100%;    
-}
-
-.content{
-    text-align: center;
-    background-color: var(--mid-red);
-
+    position: relative;
+    bottom: 0;
+    height: 100%;
 }
 
 .content p{
     text-align: center;
-    color : var(--mid-beige);
+    color : #000000;
     font-family: sans-serif;
     font-size: 12px;
     padding: 10px;
