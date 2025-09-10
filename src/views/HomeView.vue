@@ -8,14 +8,16 @@
         Immersive Software Developer
       </div>
     </div>
-    <div class="about-me">
-    From video game conception to VR application for research, checkout what I did over the last few years!
+    
+    <div class="vignette">
+      <img src="../../img/noeguillaumin_pp_circled-min.png" alt="" class="profile-picture">
+      <div class="about-me"><p>From video game conception to VR application for research, checkout what I did over the last few years!</p></div>
     </div>
 
     <div class="links">
-      <div class="linkItem"><router-link to="/projects">Projets</router-link></div>
-      <div class="linkItem"><router-link to="/experiences">Expériences</router-link></div>
-      <div class="linkItem"><router-link to="/education">Parcours</router-link></div>
+      <div class="linkItem"><router-link to="/projects">Projects</router-link></div>
+      <div class="linkItem"><router-link to="/experiences">Experiences</router-link></div>
+      <div class="linkItem"><router-link to="/education">Education</router-link></div>
     </div>
 
     <div class="contactMe">
@@ -38,12 +40,9 @@ export default {
 </script>
 
 <style scoped>
-/* .warper{
-  margin: 1.5vw;
-} */
 
 .helloText {
-  font-size: 4vw;
+  font-size: 64px;
   font-weight: 600;
   font-family: sans-serif;
   
@@ -61,12 +60,29 @@ export default {
   text-align: center;
 }
 
+.vignette{
+  display: inline-flex; 
+  align-content: center;
+  padding: 1em;
+  margin-left: 25%;
+}
+
+.profile-picture{
+  display: block;
+  width: 240px;
+}
+
 .about-me{
-  margin-top : 3vw;
-  color : var(--pure-black);
-  font-family: sans-serif;
-  font-size: 32px;
-  text-align: center;
+    justify-content: center; /* align horizontal */
+    width: 480px;
+}
+
+.about-me p{
+    color: var(--pure-black);
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 36px;
+    margin-left: 20px;
 }
 
 .links{
@@ -92,7 +108,6 @@ export default {
 
   font-size: 36px;
   border-radius: 5px;
-  padding: 1vw 2vw 1vw 2vw;
 }
 
 .links .linkItem a:hover{
