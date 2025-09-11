@@ -8,7 +8,6 @@
       <NavSep/>
       <router-link to="/education">Education</router-link>
       <NavSep/>
-      
       <router-link to="/contact">Contact</router-link>
     </nav>
   </template>
@@ -37,7 +36,6 @@ nav a {
     font-size: 18px; 
     color: var(--dark-bluegreen); 
     text-decoration: none;
-
 }
 
 nav .router-link-active{
@@ -48,7 +46,4 @@ nav .router-link-active{
 nav a:hover {
     color: var(--mid-bluegreen);
 }
-
-
-
 </style>

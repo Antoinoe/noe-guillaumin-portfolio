@@ -1,13 +1,16 @@
 <script>
     import PageTitle from '../components/PageTitle.vue';
-  export default {
-    components: {
-      PageTitle
-    }
+    import Navbar from '../components/NavBar.vue';
+    export default {
+        components: {
+        PageTitle,
+        Navbar
+        }
   }
 </script>
 
 <template>
+    <Navbar/>
     <PageTitle name = "Contact"></PageTitle>
     <div id="page_content">
         <div class="contactZone">

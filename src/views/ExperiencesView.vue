@@ -1,13 +1,15 @@
 <script>
-    import PageTitle from '../components/PageTitle.vue';
-  export default {
+import NavBar from '../components/NavBar.vue';
+import PageTitle from '../components/PageTitle.vue';
+export default {
     components: {
-      PageTitle
+      PageTitle, NavBar
     }
   }
 </script>
 
 <template>
+    <NavBar/>
     <div id="page_content">
     <PageTitle name = "Experiences"></PageTitle>
     <h3>Research Intern at INRIA</h3>

@@ -1,5 +1,5 @@
 <template>
-  <div class="warper">
+  <div class="globalContent">
     <div class="welcomeContent">
       <div class="helloText">
         Noé Guillaumin
@@ -25,9 +25,6 @@
       <div class="linkItem"><router-link to="/contact">Contacte Me</router-link></div>
     </div>
   </div>
-  
-  
-  
 </template>
 
 <script>
@@ -40,6 +37,9 @@ export default {
 </script>
 
 <style scoped>
+.globalContent{
+  margin-top: 50px;
+}
 
 .helloText {
   font-size: 64px;

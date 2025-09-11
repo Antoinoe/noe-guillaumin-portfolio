@@ -1,8 +1,15 @@
 <script>
     import PageTitle from '../components/PageTitle.vue';
+    import Navbar from '../components/NavBar.vue';
+    export default {
+    components: {
+    Navbar
+  }
+}
 </script>
 
 <template>
+    <Navbar/>
     <PageTitle name = "Projects"></PageTitle>
     <div id="content">
         <div class="overview">

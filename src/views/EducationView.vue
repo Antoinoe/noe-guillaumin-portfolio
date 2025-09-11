@@ -1,4 +1,5 @@
 <template>
+    <Navbar/>
     <PageTitle name = "Education"></PageTitle>
     <div class="educationContent">
         
@@ -97,8 +98,9 @@ I like playing video games, but what interested me was the creation of them. I k
 </style>
 <script>
     import PageTitle from '../components/PageTitle.vue';
+    import Navbar from '../components/NavBar.vue';
   export default {
     components: {
-      PageTitle
+      PageTitle, Navbar
     }
   }</script>
