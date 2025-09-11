@@ -63,7 +63,7 @@ export default {
 .vignette{
   display: inline-flex; 
   align-content: center;
-  padding: 1em;
+  padding: 2em;
   margin-left: 25%;
 }
 
@@ -74,7 +74,9 @@ export default {
 
 .about-me{
     justify-content: center; /* align horizontal */
-    width: 480px;
+    width: 650px;
+    margin-left: 2em;
+    margin-top: 20px;
 }
 
 .about-me p{
@@ -86,16 +88,15 @@ export default {
 }
 
 .links{
-  display: inline-flex;
-  margin-top: 2em;  
+  display: flex;
   text-align: center;
-  width: 100%;
+  margin-left: 37%;
 }
 
 .links .linkItem{
-  margin-top: 3em;
-  margin-bottom: 3em;
-  width: 100%;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  padding: 2em;
 }
 
 .links .linkItem a{
@@ -105,15 +106,18 @@ export default {
   border-style: solid;
   border-color: var(--pure-black);
   border-width: 3px;
-
+  border-radius: 15px;
+  box-shadow: 5px 5px 2px 1px rgba(0, 48, 32, 0.5);
+  padding: 0.5em;
   font-size: 36px;
-  border-radius: 5px;
 }
 
 .links .linkItem a:hover{
-  color: var(--mid-bluegreen);
-  border-color: var(--mid-bluegreen);
-  border-width: 5px;
+  color: var(--pure-white);
+  background-color: var(--mid-bluegreen);
+  border-style: solid;
+  border-color: var(--dark-bluegreen);
+  box-shadow: 5px 5px 2px 1px rgba(0, 48, 32, 0.7);
 }
 
 .contactMe{
@@ -136,7 +140,7 @@ export default {
   padding: 0.2em 1em 0.2em 1em;
   border-style: solid;
   border-width: 3px;
-  border-radius: 5px;
+  border-radius: 25px;
 
   align-content: center;
 }
