@@ -13,15 +13,10 @@
 <style>
 @import url('../assets/tools.css');
 
-footer{
-    margin-top: -3em;
-    padding-bottom: 0.5em;
-}
-
 .content p{
     text-align: center;
     color : #000000;
-    font-family: sans-serif;
+    font-family: "Montserrat";
     font-size: 12px;
 }
 </style>

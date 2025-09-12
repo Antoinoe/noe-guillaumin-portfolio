@@ -31,7 +31,7 @@ nav {
 }
 
 nav a {
-    font-family: sans-serif;
+    font-family: "Sansation";
     margin: 15px; 
     font-size: 18px; 
     color: var(--dark-bluegreen); 

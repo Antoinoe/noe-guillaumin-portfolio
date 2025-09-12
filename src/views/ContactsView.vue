@@ -6,7 +6,7 @@
         PageTitle,
         Navbar
         }
-  }
+    }
 </script>
 
 <template>
@@ -54,7 +54,7 @@
         display: flex;
         font-size: 26px;
         padding: 0.1em;
-        font-family: sans-serif;
+        font-family: "Sansation";
         width: max-content;
     }
     .contactItem .contactTitle{

@@ -33,7 +33,7 @@ export default {
     h2{
         color: var(--mid-red);
         font-size: 3em;
-        font-family: sans-serif;
+        font-family: "Sansation";
     }
 
     h3{
@@ -41,7 +41,7 @@ export default {
         padding-top:1em ;
         color: var(--dark-bluegreen);
         font-size: 2em;
-        font-family: sans-serif;
+        font-family: "Sansation";
     }
 
     .subtitle{
@@ -49,7 +49,7 @@ export default {
         font-size: 1.8em;
         margin-left: 6em;
         color: var(--pure-black);
-        font-family: sans-serif;
+        font-family: "Sansation";
     }
 
     .expe_content{
@@ -58,7 +58,7 @@ export default {
         font-size: 1.5em;
         text-justify: inter-word;
         color: var(--pure-black);
-        font-family: sans-serif;
+        font-family: "Montserrat";
         text-align: center;
         min-width: 500px;
     }

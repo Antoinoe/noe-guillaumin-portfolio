@@ -106,7 +106,7 @@ html, body .easterEgg {
   flex: 1;
   font-size: 64px;
   font-weight: 600;
-  font-family: sans-serif;
+  font-family: "Sansation";
   
   color: var(--dark-bluegreen);
 
@@ -117,7 +117,7 @@ html, body .easterEgg {
 .subHelloText{
   padding: 20px;
   color: var(--mid-bluegreen);
-  font-family: sans-serif;
+  font-family: "Montserrat";
   font-size: 24px;
   text-align: center;
 }
@@ -145,16 +145,16 @@ html, body .easterEgg {
 }
 
 .about-me{
-    justify-content: center; /* align horizontal */
-    width: 650px;
+    justify-content: center;
+    text-align: justify;
+    width: 700px;
     margin-left: 2em;
     margin-top: 20px;
 }
 
 .about-me p{
     color: var(--pure-black);
-    text-decoration: none;
-    font-family: sans-serif;
+    font-family: "Montserrat";
     font-size: 36px;
     margin-left: 20px;
 }
@@ -172,7 +172,7 @@ html, body .easterEgg {
 .links .linkItem a{
   color: var(--pure-black);
   text-decoration: none;
-  font-family: sans-serif;
+  font-family: "Sansation";
   border-style: solid;
   border-color: var(--pure-black);
   border-width: 3px;
@@ -218,7 +218,7 @@ html, body .easterEgg {
   display: inline;
   margin-top : 5vw;
   color : var(--pure-black);
-  font-family: sans-serif;
+  font-family: "Montserrat";
   font-size: 32px;
   text-align: center;
 }
@@ -228,7 +228,7 @@ html, body .easterEgg {
 
   text-decoration: none;
   color : var(--pure-black);
-  font-family: sans-serif;
+  font-family: "Sansation";
   font-size: 32px;
 
   padding: 0.2em 1em 0.2em 1em;

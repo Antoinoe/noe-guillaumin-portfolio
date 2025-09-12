@@ -22,7 +22,7 @@
         padding: 0em;
         width: max-content;
         font-size: 50px;
-        font-family: sans-serif;
+        font-family: "Sansation";
         font-weight: 600;
         color: var(--dark-bluegreen);
     }

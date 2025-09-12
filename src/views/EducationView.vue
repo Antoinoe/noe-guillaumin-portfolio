@@ -46,7 +46,7 @@ I like playing video games, but what interested me was the creation of them. I k
 
 <style scoped>
     p{
-        font-family:sans-serif;
+        font-family:"Montserrat";
     }
 
     .educationBoxItemTitle{

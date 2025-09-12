@@ -207,13 +207,12 @@ The list of devices are present here : https://chain-api.media.mit.edu/devices/?
 
     .overview-content li{
         color: var(--pure-black);
-        font-family: sans-serif;
+        font-family: "Montserrat";
     }
 
     .overview-title a{
-        /*j'arrive pas à mettre une margin top étrangement*/
         margin: 20px;
-        font-family: sans-serif;
+        font-family: "Sansation";
         color: var(--dark-bluegreen);
         text-decoration : none;
         font-size: 30px;
@@ -249,7 +248,7 @@ The list of devices are present here : https://chain-api.media.mit.edu/devices/?
         color: var(--pure-black);
         font-size: 20px;
         font-weight: 600;
-        font-family: sans-serif;
+        font-family: "Sansation";
     }
     .overview-item-title{
         text-decoration: none;
@@ -267,7 +266,7 @@ The list of devices are present here : https://chain-api.media.mit.edu/devices/?
 
     .projectTitle{
         color : var(--dark-bluegreen);
-        font-family: sans-serif;
+        font-family: "Sansation";
         font-size: 36px;
         font-weight: 600;
         width: max-content;
@@ -276,7 +275,7 @@ The list of devices are present here : https://chain-api.media.mit.edu/devices/?
 
     #writingZone li{
         color : var(--pure-black);
-        font-family: sans-serif;
+        font-family: "Sansation";
         font-size: 24px;
         margin-left: 0.2em;
         
@@ -284,13 +283,13 @@ The list of devices are present here : https://chain-api.media.mit.edu/devices/?
 
     .projectSubTitle{
         color : var(--pure-black);  
-        font-family: sans-serif;
+        font-family: "Sansation";
         font-size: 24px;
     }
 
     .projectSubContent p{
         color : var(--pure-black);
-        font-family: sans-serif;
+        font-family: "Montserrat";
         font-size: 16px;
         text-align: justify;
         text-justify :inter-word;
