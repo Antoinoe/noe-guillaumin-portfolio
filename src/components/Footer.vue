@@ -14,9 +14,8 @@
 @import url('../assets/tools.css');
 
 footer{
-    position: relative;
-    bottom: 0;
-    height: 100%;
+    margin-top: -3em;
+    padding-bottom: 0.5em;
 }
 
 .content p{
@@ -24,6 +23,5 @@ footer{
     color : #000000;
     font-family: sans-serif;
     font-size: 12px;
-    padding: 10px;
 }
 </style>

@@ -10,7 +10,6 @@
 
 <template>
   <div id="app">
-    
     <router-view></router-view>
     <Footer></Footer>
   </div>
@@ -19,4 +18,9 @@
 
 <style scoped>
   @import "@/assets/tools.css";
+
+  html, body, #app {
+  height: 100%;
+  margin: 0;
+}
 </style>
