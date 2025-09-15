@@ -27,12 +27,12 @@ export default {
 
 nav {
   display: inline-flex;
-  margin: 2em;
+  margin: 1rem;
 }
 
 nav a {
   font-family: "Sansation";
-  margin: 15px;
+  margin: 1rem;
   font-size: 18px;
   color: var(--dark-bluegreen);
   text-decoration: none;

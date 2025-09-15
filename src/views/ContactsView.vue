@@ -34,12 +34,12 @@ export default {
                 <div class="contactTitle"><a target="_blank" href="https://noeguillaumin.itch.io">Itch.IO</a></div>
                 <div class="contactContent"></div>
             </div>
+            <!-- <div class="contactItem">
+                <div class="contactTitle"><a target="_blank" href="/public/pdf/nguillaumin_cv_en.pdf" download>
+                        Download my resume (EN) (not updated)</a></div>
+            </div> -->
             <div class="contactItem">
-                <div class="contactTitle"><a target="_blank" href="../../public/pdf/nguillaumin_cv_en.pdf" download>
-                        Download my resume (EN)</a></div>
-            </div>
-            <div class="contactItem">
-                <div class="contactTitle"><a target="_blank" href="../../public/pdf/nguillaumin_cv_fr.pdf" download>
+                <div class="contactTitle"><a target="_blank" href="/pdf/noe_guillaumin_cv_2025_fr.pdf" download>
                         Download my resume (FR)</a></div>
             </div>
         </div>

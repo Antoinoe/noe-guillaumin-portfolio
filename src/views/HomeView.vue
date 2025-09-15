@@ -3,11 +3,14 @@
     <div class="welcomeContent">
       <div class="helloText">
         <transition name="fade" mode="out-in">
-          <p :key="isEasterEggActive">{{ isEasterEggActive ? "Space Dreamer" : "Noé GUILLAUMIN" }}</p>
+          <p :key="isEasterEggActive">{{ isEasterEggActive ? "SpaceDreamer" : "Noé GUILLAUMIN" }}</p>
         </transition>
       </div>
       <div class="subHelloText">
         Immersive Software Developer
+      </div>
+      <div class="warning">
+        <p :key="isEasterEggActive">{{ isEasterEggActive ? "" : "This website is under construction and some infos are missing/not updated. Thank you for your comprehension." }}</p>
       </div>
     </div>
 
@@ -85,17 +88,11 @@ onUnmounted(() => {
 </script>
 
 <style scoped>
-html,
-body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
 
 .globalContent {
   display: flex;
   flex-direction: column;
-  min-height: 96vh;
+  min-height: 95vh;
   background: white;
   transition: background-color 3s ease, color 1s ease;
 }
@@ -117,6 +114,12 @@ body .easterEgg {
   margin: -0.5em 0em -1em .0em;
 }
 
+.warning{
+  text-align: center;
+  font-family: "Montserrat";
+  color : brown;
+}
+
 .subHelloText {
   padding: 20px;
   color: var(--mid-bluegreen);
@@ -132,7 +135,6 @@ body .easterEgg {
   gap: 2rem;
   padding: 2em;
   margin-left: 25%;
-
 }
 
 .profile-picture {
@@ -156,14 +158,13 @@ body .easterEgg {
 .about-me {
   text-align: justify;
   width: min(700px, 60vw);
-  margin-top: 20px;
+  margin-top: 2rem;
 }
 
 .about-me p {
   color: var(--pure-black);
   font-family: "Montserrat";
-  font-size: 36px;
-  margin-left: 20px;
+  font-size: 2rem;
 }
 
 .links {
@@ -174,10 +175,6 @@ body .easterEgg {
   margin: 2rem auto;
 }
 
-.links .linkItem {
-  flex: 0 0 auto;
-}
-
 .links .linkItem a {
   color: var(--pure-black);
   text-decoration: none;
@@ -186,7 +183,7 @@ body .easterEgg {
   border-radius: 15px;
   box-shadow: 5px 5px 2px 1px rgba(0, 48, 32, 0.5);
   padding: 0.5em 1em;
-  font-size: clamp(18px, 4vw, 36px);
+  font-size: clamp(30px, 4vw, 36px);
   transition:
     color 0.5s ease,
     border-color 0.5s ease,
@@ -220,10 +217,10 @@ body .easterEgg {
 
 .contactMe {
   display: inline;
-  margin-top: 1em;
+  margin-top: 3rem;
   color: var(--pure-black);
   font-family: "Montserrat";
-  font-size: 32px;
+  font-size: clamp(30px, 4vw, 36px);
   text-align: center;
 }
 
@@ -232,9 +229,10 @@ body .easterEgg {
   text-decoration: none;
   color: var(--pure-black);
   font-family: "Sansation";
-  font-size: 32px;
+  font-size: clamp(24px, 4vw, 36px);
 
-  padding: 0.2em 1em 0.2em 1em;
+  padding: 1rem;
+  
   border-style: solid;
   border-width: 3px;
   border-radius: 25px;
@@ -250,7 +248,7 @@ body .easterEgg {
   align-self: center;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 950px) {
 
   .helloText {
     width: 100%;
@@ -259,23 +257,35 @@ body .easterEgg {
   }
 
   .vignette {
-    margin-left: 0;
+    margin: 0;
+    display: block;
+    text-align: center;
+  }
+
+  .profile-picture{
+    display: block;
+    margin: 0 auto;
   }
 
   .about-me {
     width: 100%;
     margin-left: 0;
+    text-align: center;
   }
 
   .links {
     flex-direction: column;
     align-items: center;
-    gap: 3rem;
+    gap: 5rem;
   }
 
   .links .linkItem a {
     width: 100%;
-    max-width: 300px;
+    max-width: 400px;
+  }
+
+  .contactMe{
+    margin-bottom: 1em;
   }
 }
 </style>
