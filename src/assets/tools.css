@@ -1,17 +1,17 @@
 :root {
   /* 2023 color code */
-    --dark-grey: #282828;
-    --mid-grey: #333333;
-    --light-grey: #464646;
-    --mid-red : #c52727;
-    --mid-beige : #f9dbbb;
-    --font-family: 'Arial', sans-serif;
+  --dark-grey: #282828;
+  --mid-grey: #333333;
+  --light-grey: #464646;
+  --mid-red: #c52727;
+  --mid-beige: #f9dbbb;
+  --font-family: 'Arial', sans-serif;
 
-    /*2025 color code*/
-    --pure-white: #ffffff;
-    --pure-black: #000000;
-    --dark-bluegreen : rgb(0, 48, 32);
-    --dark-bluegreen-05alpha : rgb(0, 48, 32, 0.5);
-    --dark-bluegreen-07alpha : rgb(0, 48, 32, 0.7);
-    --mid-bluegreen: #0E6F31
-  }
+  /*2025 color code*/
+  --pure-white: #ffffff;
+  --pure-black: #000000;
+  --dark-bluegreen: rgb(0, 48, 32);
+  --dark-bluegreen-05alpha: rgb(0, 48, 32, 0.5);
+  --dark-bluegreen-07alpha: rgb(0, 48, 32, 0.7);
+  --mid-bluegreen: #0E6F31
+}

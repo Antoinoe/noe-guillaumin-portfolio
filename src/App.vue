@@ -1,11 +1,11 @@
-<script >
-  import Navbar from './components/NavBar.vue';
-  import Footer from './components/Footer.vue';
-  export default {
-    components: {
-      Navbar,Footer
-    }
+<script>
+import Navbar from './components/NavBar.vue';
+import Footer from './components/Footer.vue';
+export default {
+  components: {
+    Navbar, Footer
   }
+}
 </script>
 
 <template>
@@ -13,13 +13,15 @@
     <router-view></router-view>
     <Footer></Footer>
   </div>
-  
+
 </template>
 
 <style scoped>
-  @import "@/assets/tools.css";
+@import "@/assets/tools.css";
 
-  html, body, #app {
+html,
+body,
+#app {
   height: 100%;
   margin: 0;
 }

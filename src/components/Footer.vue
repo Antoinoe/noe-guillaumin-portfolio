@@ -13,9 +13,9 @@
 <style>
 @import url('../assets/tools.css');
 
-.content p{
+.content p {
     text-align: center;
-    color : #000000;
+    color: #000000;
     font-family: "Montserrat";
     font-size: 12px;
 }

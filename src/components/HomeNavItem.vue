@@ -1,75 +1,68 @@
 <template>
-    <router-link :to=name class="item">
-      <div class="item-name">
-        <p>{{ name }}</p>
-      </div>
-      <div class="image-container">
-        <img :src="imageSrc" alt="card">
-      </div>
+  <router-link :to=name class="item">
+    <div class="item-name">
+      <p>{{ name }}</p>
+    </div>
+    <div class="image-container">
+      <img :src="imageSrc" alt="card">
+    </div>
 
-    </router-link>
-      
-    </template>
-      
-    <script>
-    
-      export default {
+  </router-link>
 
-        name: "HomeNavItem",
-        props: {
-          name: String,
-          imageSrc: String,
-        }
-      }
-    </script>
-      
-    <style scoped> 
-    @import url('../assets/tools.css'); 
-      a {
-        text-decoration: none;
-      }
+</template>
 
-      .item{
-        text-align: center;
-        width: 100%;
-        margin-left :5em;
-        margin-right:5em;
+<script>
 
-        border-style: solid;
-        border-color: #0E6F31;
-        border-width: 0 5px 5px 5px;
-        border-radius: 0 0 5px 5px;
-        
-      }
+export default {
 
-      .item-name {
-        background-color: var(--mid-beige);
-        border-style: solid;
-        border-color: var(--mid-red);
-        border-width: 5px;
-        font-size: 24px;
-        font-weight: 600;
-        color :var(--dark-grey);
-        text-transform: uppercase;
-        font-family: sans-serif; 
-      }
+  name: "HomeNavItem",
+  props: {
+    name: String,
+    imageSrc: String,
+  }
+}
+</script>
 
-      .image-container {
+<style scoped>
+@import url('../assets/tools.css');
 
-          display: flex;
-          align-items: center; 
-          justify-content: center; 
-      }
+a {
+  text-decoration: none;
+}
 
-      .image-container img {
-        max-width: 100%;  
-      }
-    </style>
-    
-    
-      
-      
-      
-      
-      
-      
+.item {
+  text-align: center;
+  width: 100%;
+  margin-left: 5em;
+  margin-right: 5em;
+
+  border-style: solid;
+  border-color: #0E6F31;
+  border-width: 0 5px 5px 5px;
+  border-radius: 0 0 5px 5px;
+
+}
+
+.item-name {
+  background-color: var(--mid-beige);
+  border-style: solid;
+  border-color: var(--mid-red);
+  border-width: 5px;
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--dark-grey);
+  text-transform: uppercase;
+  font-family: sans-serif;
+}
+
+.image-container {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container img {
+  max-width: 100%;
+}
+</style>

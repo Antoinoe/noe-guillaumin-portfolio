@@ -2,20 +2,23 @@
   <div class="globalContent" :class="{ easterEgg: isEasterEggActive }">
     <div class="welcomeContent">
       <div class="helloText">
-        <transition name="fade" mode="out-in"><p :key="isEasterEggActive">{{ isEasterEggActive ? "Space Dreamer" : "Noé GUILLAUMIN" }}</p></transition>
+        <transition name="fade" mode="out-in">
+          <p :key="isEasterEggActive">{{ isEasterEggActive ? "Space Dreamer" : "Noé GUILLAUMIN" }}</p>
+        </transition>
       </div>
       <div class="subHelloText">
         Immersive Software Developer
       </div>
     </div>
-    
-    <div class="vignette">
-      <img :src="isEasterEggActive ? './public/img/space_dreamer_25-modified.png' : './public/img/noeguillaumin_pp_circled-min.png'"
-           alt="Photo de profil de Noé Guillaumin" 
-           class="profile-picture" 
-           @click="easterEggClick" >
 
-      <div class="about-me"><p>From video game conception to VR application for research, checkout what I did over the last few years!</p></div>
+    <div class="vignette">
+      <img
+        :src="isEasterEggActive ? './public/img/space_dreamer_25-modified.png' : 'img/noeguillaumin_pp_circled-min.png'"
+        alt="Photo de profil de Noé Guillaumin" class="profile-picture" @click="easterEggClick">
+
+      <div class="about-me">
+        <p>From video game conception to VR application for research, checkout what I did over the last few years!</p>
+      </div>
     </div>
 
     <div class="links">
@@ -41,7 +44,7 @@ export default {
 </script>
 
 <script setup>
-import { ref, onUnmounted  } from 'vue'
+import { ref, onUnmounted } from 'vue'
 
 const clickCount = ref(0)
 let timer = null
@@ -51,30 +54,30 @@ const easterEggAuthorized = true;
 audio.volume = 0.3 // volume à 30%
 
 function easterEggClick() {
-if(easterEggAuthorized){
-  if (clickCount.value === 0) {
-    timer = setTimeout(() => {
+  if (easterEggAuthorized) {
+    if (clickCount.value === 0) {
+      timer = setTimeout(() => {
+        clickCount.value = 0
+      }, 5000)
+    }
+
+    clickCount.value++
+
+    if (clickCount.value >= 10) {
+      clearTimeout(timer)
       clickCount.value = 0
-    }, 5000)
+
+      isEasterEggActive.value = true
+
+      audio.currentTime = 0
+      audio.play()
+
+      // désactive après 30 secondes
+      setTimeout(() => {
+        isEasterEggActive.value = false
+      }, 23000)
+    }
   }
-
-  clickCount.value++
-
-  if (clickCount.value >= 10) {
-    clearTimeout(timer)
-    clickCount.value = 0
-
-    isEasterEggActive.value = true
-
-    audio.currentTime = 0
-    audio.play()
-
-    // désactive après 30 secondes
-    setTimeout(() => {
-      isEasterEggActive.value = false
-    }, 23000)
-  }
-}
 
 }
 onUnmounted(() => {
@@ -84,13 +87,14 @@ onUnmounted(() => {
 </script>
 
 <style scoped>
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   padding: 0;
 }
 
-.globalContent{
+.globalContent {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -98,8 +102,9 @@ html, body {
   transition: background-color 3s ease, color 1s ease;
 }
 
-html, body .easterEgg {
-  background: rgb(174, 0, 255); /* couleur spéciale pendant 30s */
+html,
+body .easterEgg {
+  background: rgb(129, 8, 173);
 }
 
 .helloText {
@@ -107,14 +112,14 @@ html, body .easterEgg {
   font-size: 64px;
   font-weight: 600;
   font-family: "Sansation";
-  
+
   color: var(--dark-bluegreen);
 
   text-align: center;
   margin: 0em .0em -1em .0em;
 }
 
-.subHelloText{
+.subHelloText {
   padding: 20px;
   color: var(--mid-bluegreen);
   font-family: "Montserrat";
@@ -122,54 +127,54 @@ html, body .easterEgg {
   text-align: center;
 }
 
-.vignette{
-  display: inline-flex; 
+.vignette {
+  display: inline-flex;
   align-content: center;
   padding: 2em;
   margin-left: 25%;
-  
+
 }
 
-.profile-picture{
+.profile-picture {
   display: block;
   width: 240px;
   transition: opacity 3s ease;
 }
 
-.profile-picture[src*="./public/img/space_dreamer_25-modified.png"]{
- opacity: 1;
+.profile-picture[src*="./public/img/space_dreamer_25-modified.png"] {
+  opacity: 1;
 }
 
-.profile-picture[src*="./public/img/noeguillaumin_pp_circled-min.png"]{
- opacity: 1;
+.profile-picture[src*="./public/img/noeguillaumin_pp_circled-min.png"] {
+  opacity: 1;
 }
 
-.about-me{
-    justify-content: center;
-    text-align: justify;
-    width: 700px;
-    margin-left: 2em;
-    margin-top: 20px;
+.about-me {
+  justify-content: center;
+  text-align: justify;
+  width: 700px;
+  margin-left: 2em;
+  margin-top: 20px;
 }
 
-.about-me p{
-    color: var(--pure-black);
-    font-family: "Montserrat";
-    font-size: 36px;
-    margin-left: 20px;
+.about-me p {
+  color: var(--pure-black);
+  font-family: "Montserrat";
+  font-size: 36px;
+  margin-left: 20px;
 }
 
-.links{
+.links {
   display: flex;
   text-align: center;
   margin-left: 40%;
 }
 
-.links .linkItem{
+.links .linkItem {
   padding: 2em;
 }
 
-.links .linkItem a{
+.links .linkItem a {
   color: var(--pure-black);
   text-decoration: none;
   font-family: "Sansation";
@@ -180,19 +185,19 @@ html, body .easterEgg {
   box-shadow: 5px 5px 2px 1px rgba(0, 48, 32, 0.5);
   padding: 0.5em;
   font-size: 36px;
-    transition: 
+  transition:
     color 0.5s ease,
     border-color 0.5s ease,
     box-shadow 0.5s ease;
 }
 
-.links .linkItem a:hover{
+.links .linkItem a:hover {
   color: var(--pure-white);
   background-color: var(--mid-bluegreen);
   border-style: solid;
   border-color: var(--dark-bluegreen);
   box-shadow: 5px 5px 2px 1px rgba(0, 48, 32, 0.7);
-    transition: 
+  transition:
     color 0.5s ease,
     border-color 0.5s ease,
     box-shadow 0.5s ease;
@@ -200,34 +205,35 @@ html, body .easterEgg {
 
 .easterEgg {
   --shadow-color: rgba(225, 0, 255, 0.384);
-  --pure-black : rgba(255,255,255);
-  --dark-bluegreen : rgb(231, 198, 12);
-  --mid-bluegreen : rgb(240, 237, 77);
+  --pure-black: rgba(255, 255, 255);
+  --dark-bluegreen: rgb(231, 198, 12);
+  --mid-bluegreen: rgb(240, 237, 77);
 }
 
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.5s ease;
 }
+
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;
 }
 
-.contactMe{
+.contactMe {
   display: inline;
-  margin-top : 5vw;
-  color : var(--pure-black);
+  margin-top: 5vw;
+  color: var(--pure-black);
   font-family: "Montserrat";
   font-size: 32px;
   text-align: center;
 }
 
 .contactMe a {
-  margin-left : 10px;
+  margin-left: 10px;
 
   text-decoration: none;
-  color : var(--pure-black);
+  color: var(--pure-black);
   font-family: "Sansation";
   font-size: 32px;
 
@@ -239,13 +245,14 @@ html, body .easterEgg {
   align-content: center;
 }
 
-.contactMe a:hover{
-  color : var(--mid-bluegreen);
+.contactMe a:hover {
+  color: var(--mid-bluegreen);
 }
 
-.contactMe .linkItem{
+.contactMe .linkItem {
   align-self: center;
 }
+
 footer {
   flex-shrink: 0;
   text-align: center;

@@ -1,15 +1,16 @@
 <template>
-    <p class="nav_sep">|</p>
+  <p class="nav_sep">|</p>
 </template>
 
 <script>
-    export default{
-    }
+export default {
+}
 </script>
 
 <style>
 @import url('../assets/tools.css');
-.nav_sep{
+
+.nav_sep {
   color: var(--pure-black);
   font-size: 1em;
   font-weight: 900;
