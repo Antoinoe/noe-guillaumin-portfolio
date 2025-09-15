@@ -49,6 +49,9 @@ export default {
 
 <style scoped>
 #page_content {
+    display: flex;
+    flex-direction: column;
+    min-height: 74vh;
     width: max-content;
 }
 

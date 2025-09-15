@@ -13,7 +13,7 @@
 
     <div class="vignette">
       <img
-        :src="isEasterEggActive ? './public/img/space_dreamer_25-modified.png' : 'img/noeguillaumin_pp_circled-min.png'"
+        :src="isEasterEggActive ? 'img/space_dreamer_25-modified.png' : 'img/noeguillaumin_pp_circled-min.png'"
         alt="Photo de profil de Noé Guillaumin" class="profile-picture" @click="easterEggClick">
 
       <div class="about-me">
@@ -51,7 +51,7 @@ let timer = null
 const isEasterEggActive = ref(false)
 const audio = new Audio('./public/mp3/resonance.mp3')
 const easterEggAuthorized = true;
-audio.volume = 0.3 // volume à 30%
+audio.volume = 0.3
 
 function easterEggClick() {
   if (easterEggAuthorized) {
@@ -72,7 +72,6 @@ function easterEggClick() {
       audio.currentTime = 0
       audio.play()
 
-      // désactive après 30 secondes
       setTimeout(() => {
         isEasterEggActive.value = false
       }, 23000)
@@ -97,7 +96,7 @@ body {
 .globalContent {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height:96vh;
   background: white;
   transition: background-color 3s ease, color 1s ease;
 }
@@ -138,14 +137,14 @@ body .easterEgg {
 .profile-picture {
   display: block;
   width: 240px;
-  transition: opacity 3s ease;
+  transition: opacity 1s ease;
 }
 
-.profile-picture[src*="./public/img/space_dreamer_25-modified.png"] {
+.profile-picture[src*="/img/space_dreamer_25-modified.png"] {
   opacity: 1;
 }
 
-.profile-picture[src*="./public/img/noeguillaumin_pp_circled-min.png"] {
+.profile-picture[src*="/img/noeguillaumin_pp_circled-min.png"] {
   opacity: 1;
 }
 
@@ -171,7 +170,7 @@ body .easterEgg {
 }
 
 .links .linkItem {
-  padding: 2em;
+  padding: 1em;
 }
 
 .links .linkItem a {
@@ -222,7 +221,7 @@ body .easterEgg {
 
 .contactMe {
   display: inline;
-  margin-top: 5vw;
+  margin-top: 1em;
   color: var(--pure-black);
   font-family: "Montserrat";
   font-size: 32px;
@@ -251,10 +250,5 @@ body .easterEgg {
 
 .contactMe .linkItem {
   align-self: center;
-}
-
-footer {
-  flex-shrink: 0;
-  text-align: center;
 }
 </style>

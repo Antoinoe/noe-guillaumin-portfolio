@@ -15,7 +15,7 @@
 
 .content p {
     text-align: center;
-    color: #000000;
+    color: var(--pure-black);
     font-family: "Montserrat";
     font-size: 12px;
 }

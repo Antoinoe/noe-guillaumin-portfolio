@@ -15,7 +15,12 @@ export default {
         <h3>Unity Developer at Obvious Technologies</h3>
         <div class="subtitle">France - Nanterre 92050 - 2024</div>
         <p class="expe_content">Obvious Technologies is a compagny focussed on producing software solution for building
-            and area security.</p>
+            and area security. During six months, I worked on several tasks, from testing the application, discovering
+            bugs, writing gitlab issues, fixed them and validate the work with my supervisor. I worked on a MVCS C# code
+            architecture and it was fascinating to dig into the architecture of the project. I saw how things connect,
+            and how it felt "right". It changes a lot contrary to my precedent work experiences where I had to create a
+            Unity app from scratch. The fact that I had other several experienced collegues were a big part of my skill
+            developpement, and I want to take the opportunity to thank them here.</p>
         <p class="expe_content"></p>
         <!-- <img src="../../public/img/shelf.png" alt="graphic of how the user interact in AR with vertical farming." width="480px" class="experienceImg"> -->
         <h3>Research Intern at INRIA</h3>
@@ -29,8 +34,8 @@ export default {
             to develop a tactile device for users to interact with, visually presented as a device with simulated
             vibration effects. Through manipulating the visual effects, their intensity, and the strength of the
             vibrator, we aimed to determine which combination offered the most "realistic" experience to the user.</p>
-        <img src="/img/inria_diagram.png"
-            alt="Diagram that shows how the user interacts with the application" width="480px" class="experienceImg">
+        <img src="/img/inria_diagram.png" alt="Diagram that shows how the user interacts with the application"
+            width="480px" class="experienceImg">
         <h3>Unity AR Dev Intern at Farm3</h3>
         <div class="subtitle">France - Paris 75005 - 2022</div>
         <p class="expe_content">Farm3 is a French startup specializing in the creation of an optimized structure for
@@ -39,8 +44,8 @@ export default {
             augmented reality application allowing users to scan a plant, access its data, and make modifications as
             necessary.</p>
         <p class="expe_content">It's during this internship I've heavilly developped an interest to XR application. </p>
-        <img src="/img/shelf.png" alt="graphic of how the user interact in AR with vertical farming."
-            width="480px" class="experienceImg">
+        <img src="/img/shelf.png" alt="graphic of how the user interact in AR with vertical farming." width="480px"
+            class="experienceImg">
     </div>
 
 </template>
@@ -76,7 +81,7 @@ h3 {
     text-justify: inter-word;
     color: var(--pure-black);
     font-family: "Montserrat";
-    text-align: center;
+    text-align: justify;
     min-width: 500px;
 }
 

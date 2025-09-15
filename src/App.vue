@@ -17,12 +17,5 @@ export default {
 </template>
 
 <style scoped>
-@import "@/assets/tools.css";
 
-html,
-body,
-#app {
-  height: 100%;
-  margin: 0;
-}
 </style>
