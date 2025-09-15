@@ -30,7 +30,7 @@
     </div>
 
     <div class="contactMe">
-      <p>Did I caught your attention?</p>
+      <p>Did I catch your attention?</p>
       <div class="linkItem"><router-link to="/contact">Contacte Me</router-link></div>
     </div>
   </div>
