@@ -10,7 +10,7 @@
         Immersive Software Developer
       </div>
       <div class="warning">
-        <p :key="isEasterEggActive">{{ isEasterEggActive ? "" : "This website is under construction and some infos are missing/not updated. Thank you for your comprehension." }}</p>
+        <p :key="isEasterEggActive">{{ isEasterEggActive ? "" : "This website is under construction and some info is missing/not updated. Thank you for your comprehension." }}</p>
       </div>
     </div>
 
@@ -172,7 +172,7 @@ body .easterEgg {
   justify-content: center;
   gap: 1rem;
   flex-wrap: wrap;
-  margin: 2rem auto;
+  margin: 1rem auto;
 }
 
 .links .linkItem a {

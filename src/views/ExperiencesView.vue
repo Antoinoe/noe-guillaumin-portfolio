@@ -14,13 +14,13 @@ export default {
         <PageTitle name="Experiences"></PageTitle>
         <h3>Unity Developer at Obvious Technologies</h3>
         <div class="subtitle">France - Nanterre 92050 - 2024</div>
-        <p class="expe_content">Obvious Technologies is a compagny focussed on producing software solution for building
+        <p class="expe_content">Obvious Technologies is a company focused on producing software solutions for building
             and area security. During six months, I worked on several tasks, from testing the application, discovering
-            bugs, writing gitlab issues, fixed them and validate the work with my supervisor. I worked on a MVCS C# code
-            architecture and it was fascinating to dig into the architecture of the project. I saw how things connect,
-            and how it felt "right". It changes a lot contrary to my precedent work experiences where I had to create a
-            Unity app from scratch. The fact that I had other several experienced collegues were a big part of my skill
-            developpement, and I want to take the opportunity to thank them here.</p>
+            bugs, writing GitLab issues, fixing them, and validating the work with my supervisor. I worked on an MVCS C#
+            code architecture and it was fascinating to dig into the architecture of the project. I saw how things
+            connect, and how it felt "right". It changes a lot contrary to my precedent work experiences where I had to
+            create a Unity app from scratch. The fact that I had several other experienced colleagues was a big part of
+            my skill development, and I want to take the opportunity to thank them here.</p>
         <p class="expe_content"></p>
         <!-- <img src="../../public/img/shelf.png" alt="graphic of how the user interact in AR with vertical farming." width="480px" class="experienceImg"> -->
         <h3>Research Intern at INRIA</h3>
