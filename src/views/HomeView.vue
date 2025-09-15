@@ -12,8 +12,7 @@
     </div>
 
     <div class="vignette">
-      <img
-        :src="isEasterEggActive ? 'img/space_dreamer_25-modified.png' : 'img/noeguillaumin_pp_circled-min.png'"
+      <img :src="isEasterEggActive ? 'img/space_dreamer_25-modified.png' : 'img/noeguillaumin_pp_circled-min.png'"
         alt="Photo de profil de Noé Guillaumin" class="profile-picture" @click="easterEggClick">
 
       <div class="about-me">
@@ -49,7 +48,7 @@ import { ref, onUnmounted } from 'vue'
 const clickCount = ref(0)
 let timer = null
 const isEasterEggActive = ref(false)
-const audio = new Audio('./public/mp3/resonance.mp3')
+const audio = new Audio('/mp3/resonance.mp3')
 const easterEggAuthorized = true;
 audio.volume = 0.3
 
@@ -96,7 +95,7 @@ body {
 .globalContent {
   display: flex;
   flex-direction: column;
-  min-height:96vh;
+  min-height: 96vh;
   background: white;
   transition: background-color 3s ease, color 1s ease;
 }
@@ -108,14 +107,14 @@ body .easterEgg {
 
 .helloText {
   flex: 1;
-  font-size: 64px;
+  font-size: 5rem;
   font-weight: 600;
   font-family: "Sansation";
 
   color: var(--dark-bluegreen);
 
   text-align: center;
-  margin: 0em .0em -1em .0em;
+  margin: -0.5em 0em -1em .0em;
 }
 
 .subHelloText {
@@ -127,8 +126,10 @@ body .easterEgg {
 }
 
 .vignette {
-  display: inline-flex;
+  display: flex;
+  flex-wrap: wrap;
   align-content: center;
+  gap: 2rem;
   padding: 2em;
   margin-left: 25%;
 
@@ -136,8 +137,12 @@ body .easterEgg {
 
 .profile-picture {
   display: block;
-  width: 240px;
+  width: clamp(160px, 20vw, 240px);
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
   transition: opacity 1s ease;
+  flex: 0 0 auto;
 }
 
 .profile-picture[src*="/img/space_dreamer_25-modified.png"] {
@@ -149,10 +154,8 @@ body .easterEgg {
 }
 
 .about-me {
-  justify-content: center;
   text-align: justify;
-  width: 700px;
-  margin-left: 2em;
+  width: min(700px, 60vw);
   margin-top: 20px;
 }
 
@@ -165,41 +168,37 @@ body .easterEgg {
 
 .links {
   display: flex;
-  text-align: center;
-  margin-left: 40%;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 2rem auto;
 }
 
 .links .linkItem {
-  padding: 1em;
+  flex: 0 0 auto;
 }
 
 .links .linkItem a {
   color: var(--pure-black);
   text-decoration: none;
   font-family: "Sansation";
-  border-style: solid;
-  border-color: var(--pure-black);
-  border-width: 3px;
+  border: 3px solid var(--pure-black);
   border-radius: 15px;
   box-shadow: 5px 5px 2px 1px rgba(0, 48, 32, 0.5);
-  padding: 0.5em;
-  font-size: 36px;
+  padding: 0.5em 1em;
+  font-size: clamp(18px, 4vw, 36px);
   transition:
     color 0.5s ease,
     border-color 0.5s ease,
-    box-shadow 0.5s ease;
+    box-shadow 0.5s ease,
+    background-color 0.5s ease;
 }
 
 .links .linkItem a:hover {
   color: var(--pure-white);
   background-color: var(--mid-bluegreen);
-  border-style: solid;
   border-color: var(--dark-bluegreen);
   box-shadow: 5px 5px 2px 1px rgba(0, 48, 32, 0.7);
-  transition:
-    color 0.5s ease,
-    border-color 0.5s ease,
-    box-shadow 0.5s ease;
 }
 
 .easterEgg {
@@ -230,7 +229,6 @@ body .easterEgg {
 
 .contactMe a {
   margin-left: 10px;
-
   text-decoration: none;
   color: var(--pure-black);
   font-family: "Sansation";
@@ -250,5 +248,34 @@ body .easterEgg {
 
 .contactMe .linkItem {
   align-self: center;
+}
+
+@media (max-width: 900px) {
+
+  .helloText {
+    width: 100%;
+    margin: 0;
+    font-size: 2rem;
+  }
+
+  .vignette {
+    margin-left: 0;
+  }
+
+  .about-me {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .links {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .links .linkItem a {
+    width: 100%;
+    max-width: 300px;
+  }
 }
 </style>
