@@ -31,7 +31,7 @@
 
     <div class="contactMe">
       <p>Did I catch your attention?</p>
-      <div class="linkItem"><router-link to="/contact">Contacte Me</router-link></div>
+      <div class="linkItem"><router-link to="/contact">Contact Me</router-link></div>
     </div>
   </div>
 </template>
