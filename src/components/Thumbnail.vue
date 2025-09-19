@@ -30,15 +30,21 @@ export default {
 @import url('../assets/tools.css');
 @import url('../assets/fonts.css');
 
-/* Carte */
 .thumbnail {
-    background-color: var(--pure-white);
+    background-color: var(--dark-bluegreen);
     border: 5px solid var(--dark-bluegreen);
     border-radius: 16px;
     height: 360px;
     width: 240px;
     overflow: hidden;
     cursor: pointer;
+    transition: ease 0.2s;
+}
+
+.thumbnail:hover {
+    background-color: var(--mid-bluegreen);
+    border: 5px solid var(--mid-bluegreen);
+    transition: ease 0.2s;
 }
 
 .thumb-link {
@@ -61,7 +67,6 @@ h2 {
     padding: .25rem .5rem;
     font-family: "Sansation";
     color: var(--pure-white);
-    background-color: var(--dark-bluegreen);
     border-radius: 10px 10px 0 0;
 }
 
@@ -73,7 +78,6 @@ h2 {
 }
 
 .subContent {
-    background-color: var(--dark-bluegreen);
     color: var(--pure-white);
     flex: 1;
     width: 100%;
