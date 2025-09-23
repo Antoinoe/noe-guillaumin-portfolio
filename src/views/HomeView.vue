@@ -10,7 +10,10 @@
         Immersive Software Developer
       </div>
       <div class="warning">
-        <p :key="isEasterEggActive">{{ isEasterEggActive ? "" : "This website is under construction and some info is missing/not updated. Thank you for your comprehension." }}</p>
+        <p v-if="!isEasterEggActive">
+          This website is under construction and some info is missing / not updated.
+          Thank you for your comprehension.
+        </p>
       </div>
     </div>
 
@@ -22,8 +25,199 @@
         <p>From video game conception to VR application for research, checkout what I did over the last few years!</p>
       </div>
     </div>
+    <div class="content">
+      <div class="category">
+        <h2 class="categoryTitle">Virtual & Augmented Reality</h2>
+        <div class="thumbnailContainer">
+          <router-link class="thumb-link" to="/contact">
+            <Thumbnail thumbnailTitle="2D Olfactory Map"
+              thumbnailSubtitle="A solution to map olfactory data in VR applications." imageSrc="/img/xrtp_1.webp"
+              tags="2024 - VR - Unity"></Thumbnail>
+          </router-link>
+          <router-link class="thumb-link" to="/contact">
+            <Thumbnail thumbnailTitle="Dynamic Weather System" thumbnailSubtitle="" imageSrc="/img/xrtp_1.webp"
+              tags="2024 - VR - Unity"></Thumbnail>
+          </router-link>
+          <router-link class="thumb-link" to="/contact">
+            <Thumbnail thumbnailTitle="Pyramidal Hologram" thumbnailSubtitle="Sous-titre" imageSrc="/img/xrtp_1.webp"
+              tags="2024 - VR - Unity"></Thumbnail>
+          </router-link>
+        </div>
+      </div>
+      <div class="category">
+        <h2 class="categoryTitle">Video Games</h2>
+        <div class="thumbnailContainer">
+          <router-link class="thumb-link" to="/contact">
+            <Thumbnail thumbnailTitle="Murphy's Escape" thumbnailSubtitle="Sous-titre" imageSrc="/img/xrtp_1.webp"
+              tags="2024 - VR - Unity"></Thumbnail>
+          </router-link>
+          <router-link class="thumb-link" to="/contact">
+            <Thumbnail thumbnailTitle="Xenos Heresy" thumbnailSubtitle="Sous-titre" imageSrc="/img/xrtp_1.webp"
+              tags="2024 - VR - Unity"></Thumbnail>
+          </router-link>
+          <router-link class="thumb-link" to="/contact">
+            <Thumbnail thumbnailTitle="Yeet The Gift" thumbnailSubtitle="Sous-titre" imageSrc="/img/xrtp_1.webp"
+              tags="2024 - VR - Unity"></Thumbnail>
+          </router-link>
+          <router-link class="thumb-link" to="/contact">
+            <Thumbnail thumbnailTitle="Ocultas" thumbnailSubtitle="Sous-titre" imageSrc="/img/xrtp_1.webp"
+              tags="2024 - VR - Unity"></Thumbnail>
+          </router-link>
+          <router-link class="thumb-link" to="/contact">
+            <Thumbnail thumbnailTitle="Save The Office" thumbnailSubtitle="Sous-titre" imageSrc="/img/xrtp_1.webp"
+              tags="2024 - VR - Unity"></Thumbnail>
+          </router-link>
+        </div>
+      </div>
+      <div class="category">
+        <h2 class="categoryTitle">Professional Experiences</h2>
+        <div class="thumbnailContainer">
+          <router-link class="thumb-link" to="/contact">
+            <Thumbnail thumbnailTitle="Obvious Technologies" thumbnailSubtitle="Sous-titre" imageSrc="/img/xrtp_1.webp"
+              tags="2024 - VR - Unity"></Thumbnail>
+          </router-link>
+          <router-link class="thumb-link" to="/contact">
+            <Thumbnail thumbnailTitle="INRIA" thumbnailSubtitle="Sous-titre" imageSrc="/img/xrtp_1.webp"
+              tags="2024 - VR - Unity"></Thumbnail>
+          </router-link>
+          <router-link class="thumb-link" to="/contact">
+            <Thumbnail thumbnailTitle="Farm3" thumbnailSubtitle="Sous-titre" imageSrc="/img/xrtp_1.webp"
+              tags="2024 - VR - Unity"></Thumbnail>
+          </router-link>
+        </div>
+      </div>
+      <div class="category">
+        <h2 class="categoryTitle">Others</h2>
+        <div class="thumbnailContainer">
+          <router-link class="thumb-link" to="/contact">
+            <Thumbnail thumbnailTitle="Titre" thumbnailSubtitle="Sous-titre" imageSrc="/img/xrtp_1.webp"
+              tags="2024 - VR - Unity"></Thumbnail>
+          </router-link>
+          <router-link class="thumb-link" to="/contact">
+            <Thumbnail thumbnailTitle="Titre" thumbnailSubtitle="Sous-titre" imageSrc="/img/xrtp_1.webp"
+              tags="2024 - VR - Unity"></Thumbnail>
+          </router-link>
+          <router-link class="thumb-link" to="/contact">
+            <Thumbnail thumbnailTitle="Titre" thumbnailSubtitle="Sous-titre" imageSrc="/img/xrtp_1.webp"
+              tags="2024 - VR - Unity"></Thumbnail>
+          </router-link>
+        </div>
+      </div>
+    </div>
 
-    <div class="links">
+    <!-- <div class="test">
+    <h3 class="categoryTitle">Category</h3>
+    <div class="thumbnailContainer">
+      <router-link to="/contact" class="thumb-link">
+        <Thumbnail 
+        thumbnailTitle="2D Olfctory Map"
+        thumbnailSubtitle="A solution to map olfactory data in VR applications." 
+        imageSrc="/img/xrtp_1.webp
+        tags="2024 - VR - Unity 
+      />
+      </router-link>
+      
+      <router-link to="/contact" class="thumb-link">
+        <Thumbnail 
+          thumbnailTitle="Dynamic Weather System"
+          thumbnailSubtitle="A solution to map olfactory data in VR applications." 
+          imageSrc="/img/xrtp_1.webp"
+          tags="2024 - VR - Unity" 
+        />
+      </router-link>
+      <Thumbnail 
+        thumbnailTitle="My experience at Farm3"
+        thumbnailSubtitle="A solution to map olfactory data in VR applications." 
+        imageSrc="/img/xrtp_1.webp"
+        tags="2024 - VR - Unity" 
+      />
+      
+      <router-link to="/contact" class="thumb-link">
+        <Thumbnail 
+          thumbnailTitle="My experience at INRIA"
+          thumbnailSubtitle="A solution to map olfactory data in VR applications." 
+          imageSrc="/img/xrtp_1.webp"
+          tags="2024 - VR - Unity" 
+        />
+      </router-link>
+    </div>
+    <h3 class="categoryTitle">Category</h3>
+    <div class="thumbnailContainer">
+      <router-link to="/contact" class="thumb-link">
+        <Thumbnail 
+          thumbnailTitle="My experience at Obvious Technologies"
+          thumbnailSubtitle="A solution to map olfactory data in VR applications." 
+          imageSrc="/img/xrtp_1.webp"
+          tags="2024 - VR - Unity" 
+        />
+      </router-link>
+
+      <a class ="thumbnailRedirection" href="https://lucasvh.itch.io/ocultas" target="_blank">
+        <Thumbnail 
+          thumbnailTitle="Xenos Heresy"
+          thumbnailSubtitle="A solution to map olfactory data in VR applications." 
+          imageSrc="/img/xrtp_1.webp"
+          tags="2024 - VR - Unity" 
+        />
+      </a>
+
+      <a class ="thumbnailRedirection" href="https://lucasvh.itch.io/ocultas" target="_blank">
+        <Thumbnail 
+          thumbnailTitle="Yeet The Gift"
+          thumbnailSubtitle="A solution to map olfactory data in VR applications." 
+          imageSrc="/img/xrtp_1.webp"
+          tags="2024 - VR - Unity" 
+        />
+      </a>
+
+      <a class ="thumbnailRedirection" href="https://lucasvh.itch.io/ocultas" target="_blank">
+        <Thumbnail 
+          thumbnailTitle="Ocultas"
+          thumbnailSubtitle="A solution to map olfactory data in VR applications." 
+          imageSrc="/img/xrtp_1.webp"
+          tags="2024 - VR - Unity" 
+        />
+      </a>
+
+      <a class ="thumbnailRedirection" href="https://lucasvh.itch.io/ocultas" target="_blank">
+        <Thumbnail 
+          thumbnailTitle="Murphy's Escape"
+          thumbnailSubtitle="A solution to map olfactory data in VR applications." 
+          imageSrc="/img/xrtp_1.webp"
+          tags="2024 - VR - Unity" 
+        />
+      </a>
+
+      <a class ="thumbnailRedirection" href="https://lucasvh.itch.io/ocultas" target="_blank">
+        <Thumbnail 
+          thumbnailTitle="Save The Office"
+          thumbnailSubtitle="A solution to map olfactory data in VR applications." 
+          imageSrc="/img/xrtp_1.webp"
+          tags="2024 - VR - Unity" 
+        />
+      </a>
+
+      <router-link to="/contact" class="thumb-link">
+        <Thumbnail 
+          thumbnailTitle="My vision of Solarpunk"
+          thumbnailSubtitle="A solution to map olfactory data in VR applications." 
+          imageSrc="/img/xrtp_1.webp"
+          tags="2024 - VR - Unity" 
+        />
+      </router-link>
+
+      <router-link to="/contact" class="thumb-link">
+        <Thumbnail 
+          thumbnailTitle="Why Virtual Reality is useful?"
+          thumbnailSubtitle="A solution to map olfactory data in VR applications." 
+          imageSrc="/img/xrtp_1.webp"
+          tags="2024 - VR - Unity" 
+        />
+      </router-link>
+      </div> 
+    </div>-->
+
+    <!-- <div class="links">
       <div class="linkItem"><router-link to="/projects">Projects</router-link></div>
       <div class="linkItem"><router-link to="/experiences">Experiences</router-link></div>
       <div class="linkItem"><router-link to="/education">Education</router-link></div>
@@ -32,15 +226,17 @@
     <div class="contactMe">
       <p>Did I catch your attention?</p>
       <div class="linkItem"><router-link to="/contact">Contacte Me</router-link></div>
-    </div>
+    </div> -->
   </div>
 </template>
 
 <script>
 import HomeNavItem from '../components/HomeNavItem.vue';
+import Thumbnail from '../components/Thumbnail.vue';
+import { RouterLink } from 'vue-router';
 export default {
   components: {
-    HomeNavItem
+    HomeNavItem, Thumbnail
   }
 }
 </script>
@@ -88,7 +284,6 @@ onUnmounted(() => {
 </script>
 
 <style scoped>
-
 .globalContent {
   display: flex;
   flex-direction: column;
@@ -114,10 +309,10 @@ body .easterEgg {
   margin: -0.5em 0em -1em .0em;
 }
 
-.warning{
+.warning {
   text-align: center;
   font-family: "Montserrat";
-  color : brown;
+  color: brown;
 }
 
 .subHelloText {
@@ -215,6 +410,29 @@ body .easterEgg {
   opacity: 0;
 }
 
+.content {
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+
+.categoryTitle {
+  font-family: "Montserrat";
+  color: var(--dark-bluegreen);
+  font-size: 2rem;
+}
+
+.thumbnailContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.thumb-link {
+  margin: 1rem;
+  max-width: 300px;
+  text-decoration: none;
+}
+
 .contactMe {
   display: inline;
   margin-top: 3rem;
@@ -232,7 +450,7 @@ body .easterEgg {
   font-size: clamp(24px, 4vw, 36px);
 
   padding: 1rem;
-  
+
   border-style: solid;
   border-width: 3px;
   border-radius: 25px;
@@ -262,7 +480,7 @@ body .easterEgg {
     text-align: center;
   }
 
-  .profile-picture{
+  .profile-picture {
     display: block;
     margin: 0 auto;
   }
@@ -284,7 +502,7 @@ body .easterEgg {
     max-width: 400px;
   }
 
-  .contactMe{
+  .contactMe {
     margin-bottom: 1em;
   }
 }
