@@ -35,8 +35,9 @@
               tags="2024 - VR - Unity"></Thumbnail>
           </router-link>
           <router-link class="thumb-link" to="/contact">
-            <Thumbnail thumbnailTitle="Dynamic Weather System" thumbnailSubtitle="" imageSrc="/img/xrtp_1.webp"
-              tags="2024 - VR - Unity"></Thumbnail>
+            <Thumbnail thumbnailTitle="Dynamic Weather System"
+              thumbnailSubtitle="Modify the celestial environment based on environmental and temporal data"
+              imageSrc="/img/xrtp_1.webp" tags="2024 - VR - Unity"></Thumbnail>
           </router-link>
           <router-link class="thumb-link" to="/contact">
             <Thumbnail thumbnailTitle="Pyramidal Hologram" thumbnailSubtitle="Sous-titre" imageSrc="/img/xrtp_1.webp"
@@ -429,7 +430,7 @@ body .easterEgg {
 
 .thumb-link {
   margin: 1rem;
-  max-width: 300px;
+  max-width: 250px;
   text-decoration: none;
 }
 
