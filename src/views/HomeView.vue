@@ -494,6 +494,11 @@ body .easterEgg {
     margin-bottom: -3rem;
   }
 
+  .content {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
   .links {
     flex-direction: column;
     align-items: center;
