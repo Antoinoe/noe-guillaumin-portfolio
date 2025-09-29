@@ -31,8 +31,8 @@
         <div class="thumbnailContainer">
           <router-link class="thumb-link" to="/contact">
             <Thumbnail thumbnailTitle="2D Olfactory Map"
-              thumbnailSubtitle="A solution to map olfactory data in VR applications. A solution to map olfactory data in VR applications. A solution to map olfactory data in VR applications. A solution to map olfactory data in VR applications. A solution to map olfactory data in VR applications. A solution to map olfactory data in VR applications. A solution to map olfactory data in VR applications. A solution to map olfactory data in VR applications. A solution to map olfactory data in VR applications. " imageSrc="/img/xrtp_1.webp"
-              tags="2024 - VR - Unity"></Thumbnail>
+              thumbnailSubtitle="A solution to map olfactory data in VR applications. A solution to map olfactory data in VR applications. A solution to map olfactory data in VR applications. A solution to map olfactory data in VR applications. A solution to map olfactory data in VR applications. A solution to map olfactory data in VR applications. A solution to map olfactory data in VR applications. A solution to map olfactory data in VR applications. A solution to map olfactory data in VR applications. "
+              imageSrc="/img/xrtp_1.webp" tags="2024 - VR - Unity"></Thumbnail>
           </router-link>
           <router-link class="thumb-link" to="/contact">
             <Thumbnail thumbnailTitle="Dynamic Weather System"
@@ -495,9 +495,9 @@ body .easterEgg {
   }
 
   .content {
-  margin-left: 3rem;
-  margin-right: 3rem;
-}
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
 
   .links {
     flex-direction: column;
@@ -520,8 +520,8 @@ body .easterEgg {
     align-items: start;
   }
 
-  .categoryTitle{
-    margin:0;
+  .categoryTitle {
+    margin: 0;
     margin-top: 1rem;
     text-align: center;
   }

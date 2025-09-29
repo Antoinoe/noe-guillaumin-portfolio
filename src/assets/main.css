@@ -33,9 +33,23 @@ body {
 
 .headerOverlay {
   position: absolute;
-  top: 15%;
+  top: 8rem;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.returnToHomePage {
+  position: absolute;
+  color: white;
+  top: 3rem;
+  left: 3rem;
+}
+
+.returnToHomePage a {
+  text-decoration: none;
+  color: white;
+  font-family: "Montserrat";
+  font-size: 1.75rem;
 }
 
 .headerPageTitle {
@@ -51,7 +65,10 @@ body {
   font-family: "Montserrat";
   font-size: 2rem;
   font-style: italic;
-  margin-top: -0rem;
+}
+
+.captionedImage {
+  margin: 1rem;
 }
 
 .captionedImage img {
@@ -60,10 +77,45 @@ body {
   width: 50%;
 }
 
-.captionedImage p{
+.chapterTitle {
+  color: var(--dark-bluegreen);
+  font-family: "Sansation";
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+.chapterSubTitle {
+  color: var(--dark-bluegreen);
+  font-family: "Sansation";
+  font-size: 2rem;
+  margin: 1rem 0rem 1rem 3rem;
+}
+
+.chapter p {
+  margin: 0rem 6rem;
+  font-size: 1.5rem;
+  font-family: "Montserrat";
+  text-align: justify;
+}
+
+.captionText {
   text-align: center;
   font-family: sans-serif;
   font-style: italic;
+  display: block;
+  margin: auto;
+  width: 50%;
+
+}
+
+.githubIcon {
+  position: absolute;
+  top: 270px;
+  right: 3rem;
+}
+
+.githubIcon img {
+  width: 50px;
 }
 
 @media (max-width : 950px) {
@@ -85,5 +137,41 @@ body {
 
   .defaultPageImage {
     width: 100%;
+  }
+
+  .returnToHomePage {
+    top: 0.5rem;
+    left: 1rem;
+  }
+
+  .returnToHomePage a {
+    font-size: 1rem;
+  }
+
+  .chapterTitle {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .chapter p {
+    font-size: 1rem;
+    margin: 0rem 2rem;
+  }
+
+  .captionedImage p {
+    text-align: center;
+    margin: 0;
+  }
+
+  .githubIcon {
+    position: absolute;
+    top: 180px;
+    right: 1rem;
+  }
+
+  .chapterSubTitle {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 1rem;
   }
 }
