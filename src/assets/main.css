@@ -8,3 +8,82 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.pageContent {
+  margin: 0;
+}
+
+.pageHeader {
+  background-color: black;
+  height: 350px;
+  overflow: hidden;
+}
+
+.headerImage {
+  width: 100%;
+  height: auto;
+  display: block;
+  opacity: 0.6;
+  object-fit: cover;
+}
+
+.pageBody {
+  margin: 3rem;
+}
+
+.headerOverlay {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.headerPageTitle {
+  color: white;
+  text-align: center;
+  font-family: "Sansation";
+  font-size: 6rem;
+}
+
+.headerTags {
+  color: white;
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 2rem;
+  font-style: italic;
+  margin-top: -0rem;
+}
+
+.captionedImage img {
+  display: block;
+  margin: auto;
+  width: 50%;
+}
+
+.captionedImage p{
+  text-align: center;
+  font-family: sans-serif;
+  font-style: italic;
+}
+
+@media (max-width : 950px) {
+  .pageBody {
+    margin: 1rem;
+  }
+
+  .pageHeader {
+    height: 250px;
+  }
+
+  .headerPageTitle {
+    font-size: 3rem;
+  }
+
+  .headerTags {
+    font-size: 1.5rem;
+  }
+
+  .defaultPageImage {
+    width: 100%;
+  }
+}
