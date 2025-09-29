@@ -31,17 +31,17 @@
         <div class="thumbnailContainer">
           <router-link class="thumb-link" to="/contact">
             <Thumbnail thumbnailTitle="2D Olfactory Map"
-              thumbnailSubtitle="A solution to map olfactory data in VR applications." imageSrc="/img/xrtp_1.webp"
+              thumbnailSubtitle="A solution to map olfactory data in VR applications. A solution to map olfactory data in VR applications. A solution to map olfactory data in VR applications. A solution to map olfactory data in VR applications. A solution to map olfactory data in VR applications. A solution to map olfactory data in VR applications. A solution to map olfactory data in VR applications. A solution to map olfactory data in VR applications. A solution to map olfactory data in VR applications. " imageSrc="/img/xrtp_1.webp"
               tags="2024 - VR - Unity"></Thumbnail>
           </router-link>
           <router-link class="thumb-link" to="/contact">
             <Thumbnail thumbnailTitle="Dynamic Weather System"
               thumbnailSubtitle="Modify the celestial environment based on environmental and temporal data"
-              imageSrc="/img/xrtp_1.webp" tags="2024 - VR - Unity"></Thumbnail>
+              imageSrc="/img/nono_croped.jpg" tags="2024 - VR - Unity"></Thumbnail>
           </router-link>
           <router-link class="thumb-link" to="/contact">
-            <Thumbnail thumbnailTitle="Pyramidal Hologram" thumbnailSubtitle="Sous-titre" imageSrc="/img/xrtp_1.webp"
-              tags="2024 - VR - Unity"></Thumbnail>
+            <Thumbnail thumbnailTitle="Pyramidal Hologram" thumbnailSubtitle="Sous-titre"
+              imageSrc="/img/noeguillaumin_pp_circled-min.png" tags="2024 - VR - Unity"></Thumbnail>
           </router-link>
         </div>
       </div>
@@ -426,6 +426,7 @@ body .easterEgg {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  margin-left: -1rem;
 }
 
 .thumb-link {
@@ -490,6 +491,7 @@ body .easterEgg {
     width: 100%;
     margin-left: 0;
     text-align: center;
+    margin-bottom: -3rem;
   }
 
   .links {
@@ -505,6 +507,18 @@ body .easterEgg {
 
   .contactMe {
     margin-bottom: 1em;
+  }
+
+  .thumbnailContainer {
+    display: inline;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    align-items: start;
+  }
+
+  .categoryTitle{
+    margin:0;
+    margin-top: 1rem;
+    text-align: center;
   }
 }
 </style>

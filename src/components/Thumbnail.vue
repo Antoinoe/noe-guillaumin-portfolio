@@ -2,10 +2,8 @@
     <div class="thumbnail">
         <h3>{{ thumbnailTitle }}</h3>
         <img :src="imageSrc" alt="thumbnail picture" width="240" />
-        <div class="thumbnailSubContent">
-            <h4>{{ thumbnailSubtitle }}</h4>
-            <p class="tags">{{ tags }}</p>
-        </div>
+        <h4>{{ thumbnailSubtitle }}</h4>
+        <p class="tags">{{ tags }}</p>
     </div>
 </template>
 
@@ -26,17 +24,23 @@ export default {
 @import url('../assets/fonts.css');
 
 .thumbnail {
+    height: 320px;
+    width: 230px;
+    min-width: 14rem;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-left: -1rem;
+
     background-color: var(--dark-bluegreen);
     border: 5px solid var(--dark-bluegreen);
     border-radius: 16px;
-    height: 320px;
-    width: 240px;
+    box-shadow: 5px 5px 2px 1px rgba(0, 48, 32, 0.7);
+
     overflow: hidden;
     cursor: pointer;
-    box-shadow: 5px 5px 2px 1px rgba(0, 48, 32, 0.7);
     transition: ease 0.2s;
-    text-align: center;
-    min-height: 100%;
 }
 
 .thumbnail:hover {
@@ -53,32 +57,72 @@ h3 {
     font-size: clamp(16px, 2vw, 20px);
     color: var(--pure-white);
     border-radius: 10px 10px 0 0;
+    text-overflow: ellipsis " [..]";
 }
 
 .thumbnail img {
     width: 100%;
+    max-width: fit-content;
     height: auto;
+    max-height: 40%;
     display: block;
     flex: 0 0 auto;
+    align-self: center;
 }
 
-.thumbnailSubContent {
-    color: var(--pure-white);
-    flex: 0;
-    width: 100%;
-}
-
-.thumbnailSubContent h4 {
+h4 {
     font-family: "Montserrat";
     font-weight: 300;
     font-size: clamp(13px, 1vw, 16px);
     text-align: center;
+    flex-shrink: 1;
+    color: var(--pure-white);
+    overflow: hidden;
+    text-overflow: ellipsis " [..]";
 }
 
-.thumbnailSubContent p {
+.tags {
     color: gray;
     font-family: "Montserrat";
+    margin-top: auto;
 }
 
-@media (max-width : 950px) {}
+@media (max-width : 900px) {
+    .thumbnail {
+        width: 100%;
+        height: 75px;
+        border-radius: 4px;
+
+        display: flex;
+    }
+
+    .thumbnail img {
+        position: absolute;
+        max-width: 75px;
+        width: auto;
+        height: auto;
+        max-height: 75px;
+        align-self: auto;
+    }
+
+    h3{
+        font-size: clamp(16px, 2vw, 20px);
+        margin: -1rem;
+    }
+
+    h3, h4 {
+        padding-left: 75px;
+        padding-right: 5px;
+        text-align: right;
+        margin: 0;
+    }
+
+    .thumbnail {
+        gap: .5rem;
+    }
+
+    .tags {
+        display: none;
+    }
+}
 </style>
