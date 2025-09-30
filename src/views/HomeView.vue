@@ -29,12 +29,12 @@
       <div class="category">
         <h2 class="categoryTitle">Virtual & Augmented Reality</h2>
         <div class="thumbnailContainer">
-          <router-link class="thumb-link" to="/contact">
+          <router-link class="thumb-link" to="/olfactorymap">
             <Thumbnail thumbnailTitle="2D Olfactory Map"
               thumbnailSubtitle="A solution to map olfactory data in VR applications. A solution to map olfactory data in VR applications. A solution to map olfactory data in VR applications. A solution to map olfactory data in VR applications. A solution to map olfactory data in VR applications. A solution to map olfactory data in VR applications. A solution to map olfactory data in VR applications. A solution to map olfactory data in VR applications. A solution to map olfactory data in VR applications. "
               imageSrc="/img/xrtp_1.webp" tags="2025 - DevTool - Unity"></Thumbnail>
           </router-link>
-          <router-link class="thumb-link" to="/contact">
+          <router-link class="thumb-link" to="/dynamicweathersystem">
             <Thumbnail thumbnailTitle="Dynamic Weather System"
               thumbnailSubtitle="Modify the celestial environment based on environmental and temporal data"
               imageSrc="/img/nono_croped.jpg" tags="2024 - VR - Unity"></Thumbnail>

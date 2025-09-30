@@ -63,7 +63,7 @@ body {
   color: white;
   text-align: center;
   font-family: "Sansation";
-  font-size: 6rem;
+  font-size: 5rem;
 }
 
 .headerTags {
@@ -87,7 +87,7 @@ body {
 .chapter h3 {
   color: var(--dark-bluegreen);
   font-family: "Sansation";
-  font-size: 4rem;
+  font-size: 3rem;
   margin-bottom: 2rem;
 }
 
@@ -142,7 +142,8 @@ body {
   }
 
   .headerPageTitle {
-    font-size: 3rem;
+    font-size: 2rem;
+    margin: 0;
   }
 
   .headerTags {
@@ -164,6 +165,7 @@ body {
 
   .chapter h3 {
     font-size: 2rem;
+    margin-bottom: 0;
     text-align: center;
   }
 
