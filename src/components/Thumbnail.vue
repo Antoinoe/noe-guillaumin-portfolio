@@ -2,7 +2,7 @@
     <div class="thumbnail">
         <h3>{{ thumbnailTitle }}</h3>
         <img :src="imageSrc" alt="thumbnail picture" width="240" />
-        <h4>{{ thumbnailSubtitle }}</h4>
+        <h4 class="thumbnailSubtitle">{{ thumbnailSubtitle }}</h4>
         <p class="tags">{{ tags }}</p>
     </div>
 </template>
@@ -54,7 +54,7 @@ h3 {
     margin: 0.5rem 0rem;
     max-height: 3rem;
     font-family: "Sansation";
-    font-size: clamp(16px, 2vw, 20px);
+    font-size: clamp(14px, 1vw, 20px);
     color: var(--pure-white);
     border-radius: 10px 10px 0 0;
     text-overflow: ellipsis " [..]";
@@ -70,15 +70,15 @@ h3 {
     align-self: center;
 }
 
-h4 {
+h4.thumbnailSubtitle {
     font-family: "Montserrat";
     font-weight: 300;
-    font-size: clamp(13px, 1vw, 16px);
+    font-size: clamp(11px, 0.8vw, 16px);
     text-align: center;
     flex-shrink: 1;
     color: var(--pure-white);
-    overflow: hidden;
-    text-overflow: ellipsis " [..]";
+    overflow:hidden;
+    text-overflow: ellipsis;
 }
 
 .tags {

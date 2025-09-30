@@ -28,7 +28,7 @@ body {
 }
 
 .pageBody {
-  margin: 3rem;
+  margin: 5rem;
 }
 
 .headerOverlay {
@@ -43,6 +43,13 @@ body {
   color: white;
   top: 3rem;
   left: 3rem;
+  opacity: 0.7;
+  transition : ease 0.2s;
+}
+
+.returnToHomePage:hover{
+  opacity: 1;
+  transition: ease 0.2s;
 }
 
 .returnToHomePage a {
@@ -91,9 +98,9 @@ body {
   margin: 1rem 0rem 1rem 3rem;
 }
 
-.chapter p {
+.chapter p{
   margin: 0rem 6rem;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   font-family: "Montserrat";
   text-align: justify;
 }
@@ -112,6 +119,13 @@ body {
   position: absolute;
   top: 270px;
   right: 3rem;
+  opacity: 0.5;
+  transition: ease 0.2s;
+}
+
+.githubIcon:hover{
+  opacity: 1;
+  transition: ease 0.2s;
 }
 
 .githubIcon img {

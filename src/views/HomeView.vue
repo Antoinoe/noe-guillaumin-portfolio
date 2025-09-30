@@ -32,7 +32,7 @@
           <router-link class="thumb-link" to="/contact">
             <Thumbnail thumbnailTitle="2D Olfactory Map"
               thumbnailSubtitle="A solution to map olfactory data in VR applications. A solution to map olfactory data in VR applications. A solution to map olfactory data in VR applications. A solution to map olfactory data in VR applications. A solution to map olfactory data in VR applications. A solution to map olfactory data in VR applications. A solution to map olfactory data in VR applications. A solution to map olfactory data in VR applications. A solution to map olfactory data in VR applications. "
-              imageSrc="/img/xrtp_1.webp" tags="2024 - VR - Unity"></Thumbnail>
+              imageSrc="/img/xrtp_1.webp" tags="2025 - DevTool - Unity"></Thumbnail>
           </router-link>
           <router-link class="thumb-link" to="/contact">
             <Thumbnail thumbnailTitle="Dynamic Weather System"
@@ -360,7 +360,7 @@ body .easterEgg {
 .about-me p {
   color: var(--pure-black);
   font-family: "Montserrat";
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .links {
@@ -417,6 +417,8 @@ body .easterEgg {
 }
 
 .categoryTitle {
+  margin: 0;
+  margin-top: 3rem;
   font-family: "Montserrat";
   color: var(--dark-bluegreen);
   font-size: 2rem;
@@ -492,6 +494,11 @@ body .easterEgg {
     margin-left: 0;
     text-align: center;
     margin-bottom: -3rem;
+  }
+
+  .about-me p{
+    font-size: 1.3rem;
+    margin-top: -1rem;
   }
 
   .content {
