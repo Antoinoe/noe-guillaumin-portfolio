@@ -15,8 +15,8 @@
         </div>
         <div class="pageBody">
             <div class="chapter">
-                <h3 class="chapterTitle">Chapter Title</h3>
-                <h4 class="chapterSubTitle">1. Chapter Subtitle</h4>
+                <h3>Chapter Title</h3>
+                <h4>1. Chapter Subtitle</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae unde, natus rem cumque non odit
                     maiores libero quasi accusantium excepturi itaque esse facilis expedita, corrupti placeat. Amet
                     perferendis quos qui.
@@ -30,7 +30,7 @@
                     explicabo quidem. Cum itaque maiores temporibus expedita amet! Illum, expedita voluptatum? Repellat
                     quisquam laudantium totam delectus ut?
                     Enim, maxime deserunt vel corrupti consequuntur</p>
-                <h4 class="chapterSubTitle">2. Chapter Subtitle</h4>
+                <h4>2. Chapter Subtitle</h4>
                 <p>dolor expedita nihil necessitatibus distinctio illo inventore natus amet sit officiis incidunt saepe,
                     dicta accusantium delectus molestias fugiat beatae aliquam harum! Illum, asperiores fuga?
                     Sunt dolor aliquam animi quia eos accusamus sint repellat ullam doloremque hic odio eveniet, culpa
@@ -59,7 +59,7 @@
                     repellat, consequuntur autem?</p>
             </div>
             <div class="chapter">
-                <h3 class="chapterTitle">Chapter Title</h3>
+                <h3>Chapter Title</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sit dolorum nam iure dicta est.
                     Labore sed suscipit quae commodi quaerat facere provident? Error facilis repellat totam, minus
                     voluptas velit.</p>
