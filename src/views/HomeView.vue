@@ -18,7 +18,7 @@
     </div>
 
     <div class="vignette">
-      <img :src="isEasterEggActive ? 'img/space_dreamer_25-modified.webp' : 'img/noeguillaumin_pp_circled-min.png'"
+      <img :src="isEasterEggActive ? 'img/space_dreamer_25-modified.png' : 'img/noeguillaumin_pp_circled-min.png'"
         alt="Photo de profil de Noé Guillaumin" class="profile-picture" @click="easterEggClick">
 
       <div class="about-me">
