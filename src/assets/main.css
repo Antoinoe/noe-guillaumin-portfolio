@@ -9,6 +9,19 @@ body {
   padding: 0;
 }
 
+.codeBlock{
+  border: solid;
+  border-width: 3px;
+  border-radius: 5px;
+  display: block;
+  width: fit-content;
+  text-align: center;
+}
+
+code{
+  margin: 1rem;
+}
+
 .pageContent {
   margin: 0;
 }
@@ -105,6 +118,16 @@ body {
   text-align: justify;
 }
 
+.chapter a{
+  text-decoration: none;
+  color: var(--dark-bluegreen);
+}
+
+.chapter a:hover{
+  text-decoration: underline;
+  color: var(--mid-bluegreen);
+}
+
 .captionText {
   text-align: center;
   font-family: sans-serif;
@@ -174,6 +197,11 @@ body {
     margin: 0rem 2rem;
   }
 
+  .chapter a{
+    color: var(--mid-bluegreen);
+    text-decoration: none;
+  }
+
   .captionedImage p {
     text-align: center;
     margin: 0;
@@ -182,7 +210,7 @@ body {
   .githubIcon {
     position: absolute;
     top: 180px;
-    right: 1rem;
+    right: 50rem;
   }
 
   .chapter h4 {

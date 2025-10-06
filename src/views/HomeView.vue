@@ -18,7 +18,7 @@
     </div>
 
     <div class="vignette">
-      <img :src="isEasterEggActive ? 'img/space_dreamer_25-modified.png' : 'img/noeguillaumin_pp_circled-min.png'"
+      <img :src="isEasterEggActive ? 'img/space_dreamer_25-modified.webp' : 'img/noeguillaumin_pp_circled-min.webp'"
         alt="Photo de profil de Noé Guillaumin" class="profile-picture" @click="easterEggClick">
 
       <div class="about-me">
@@ -31,203 +31,67 @@
         <div class="thumbnailContainer">
           <router-link class="thumb-link" to="/olfactorymap">
             <Thumbnail thumbnailTitle="2D Olfactory Map"
-              thumbnailSubtitle="A solution to map olfactory data in VR applications. A solution to map olfactory data in VR applications. A solution to map olfactory data in VR applications. A solution to map olfactory data in VR applications. A solution to map olfactory data in VR applications. A solution to map olfactory data in VR applications. A solution to map olfactory data in VR applications. A solution to map olfactory data in VR applications. A solution to map olfactory data in VR applications. "
-              imageSrc="/img/xrtp_1.webp" tags="2025 - DevTool - Unity"></Thumbnail>
+              thumbnailSubtitle="A texture-based solution to map olfactory data in VR applications."
+              imageSrc="/img/smell_map_visual.webp" tags="2025 - DevTool - Unity"></Thumbnail>
           </router-link>
           <router-link class="thumb-link" to="/dynamicweathersystem">
             <Thumbnail thumbnailTitle="Dynamic Weather System"
-              thumbnailSubtitle="Modify the celestial environment based on environmental and temporal data"
-              imageSrc="/img/nono_croped.jpg" tags="2024 - VR - Unity"></Thumbnail>
-          </router-link>
-          <router-link class="thumb-link" to="/contact">
-            <Thumbnail thumbnailTitle="Pyramidal Hologram" thumbnailSubtitle="Sous-titre"
-              imageSrc="/img/noeguillaumin_pp_circled-min.png" tags="2024 - VR - Unity"></Thumbnail>
+              thumbnailSubtitle="Modify weather and daytime cycles based on real-time environmental data."
+              imageSrc="/img/xrtp_1.webp" tags="2024 - VR - Unity"></Thumbnail>
           </router-link>
         </div>
       </div>
       <div class="category">
         <h2 class="categoryTitle">Video Games</h2>
         <div class="thumbnailContainer">
-          <router-link class="thumb-link" to="/contact">
-            <Thumbnail thumbnailTitle="Murphy's Escape" thumbnailSubtitle="Sous-titre" imageSrc="/img/xrtp_1.webp"
-              tags="2024 - VR - Unity"></Thumbnail>
-          </router-link>
-          <router-link class="thumb-link" to="/contact">
-            <Thumbnail thumbnailTitle="Xenos Heresy" thumbnailSubtitle="Sous-titre" imageSrc="/img/xrtp_1.webp"
-              tags="2024 - VR - Unity"></Thumbnail>
-          </router-link>
-          <router-link class="thumb-link" to="/contact">
-            <Thumbnail thumbnailTitle="Yeet The Gift" thumbnailSubtitle="Sous-titre" imageSrc="/img/xrtp_1.webp"
-              tags="2024 - VR - Unity"></Thumbnail>
-          </router-link>
-          <router-link class="thumb-link" to="/contact">
-            <Thumbnail thumbnailTitle="Ocultas" thumbnailSubtitle="Sous-titre" imageSrc="/img/xrtp_1.webp"
-              tags="2024 - VR - Unity"></Thumbnail>
-          </router-link>
-          <router-link class="thumb-link" to="/contact">
-            <Thumbnail thumbnailTitle="Save The Office" thumbnailSubtitle="Sous-titre" imageSrc="/img/xrtp_1.webp"
-              tags="2024 - VR - Unity"></Thumbnail>
-          </router-link>
+          <a href="https://oceane-famechon.itch.io/murphys-escape" target="_blank">
+            <Thumbnail thumbnailTitle="Murphy's Escape"
+              thumbnailSubtitle="Everytime you finish the level, it restart, but with more stuff. Will you ever escape the loop?"
+              imageSrc="/img/murphys_escape.webp" tags="2020 - GameJam - Unity"></Thumbnail>
+          </a>
+          <a href="https://faraldram.itch.io/xenos-heresy" target="_blank">
+            <Thumbnail thumbnailTitle="Xenos Heresy"
+              thumbnailSubtitle="Turn by turn strategy mobile game. Available on Google Playstore."
+              imageSrc="/img/xenos_heresy.webp" tags="2021 - School Project - Unity"></Thumbnail>
+          </a>
+          <a href="https://baptiste-figeac.itch.io/yeet-the-gift" target="_blank">
+            <Thumbnail thumbnailTitle="Yeet The Gift"
+              thumbnailSubtitle="As Santa, your elves start to rebel. Punish them by yeeting gift at them using your 'Gift Bazooka'."
+              imageSrc="/img/yeet_the_gift.webp" tags="2021 - GameJam - UnrealEngine"></Thumbnail>
+          </a>
+          <a href="https://lucasvh.itch.io/ocultas" target="_blank">
+            <Thumbnail thumbnailTitle="Ocultas"
+              thumbnailSubtitle="Couch Game. Find your friends among impostors, without being catched first!"
+              imageSrc="/img/ocultas.webp" tags="2022 - School Project - Unity"></Thumbnail>
+          </a>
+          <a href="https://minstery.itch.io/save-the-office" target="_blank">
+            <Thumbnail thumbnailTitle="Save The Office"
+              thumbnailSubtitle="Looking for someone to save the office!!! Theme : 'Super hero of a new kind'."
+              imageSrc="/img/save_the_office.webp" tags="2020 - GameJam - Unity"></Thumbnail>
+          </a>
         </div>
       </div>
       <div class="category">
         <h2 class="categoryTitle">Professional Experiences</h2>
         <div class="thumbnailContainer">
-          <router-link class="thumb-link" to="/contact">
-            <Thumbnail thumbnailTitle="Obvious Technologies" thumbnailSubtitle="Sous-titre" imageSrc="/img/xrtp_1.webp"
-              tags="2024 - VR - Unity"></Thumbnail>
-          </router-link>
-          <router-link class="thumb-link" to="/contact">
-            <Thumbnail thumbnailTitle="INRIA" thumbnailSubtitle="Sous-titre" imageSrc="/img/xrtp_1.webp"
-              tags="2024 - VR - Unity"></Thumbnail>
-          </router-link>
-          <router-link class="thumb-link" to="/contact">
-            <Thumbnail thumbnailTitle="Farm3" thumbnailSubtitle="Sous-titre" imageSrc="/img/xrtp_1.webp"
-              tags="2024 - VR - Unity"></Thumbnail>
-          </router-link>
-        </div>
-      </div>
-      <div class="category">
-        <h2 class="categoryTitle">Others</h2>
-        <div class="thumbnailContainer">
-          <router-link class="thumb-link" to="/contact">
-            <Thumbnail thumbnailTitle="Titre" thumbnailSubtitle="Sous-titre" imageSrc="/img/xrtp_1.webp"
-              tags="2024 - VR - Unity"></Thumbnail>
-          </router-link>
-          <router-link class="thumb-link" to="/contact">
-            <Thumbnail thumbnailTitle="Titre" thumbnailSubtitle="Sous-titre" imageSrc="/img/xrtp_1.webp"
-              tags="2024 - VR - Unity"></Thumbnail>
-          </router-link>
-          <router-link class="thumb-link" to="/contact">
-            <Thumbnail thumbnailTitle="Titre" thumbnailSubtitle="Sous-titre" imageSrc="/img/xrtp_1.webp"
-              tags="2024 - VR - Unity"></Thumbnail>
-          </router-link>
+          <a href="https://oodaworld.com/fr/" target="_blank">
+            <Thumbnail thumbnailTitle="Obvious Technologies"
+              thumbnailSubtitle="Worked on 'OODA', a command & control platform that aggregates multi-source data in 3D, enabling users to observe, orient, decide, and act in real time."
+              imageSrc="/img/obvious_technologies_logo.webp" tags="2024 - Unity3D - MVCS Architecture"></Thumbnail>
+          </a>
+          <a href="https://team.inria.fr/hybrid/" target="_blank">
+            <Thumbnail thumbnailTitle="INRIA"
+              thumbnailSubtitle="Developped a Unity3D application for a research publication on pseudo-haptic feedback in VR. Research paper to be published soon at the IHM2025 conference."
+              imageSrc="/img/inria_logo_red.png" tags="2023 - AR/VR - Unity"></Thumbnail>
+          </a>
+          <a href="https://www.farmcube.eu" target="_blank">
+            <Thumbnail thumbnailTitle="Farm3"
+              thumbnailSubtitle="Developped an application to better manage vertical farming equipment using XR technologies."
+              imageSrc="/img/farm3_logo.png" tags="2022 - XR - Unity3D"></Thumbnail>
+          </a>
         </div>
       </div>
     </div>
-
-    <!-- <div class="test">
-    <h3 class="categoryTitle">Category</h3>
-    <div class="thumbnailContainer">
-      <router-link to="/contact" class="thumb-link">
-        <Thumbnail 
-        thumbnailTitle="2D Olfctory Map"
-        thumbnailSubtitle="A solution to map olfactory data in VR applications." 
-        imageSrc="/img/xrtp_1.webp
-        tags="2024 - VR - Unity 
-      />
-      </router-link>
-      
-      <router-link to="/contact" class="thumb-link">
-        <Thumbnail 
-          thumbnailTitle="Dynamic Weather System"
-          thumbnailSubtitle="A solution to map olfactory data in VR applications." 
-          imageSrc="/img/xrtp_1.webp"
-          tags="2024 - VR - Unity" 
-        />
-      </router-link>
-      <Thumbnail 
-        thumbnailTitle="My experience at Farm3"
-        thumbnailSubtitle="A solution to map olfactory data in VR applications." 
-        imageSrc="/img/xrtp_1.webp"
-        tags="2024 - VR - Unity" 
-      />
-      
-      <router-link to="/contact" class="thumb-link">
-        <Thumbnail 
-          thumbnailTitle="My experience at INRIA"
-          thumbnailSubtitle="A solution to map olfactory data in VR applications." 
-          imageSrc="/img/xrtp_1.webp"
-          tags="2024 - VR - Unity" 
-        />
-      </router-link>
-    </div>
-    <h3 class="categoryTitle">Category</h3>
-    <div class="thumbnailContainer">
-      <router-link to="/contact" class="thumb-link">
-        <Thumbnail 
-          thumbnailTitle="My experience at Obvious Technologies"
-          thumbnailSubtitle="A solution to map olfactory data in VR applications." 
-          imageSrc="/img/xrtp_1.webp"
-          tags="2024 - VR - Unity" 
-        />
-      </router-link>
-
-      <a class ="thumbnailRedirection" href="https://lucasvh.itch.io/ocultas" target="_blank">
-        <Thumbnail 
-          thumbnailTitle="Xenos Heresy"
-          thumbnailSubtitle="A solution to map olfactory data in VR applications." 
-          imageSrc="/img/xrtp_1.webp"
-          tags="2024 - VR - Unity" 
-        />
-      </a>
-
-      <a class ="thumbnailRedirection" href="https://lucasvh.itch.io/ocultas" target="_blank">
-        <Thumbnail 
-          thumbnailTitle="Yeet The Gift"
-          thumbnailSubtitle="A solution to map olfactory data in VR applications." 
-          imageSrc="/img/xrtp_1.webp"
-          tags="2024 - VR - Unity" 
-        />
-      </a>
-
-      <a class ="thumbnailRedirection" href="https://lucasvh.itch.io/ocultas" target="_blank">
-        <Thumbnail 
-          thumbnailTitle="Ocultas"
-          thumbnailSubtitle="A solution to map olfactory data in VR applications." 
-          imageSrc="/img/xrtp_1.webp"
-          tags="2024 - VR - Unity" 
-        />
-      </a>
-
-      <a class ="thumbnailRedirection" href="https://lucasvh.itch.io/ocultas" target="_blank">
-        <Thumbnail 
-          thumbnailTitle="Murphy's Escape"
-          thumbnailSubtitle="A solution to map olfactory data in VR applications." 
-          imageSrc="/img/xrtp_1.webp"
-          tags="2024 - VR - Unity" 
-        />
-      </a>
-
-      <a class ="thumbnailRedirection" href="https://lucasvh.itch.io/ocultas" target="_blank">
-        <Thumbnail 
-          thumbnailTitle="Save The Office"
-          thumbnailSubtitle="A solution to map olfactory data in VR applications." 
-          imageSrc="/img/xrtp_1.webp"
-          tags="2024 - VR - Unity" 
-        />
-      </a>
-
-      <router-link to="/contact" class="thumb-link">
-        <Thumbnail 
-          thumbnailTitle="My vision of Solarpunk"
-          thumbnailSubtitle="A solution to map olfactory data in VR applications." 
-          imageSrc="/img/xrtp_1.webp"
-          tags="2024 - VR - Unity" 
-        />
-      </router-link>
-
-      <router-link to="/contact" class="thumb-link">
-        <Thumbnail 
-          thumbnailTitle="Why Virtual Reality is useful?"
-          thumbnailSubtitle="A solution to map olfactory data in VR applications." 
-          imageSrc="/img/xrtp_1.webp"
-          tags="2024 - VR - Unity" 
-        />
-      </router-link>
-      </div> 
-    </div>-->
-
-    <!-- <div class="links">
-      <div class="linkItem"><router-link to="/projects">Projects</router-link></div>
-      <div class="linkItem"><router-link to="/experiences">Experiences</router-link></div>
-      <div class="linkItem"><router-link to="/education">Education</router-link></div>
-    </div>
-
-    <div class="contactMe">
-      <p>Did I catch your attention?</p>
-      <div class="linkItem"><router-link to="/contact">Contacte Me</router-link></div>
-    </div> -->
   </div>
 </template>
 
@@ -431,6 +295,7 @@ body .easterEgg {
   margin-left: -1rem;
 }
 
+.thumbnailContainer a,
 .thumb-link {
   margin: 1rem;
   max-width: 250px;
@@ -496,7 +361,7 @@ body .easterEgg {
     margin-bottom: -3rem;
   }
 
-  .about-me p{
+  .about-me p {
     font-size: 1.3rem;
     margin-top: -1rem;
   }

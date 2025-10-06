@@ -73,7 +73,7 @@ h3 {
 h4.thumbnailSubtitle {
     font-family: "Montserrat";
     font-weight: 300;
-    font-size: clamp(11px, 0.8vw, 16px);
+    font-size: clamp(10px, 0.7vw, 16px);
     text-align: center;
     flex-shrink: 1;
     color: var(--pure-white);
