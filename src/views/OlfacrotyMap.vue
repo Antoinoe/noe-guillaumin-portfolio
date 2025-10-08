@@ -203,11 +203,11 @@
     }
 
     .combinedColliderBox {
-        width: 180%;
-        margin-left: -40%;
+        width: 100%;
+        margin-left: 0%;
     }
 
-    .smell0 {
+    /* .smell0 {
         width: 150%;
         margin-left: -25%;
     }
@@ -215,6 +215,6 @@
     .drawioOI1 {
         width: 180%;
         margin-left: -40%;
-    }
+    } */
 }
 </style>

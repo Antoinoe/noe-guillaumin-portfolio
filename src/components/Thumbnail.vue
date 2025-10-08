@@ -87,7 +87,7 @@ h4.thumbnailSubtitle {
     margin-top: auto;
 }
 
-@media (max-width : 900px) {
+@media (max-width : 768px) {
     .thumbnail {
         width: 100%;
         height: 75px;

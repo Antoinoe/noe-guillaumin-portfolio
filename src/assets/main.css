@@ -35,6 +35,7 @@ ul.dashed > li:before {
     content: "-";
     width: 1em;
     margin-left: -1em;
+    font-weight: bold;
 }
 
 li {
@@ -120,7 +121,7 @@ figure {
 }
 
 figure img {
-  display: block;
+  display: inline;
   margin-left: 25%;
   width: 50%;
 }
@@ -182,7 +183,7 @@ figure img {
   width: 50px;
 }
 
-@media (max-width : 950px) {
+@media (max-width : 768px) {
   .pageBody {
     margin: 1rem;
   }
@@ -234,10 +235,20 @@ figure img {
     margin: 0;
   }
 
+  figure img{
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .captionText{
+    width: 100%;
+  }
+
   .githubIcon {
     position: absolute;
     top: 180px;
-    right: 50rem;
+    right: 3rem;
+    opacity: 80%;
   }
 
   .chapter h4 {
