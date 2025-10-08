@@ -68,7 +68,8 @@
                 <h4>C. Texture-based olfactory data</h4>
                 <p>One possible solution is to use a texture-based approach.</p>
                 <p>Instead of using collider boxes, we use a top-down view of the terrain and paint on separate layers.
-                    Each layer is a texture that represents a specific scent. The transparency <i>(alpha)</i> value of each
+                    Each layer is a texture that represents a specific scent. The transparency <i>(alpha)</i> value of
+                    each
                     pixel defines the intensity of that scent at the corresponding position on the terrain.</p>
                 <p>This allow for better development of feature including olfactory feedback,</p>
                 <p>The 2DOlfactory Map represents each scent as a 2D texture, where the alpha channel defines its
@@ -128,8 +129,9 @@
                     <li>how many scent are available?</li>
                     <li>what are the size of the textures?</li>
                     <li>the player's position</li>
-                    <li>the delay between each requests <i>(you don't want to read all of your textures 60 times per second, but
-                    maybe once or twice every 10 seconds)</i></li>
+                    <li>the delay between each requests <i>(you don't want to read all of your textures 60 times per
+                            second, but
+                            maybe once or twice every 10 seconds)</i></li>
                 </ul>
                 <p>You want to have a structure that looks like this :</p>
                 <figure class="drawioOI1">
@@ -140,7 +142,8 @@
                 </figure>
                 <p>The <b><i>ScentTexReader.cs</i></b> script stores a list of the textures and their corresponding
                     scent and intensity.
-                    When triggered <i>(by the script I'll explain in the next part)</i>, it takes the position of the user in
+                    When triggered <i>(by the script I'll explain in the next part)</i>, it takes the position of the
+                    user in
                     Unity, and map it to each textures. Then, it retrieves the alpha of the pixel on the texture and set
                     it to the intensity value OlfactoryData struct.</p>
                 <h4>C. Communication to the device</h4>
@@ -155,26 +158,105 @@
                     <figcaption class="captionText">Simplified representation of the code architecture for reading the
                         textures and sending the data to the Olfactory Interface</figcaption>
                 </figure>
+                <p>The <b><i>OlfactoryInterfaceManager.cs</i></b> script is the bridge between Uduino, which sends the
+                    data to the device, and the textures on Unity.</p>
+                <p>Every <i>x</i> seconds, the OIManager triggers the TexReader. Going through each OlfactoryData, it
+                    gets the intensity for each scent, and call the AnalogWrite function of the UduinoManager.</p>
+                <p>If you want to know how Uduino works, I can only recommend you to checkout <a
+                        href="https://assetstore.unity.com/packages/tools/input-management/uduino-plugin-wifi-for-esp8266-and-esp32-134187"
+                        target="_blank" class="link">Marc Teyssier's tutorial</a></p>
             </div>
             <div class="chapter">
                 <h3>3. Performance Experiment</h3>
                 <h4>A. Protocol</h4>
-                <p>Je présente les objetcifs de l'experimentation. Je présente ensuite le script qui calcule les
-                    performances</p>
+                <p>This experiment aims to verify these two hypothesis:</p>
+                <ol>
+                    <li>The 2D Olfactory Map system allow smoother and more precise scent transition than collider boxes
+                    </li>
+                    <li>The system is not too cost performant.</li>
+                </ol>
+                <p>Through these evaluations, the experiment seeks to validate the 2D Olfactory Map's practicality and
+                    scalability for large-scale virtual environments.</p>
+                <br>
+                <p>I created an empty project, with only a 512*512m terrain, a fake player and the olfactory maps</p>
+                <p>The fake player would walk by going to points to point accross the terrain several time. The path is
+                    the same everytime. The only things that changes are the walk speed, and the number of map texture
+                    used, and their dimension.</p>
+
+
+                <figure class="expeOi">
+                    <img src="/img/expe_oi.webp" alt="View of the empty terrain from above, with drawn on it the path of
+                        the fake user">
+                    <figcaption class="captionText">View of the empty terrain from above, with drawn on it the path of
+                        the fake user</figcaption>
+                </figure>
+
+                <figure class="expeOiTable">
+                    <img src="/img/expe_oi_table.webp"
+                        alt="Table showing all of the different settings for the experiment">
+                    <figcaption class="captionText">Table showing all of the different settings for the experiment
+                    </figcaption>
+                </figure>
+                <p>In total, 21 different combinaisons were tested.</p>
+                <br>
                 <h4>B. Results</h4>
-                <p>Je présente et décrit les graphiques analysés par python</p>
+                <figure class="resultOiFps">
+                    <img src="/img/Figure_1_fps.webp"
+                        alt="Graph showing the FPS (Frame Per Second) during the test for the main configurations">
+                    <figcaption class="captionText">Graph showing the mean of the FPS (Frame Per Second) during the test
+                        for the main configurations</figcaption>
+                </figure>
+                <p>The frame rate dropped by about half when the system handled four textures. As expected, processing
+                    detailed textures every second affects performance. What I didn't expect, however, was the jittery
+                    frames per second while handling four textures at 1 m/s, and I'm not really sure how to explain
+                    it...</p>
+                <figure class="resultOiPerf">
+                    <img src="/img/Figure_3_performances_fixed.webp"
+                        alt="GPU & CPU performance graph with Q1-Q3 ranges">
+                </figure>
+                <p>Regarding CPU and GPU usage, I thought it would be worse. The GPU doesn't skyrocket when handling
+                    larger textures, but it still consumes some resources.</p>
+                <figure class="resultOiTransition">
+                    <img src="/img/Figure_2_smells_every_seconds_4-1.webp" alt="View of the empty terrain from above, with drawn on it the path of
+                        the fake user">
+                </figure>
+
+                <figure class="resultOiTransition">
+                    <img src="/img/Figure_2_smells_every_seconds_4-3.webp" alt="View of the empty terrain from above, with drawn on it the path of
+                        the fake user">
+                    <figcaption class="captionText">The upper graph shows the scent's intensity transition when the user
+                        moves at 1m/s. The bottom one is the same at 3m/s</figcaption>
+                </figure>
+                <p>The scent transition is very interesting. Both graphs shows how the transition when the user moves
+                    around. The speed makes some scents less intense, like with the wooden bridge : at 3m/s, the user
+                    walk fast on the bridge and won't smell it as if it were going slower.</p>
+
             </div>
             <div class="chapter">
                 <h3>4. Limitations & Future Work</h3>
-                <h4>A. Performances</h4>
-                <p>Je parle ici des performance qui ne sont pas vraiment au niveau. Je parle de la possibilité
-                    de
-                    "chunk" les textures</p>
-                <h4>B. Dynamism</h4>
-                <p>Je parle ici de la possibilité de bouger la texture en fonction du vent. Je parle aussi de la
-                    possibilité de lier ça a un device de ventilation.</p>
-                <h4>C. General Conclusion</h4>
-                <p>Je rappelle les hypothèses et les résultats</p>
+                <p>Using collider boxes to represent smells in 3D application is complicated on a large scale. The 2D
+                    Olfactory Map project aims to facilitate the development of such application by reading scent
+                    intensity through textures. We showed how to create the textures, read them and send their value to
+                    the Olfactory Interface.</p>
+                <p>The results showed that it is unfortunately cost performant as for the frame per seconds, but show in
+                    return a greater precision in scent intentity transition when the user moves.</p>
+                <p>An interesting improvement would be to link these texture with other environmental data such as the
+                    wind. A simple example would be that when the wind is going to the north, the texture, would move
+                    too a little bit, because the smell is transported by the wind.</p>
+                <p>However, this might just take more resources for little effect.</p>
+                <figure class="oiWind">
+                    <img src="/img/oi_wind.webp"
+                        alt="A visualisation of how a 2D Olfactory Map could change based on the wind.">
+                    <figcaption class="captionText">A visualisation of how a 2D Olfactory Map could change based on the
+                        wind. A : Normal. B : Wind</figcaption>
+                </figure>
+                <p>An attempt to improve the performances would be to divide the textures into chunks, and the scripts
+                    only read the chunk where the user is at. This lower the number of pixels to read for each scent,
+                    and could be adapted to different computer configuration to make the application more accessible.
+                </p>
+                <p>It would have taken thousands of collider boxes to achieve the same result, and the performances and
+                    the management of the project would have been a nightmare. Here we only have one texture per scent,
+                    which makes the project more managable, and more scalable.</p>
             </div>
         </div>
     </div>
@@ -195,26 +277,36 @@
     margin-left: 30%;
 }
 
+.expeOi {
+    width: 50%;
+    margin-left: 25%;
+}
+
+.expeOiTable {
+    width: 50%;
+    margin-left: 25%;
+}
+
 @media (max-width: 768px) {
 
     .simpleColliderBox {
-        width: 100%;
-        margin-left: 0;
+        width: 60%;
+        margin-left: 20%;
     }
 
     .combinedColliderBox {
-        width: 100%;
-        margin-left: 0%;
+        width: 90%;
+        margin-left: 5%;
     }
 
-    /* .smell0 {
-        width: 150%;
-        margin-left: -25%;
+    .expeOi {
+        width: 60%;
+        margin-left: 20%;
     }
 
-    .drawioOI1 {
-        width: 180%;
-        margin-left: -40%;
-    } */
+    .expeOiTable {
+        width: 80%;
+        margin-left: 10%;
+    }
 }
 </style>
