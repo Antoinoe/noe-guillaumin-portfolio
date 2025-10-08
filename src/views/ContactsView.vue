@@ -1,10 +1,8 @@
 <script>
 import PageTitle from '../components/PageTitle.vue';
-import Navbar from '../components/NavBar.vue';
 export default {
     components: {
         PageTitle,
-        Navbar
     }
 }
 </script>

@@ -96,12 +96,11 @@
 </template>
 
 <script>
-import HomeNavItem from '../components/HomeNavItem.vue';
 import Thumbnail from '../components/Thumbnail.vue';
 import { RouterLink } from 'vue-router';
 export default {
   components: {
-    HomeNavItem, Thumbnail
+    Thumbnail
   }
 }
 </script>
@@ -335,7 +334,7 @@ body .easterEgg {
   align-self: center;
 }
 
-@media (max-width: 950px) {
+@media (max-width: 768px) {
 
   .helloText {
     width: 100%;
