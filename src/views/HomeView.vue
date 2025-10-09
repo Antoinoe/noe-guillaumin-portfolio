@@ -9,12 +9,12 @@
       <div class="subHelloText">
         Immersive Software Developer
       </div>
-      <div class="warning">
+      <!-- <div class="warning">
         <p v-if="!isEasterEggActive">
           This website is under construction and some info is missing / not updated.
           Thank you for your comprehension.
         </p>
-      </div>
+      </div> -->
     </div>
 
     <div class="vignette">
@@ -37,10 +37,10 @@
               thumbnailSubtitle="A texture-based solution to map olfactory data in VR applications."
               imageSrc="/img/smell_map_visual.webp" tags="2025 - DevTool - Unity"></Thumbnail>
           </router-link>
-          <router-link class="thumb-link" to="/dynamicweathersystem">
+          <router-link class="thumb-link" to="/">
             <Thumbnail thumbnailTitle="Dynamic Weather System"
               thumbnailSubtitle="Modify weather and daytime cycles based on real-time environmental data."
-              imageSrc="/img/xrtp_1.webp" tags="2024 - VR - Unity"></Thumbnail>
+              imageSrc="/img/xrtp_1.webp" tags="2024 - VR - Unity" commingSoon="true"></Thumbnail>
           </router-link>
         </div>
       </div>
@@ -92,6 +92,21 @@
               thumbnailSubtitle="Developped an application to better manage vertical farming equipment using XR technologies."
               imageSrc="/img/farm3_logo.png" tags="2022 - XR - Unity3D"></Thumbnail>
           </a>
+        </div>
+      </div>
+            <div class="category">
+        <h2 class="categoryTitle">Articles</h2>
+        <div class="thumbnailContainer">
+          <router-link class="thumb-link" to="/">
+            <Thumbnail thumbnailTitle="An introduction to Solarpunk"
+              thumbnailSubtitle="Comming Soon !"
+              imageSrc="/img/solarpunk_flag.webp" tags="2025 - Article - Society" commingSoon="true"></Thumbnail>
+          </router-link>
+          <router-link class="thumb-link" to="/">
+            <Thumbnail thumbnailTitle="Why virtual reality is important"
+              thumbnailSubtitle="Comming Soon !"
+              imageSrc="/img/vr_thumbnail.webp" tags="2024 - VR - Unity" commingSoon="true"></Thumbnail>
+          </router-link>
         </div>
       </div>
       <div class="category">

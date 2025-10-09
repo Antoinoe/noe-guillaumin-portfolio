@@ -1,5 +1,5 @@
 <template>
-    <div class="thumbnail">
+    <div class="thumbnail" :class="{ 'not-ready': commingSoon }">
         <h3>{{ thumbnailTitle }}</h3>
         <img :src="imageSrc" alt="thumbnail picture" width="240" />
         <h4 class="thumbnailSubtitle">{{ thumbnailSubtitle }}</h4>
@@ -15,6 +15,10 @@ export default {
         thumbnailSubtitle: String,
         tags: String,
         imageSrc: String,
+        commingSoon : {
+            type : Boolean,
+            default : false
+        }
     }
 }
 </script>
@@ -39,6 +43,13 @@ export default {
     overflow: hidden;
     cursor: pointer;
     transition: ease 0.2s;
+}
+
+/* Si le projet n'est pas prêt */
+.thumbnail.not-ready {
+  filter: grayscale(1);     /* passe tout en niveaux de gris */
+  opacity: 0.6;             /* rend la vignette un peu transparente */
+  cursor:default;      /* curseur désactivé */
 }
 
 .thumbnail:hover {
