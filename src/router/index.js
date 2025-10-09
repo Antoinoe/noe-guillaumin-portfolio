@@ -1,18 +1,18 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import Education from '../views/EducationView.vue';
-import Experiences from '../views/ExperiencesView.vue';
-import Projects from '../views/ProjectsView.vue';
-import Contact from '../views/ContactsView.vue'
+import Dev from '../views/Dev.vue'
+import Template from '../views/PageTemplate.vue'
+import OlfactoryMap from '../views/OlfacrotyMap.vue'
+import DynamicWeatherSystem from '../views/DynamicWeatherSystem.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
-    { path: '/', component: HomeView },
-    { path: '/Education', component: Education },
-    { path: '/Experiences', component: Experiences },
-    { path: '/Projects', component: Projects },
-    { path: '/Contact', component: Contact },
+    { path: '/', component: HomeView, name: "home" },
+    { path: '/Dev', component: Dev , name: "dev"},
+    { path: '/Template', component: Template , name: "template"},
+    { path: '/OlfactoryMap', component: OlfactoryMap , name: "olfactorymap"},
+    { path: '/DynamicWeatherSystem', component: DynamicWeatherSystem , name: "dynamic_weather_system"}
   ]
 })
 
