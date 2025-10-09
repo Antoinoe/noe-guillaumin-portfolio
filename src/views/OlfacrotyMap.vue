@@ -2,7 +2,7 @@
     <div class="pageContent">
         <div class="pageHeader">
 
-            <img class="headerImage" src="/img/xrtp_1.webp" alt="Header Image">
+            <img class="headerImage" src="/img/smells_thumbnail.webp" alt="Header Image">
             <div class="headerOverlay">
                 <h2 class="headerPageTitle">2D Olfactory Map</h2>
                 <p class="headerTags">2025 - DevTool - Unity</p>
