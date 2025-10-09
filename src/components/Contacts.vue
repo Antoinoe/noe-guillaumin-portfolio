@@ -47,6 +47,13 @@ export default {
     margin: 0.4rem;
 }
 
+#contactContent{
+    display: block;
+    background-color:   #c7c7c7;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 1rem;
+}
 #contactContent p{
     font-size: 22px;
     margin: 0.4rem;
@@ -75,12 +82,15 @@ export default {
 
 @media (max-width : 768px) {
     .contactItem {
-        justify-content: center;
+        justify-content: left;
     }
 
     #contactContent p, .contactTitle{
         font-size: 16px;
-        margin: 0.4rem;
+    }
+    #contactContent{
+        margin: 0;
+        width: 100%;
     }
 }
 </style>

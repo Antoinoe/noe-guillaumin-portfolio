@@ -39,7 +39,7 @@
           </router-link>
           <router-link class="thumb-link" to="/">
             <Thumbnail thumbnailTitle="Dynamic Weather System"
-              thumbnailSubtitle="Modify weather and daytime cycles based on real-time environmental data."
+              thumbnailSubtitle="Comming Soon !"
               imageSrc="/img/xrtp_1.webp" tags="2024 - VR - Unity" commingSoon="true"></Thumbnail>
           </router-link>
         </div>
@@ -417,8 +417,12 @@ body .easterEgg {
   }
 
   .contactMe {
-    margin-top: 1rem;
-    margin-bottom: 1em;
+    margin-top: 2rem;
+    margin-bottom: 0.5em;
+  }
+
+  .contactMe a{
+    font-size: clamp(32px, 4vw, 36px);
   }
 
   .thumbnailContainer {

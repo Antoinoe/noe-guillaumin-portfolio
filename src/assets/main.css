@@ -82,15 +82,16 @@ ul>li::marker {
 
 .returnToHomePage {
   position: absolute;
+  font-weight: 600;
   color: white;
   top: 3rem;
   left: 3rem;
-  opacity: 0.7;
+  opacity: 1;
   transition: ease 0.2s;
 }
 
 .returnToHomePage:hover {
-  opacity: 1;
+  opacity: 0.7;
   transition: ease 0.2s;
 }
 
@@ -168,14 +169,14 @@ figure img {
 
 .githubIcon {
   position: absolute;
-  top: 270px;
+  top: 370px;
   right: 3rem;
-  opacity: 0.5;
+  opacity: 1;
   transition: ease 0.2s;
 }
 
 .githubIcon:hover {
-  opacity: 1;
+  opacity: 0.7;
   transition: ease 0.2s;
 }
 
