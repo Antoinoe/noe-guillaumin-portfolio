@@ -25,6 +25,9 @@
         <p>From video game conception to VR application for research, checkout what I did over the last few years!</p>
       </div>
     </div>
+    <div class="contactMe">
+      <a href="#contactContent">Contact Me!</a>
+    </div>
     <div class="content">
       <div class="category">
         <h2 class="categoryTitle">Virtual & Augmented Reality</h2>
@@ -93,7 +96,7 @@
       </div>
       <div class="category">
         <h2 class="categoryTitle">Contacts</h2>
-        <Contacts/>
+        <Contacts />
       </div>
     </div>
   </div>
@@ -185,7 +188,7 @@ body .easterEgg {
 }
 
 .subHelloText {
-  padding: 20px;
+  padding-top: 1rem;
   color: var(--mid-bluegreen);
   font-family: "Montserrat";
   font-size: 24px;
@@ -308,8 +311,7 @@ body .easterEgg {
 
 .contactMe {
   display: inline;
-  margin-top: 3rem;
-  color: var(--pure-black);
+  color: var(--dark-bluegreen);
   font-family: "Montserrat";
   font-size: clamp(30px, 4vw, 36px);
   text-align: center;
@@ -318,21 +320,28 @@ body .easterEgg {
 .contactMe a {
   margin-left: 10px;
   text-decoration: none;
-  color: var(--pure-black);
+  color: var(--dark-bluegreen);
+  
   font-family: "Sansation";
   font-size: clamp(24px, 4vw, 36px);
 
-  padding: 1rem;
+  padding: 0.5rem;
 
   border-style: solid;
   border-width: 3px;
-  border-radius: 25px;
+  border-radius: 15px;
 
   align-content: center;
+  transition: ease 0.3s;
+  box-shadow: 4px 4px 2px 1px rgba(0, 48, 32, 0.5);
 }
 
 .contactMe a:hover {
-  color: var(--mid-bluegreen);
+  color: var(--pure-white);
+  background-color: var(--dark-bluegreen);
+  border-color: var(--dark-bluegreen);
+  transition: ease 0.3s;
+  box-shadow: 3px 3px 2px 1px rgba(0, 48, 32, 0.7);
 }
 
 .contactMe .linkItem {
@@ -344,7 +353,13 @@ body .easterEgg {
   .helloText {
     width: 100%;
     margin: 0;
-    font-size: 2rem;
+    font-size: 3rem;
+    margin-bottom: -2rem;
+  }
+
+  .subHelloText {
+    margin: 0;
+    padding-top: 0;
   }
 
   .vignette {
@@ -387,6 +402,7 @@ body .easterEgg {
   }
 
   .contactMe {
+    margin-top: 1rem;
     margin-bottom: 1em;
   }
 

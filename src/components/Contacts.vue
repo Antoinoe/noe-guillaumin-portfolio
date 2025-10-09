@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-    <div class="contactContent">
+    <div id="contactContent">
         <div class="contactItem">
             <p class="contactTitle">Email : </p>
             <p class="contactContent">noeguillaumin@gmail.com</p>
@@ -37,19 +37,20 @@ export default {
 
 <style scoped>
 
-.contactContent{
-    /* margin-top: 2rem; */
-}
-
 .contactItem {
     display: flex;
     justify-content: flex-start;
 }
 
-    .contactContent, .contactTitle{
-        font-size: 22px;
-        margin: 0.4rem;
-    }
+.contactTitle{
+    font-size: 22px;
+    margin: 0.4rem;
+}
+
+#contactContent p{
+    font-size: 22px;
+    margin: 0.4rem;
+}
 
 .contactTitle {
     font-family: "Sansation";
@@ -77,7 +78,7 @@ export default {
         justify-content: center;
     }
 
-    .contactContent, .contactTitle{
+    #contactContent p, .contactTitle{
         font-size: 16px;
         margin: 0.4rem;
     }
