@@ -1,6 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import Contact from '../views/ContactsView.vue'
 import Dev from '../views/Dev.vue'
 import Template from '../views/PageTemplate.vue'
 import OlfactoryMap from '../views/OlfacrotyMap.vue'
@@ -10,7 +9,6 @@ const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     { path: '/', component: HomeView, name: "home" },
-    { path: '/Contact', component: Contact , name: "contact"},
     { path: '/Dev', component: Dev , name: "dev"},
     { path: '/Template', component: Template , name: "template"},
     { path: '/OlfactoryMap', component: OlfactoryMap , name: "olfactorymap"},

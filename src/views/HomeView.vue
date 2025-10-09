@@ -91,16 +91,21 @@
           </a>
         </div>
       </div>
+      <div class="category">
+        <h2 class="categoryTitle">Contacts</h2>
+        <Contacts/>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 import Thumbnail from '../components/Thumbnail.vue';
+import Contacts from '../components/Contacts.vue';
 import { RouterLink } from 'vue-router';
 export default {
   components: {
-    Thumbnail
+    Thumbnail, Contacts
   }
 }
 </script>

@@ -20,8 +20,6 @@ export default {
 </script>
 
 <style scoped>
-@import url('../assets/tools.css');
-@import url('../assets/fonts.css');
 
 .thumbnail {
     height: 320px;
