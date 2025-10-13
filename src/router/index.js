@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import home from '../views/HomeView.vue'
 import dev from '../views/Dev.vue'
 import template from '../views/PageTemplate.vue'
-import olfactorymap from '../views/OlfacrotyMap.vue'
+import olfactorymap from '../views/OlfactoryMap.vue'
 import dynamicweathersystem from '../views/DynamicWeatherSystem.vue'
 
 const router = createRouter({
