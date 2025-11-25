@@ -10,8 +10,8 @@
   /*2025 color code*/
   --pure-white: #ffffff;
   --pure-black: #000000;
-  --dark-bluegreen: rgb(0, 48, 32);
-  --dark-bluegreen-05alpha: rgb(0, 48, 32, 0.5);
-  --dark-bluegreen-07alpha: rgb(0, 48, 32, 0.7);
-  --mid-bluegreen: #0E6F31
+  --dark-bluegreen: #0b5d37;
+  --dark-bluegreen-05alpha: #00302080;
+  --dark-bluegreen-07alpha: #003020b3;
+  --mid-bluegreen: #148844;
 }
