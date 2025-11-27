@@ -28,6 +28,9 @@
     <div class="contactMe">
       <a href="#contactContent">Contact Me!</a>
     </div>
+    <div class="contactMe">
+      <a target="_blank" href="/pdf/noe_guillaumin_cv_25.pdf" download>Download my resume</a>
+    </div>
     <div class="content">
       <div class="category">
         <h2 class="categoryTitle">Virtual & Augmented Reality</h2>
@@ -97,6 +100,11 @@
             <div class="category">
         <h2 class="categoryTitle">Articles</h2>
         <div class="thumbnailContainer">
+          <a href="https://hal.science/hal-05294843/" target="_blank">
+            <Thumbnail thumbnailTitle="Research Paper"
+              thumbnailSubtitle="Flexible Reality: Can Pseudo-Haptics Enhance Vibration Intensity Perception in Co-Located AR Interaction?"
+              imageSrc="/img/flexible-reality.webp" tags="2025 - Research - VR - Haptics - Unity"></Thumbnail>
+          </a>
           <router-link class="thumb-link" to="/">
             <Thumbnail thumbnailTitle="An introduction to Solarpunk"
               thumbnailSubtitle="Comming Soon !"
@@ -298,6 +306,7 @@ body .easterEgg {
 }
 
 .content {
+  margin-top: -1rem;
   margin-left: 6rem;
   margin-right: 6rem;
 }
@@ -325,11 +334,12 @@ body .easterEgg {
 }
 
 .contactMe {
-  display: inline;
+  display: block;
   color: var(--dark-bluegreen);
   font-family: "Montserrat";
   font-size: clamp(30px, 4vw, 36px);
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 .contactMe a {
