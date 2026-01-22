@@ -27,7 +27,7 @@ export default {
             <p class="contactContent"></p>
         </div>
         <div class="contactItem">
-            <p class="contactTitle"><a target="_blank" href="/pdf/noe_guillaumin_cv_25.pdf" download>
+            <p class="contactTitle"><a target="_blank" href="/pdf/noe_guillaumin_cv_26_rx.pdf" download>
                     Download my resume (FR)</a></p>
         </div>
     </div>
