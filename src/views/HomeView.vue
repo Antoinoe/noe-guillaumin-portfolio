@@ -29,7 +29,7 @@
       <a href="#contactContent">Contact Me!</a>
     </div>
     <div class="contactMe">
-      <a target="_blank" href="/pdf/noe_guillaumin_cv_26_rx.pdf" download>Download my resume</a>
+      <a target="_blank" href="/pdf/noe_guillaumin_cv_26.pdf" download>Download my resume</a>
     </div>
     <div class="content">
       <div class="category">
